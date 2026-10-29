@@ -76,6 +76,10 @@
         {
           "level": 27,
           "name": "Crunch"
+        },
+        {
+          "level": 31,
+          "name": "Agility"
         }
       ],
       "design_status": "Approved",
