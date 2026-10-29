@@ -52,6 +52,10 @@
         {
           "level": 7,
           "name": "Quick Attack"
+        },
+        {
+          "level": 10,
+          "name": "Bite"
         }
       ],
       "design_status": "Approved",
