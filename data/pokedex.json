@@ -96,6 +96,10 @@
         {
           "level": 47,
           "name": "Thrash"
+        },
+        {
+          "level": 51,
+          "name": "Endure"
         }
       ],
       "design_status": "Approved",
