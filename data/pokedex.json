@@ -100,6 +100,10 @@
         {
           "level": 51,
           "name": "Endure"
+        },
+        {
+          "level": 55,
+          "name": "Double-Edge"
         }
       ],
       "design_status": "Approved",
@@ -107,7 +111,8 @@
       "evolution_levels": {
         "to_stage_2": 17,
         "to_stage_3": 35
-      }
+      },
+      "level_up_moveset_status": "Complete"
     }
   ]
 }
