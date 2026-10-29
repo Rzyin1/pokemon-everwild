@@ -2,5 +2,30 @@
   "region": "TBD",
   "game": "Pokémon Everwild",
   "pokedex_size": "open-ended",
-  "pokemon": []
+  "pokemon": [
+    {
+      "number": 1,
+      "name": "Wolvyn",
+      "category": "Scrappy Pokémon",
+      "type1": "Normal",
+      "type2": null,
+      "inspiration": "Wolverine cub",
+      "stage": 1,
+      "evolution_line": [
+        1,
+        2,
+        3
+      ],
+      "height_m": 0.4,
+      "weight_kg": 7.8,
+      "appearance": "Shaggy brown fur, cream facial and chest markings, dark oversized paws, fluffy cream-tipped tail, mischievous expression.",
+      "personality": "Fearless, mischievous, stubborn",
+      "pokedex_entry": "Wolvyn is small, but it never backs down from a challenge. It fearlessly takes on Pokémon much larger than itself, using its sharp instincts and quick movements to get the upper hand. Its playful and mischievous nature often gets it into trouble, but its determination always helps it push through.",
+      "abilities": [],
+      "base_stats": null,
+      "moves": [],
+      "design_status": "Approved",
+      "mechanics_status": "To be determined"
+    }
+  ]
 }
