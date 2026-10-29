@@ -51,7 +51,11 @@
         }
       ],
       "design_status": "Approved",
-      "mechanics_status": "To be determined"
+      "mechanics_status": "To be determined",
+      "evolution_levels": {
+        "to_stage_2": 17,
+        "to_stage_3": 35
+      }
     }
   ]
 }
