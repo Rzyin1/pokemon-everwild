@@ -106,13 +106,14 @@
           "name": "Double-Edge"
         }
       ],
-      "design_status": "Approved",
+      "design_status": "Finalized",
       "mechanics_status": "To be determined",
       "evolution_levels": {
         "to_stage_2": 17,
         "to_stage_3": 35
       },
-      "level_up_moveset_status": "Complete"
+      "level_up_moveset_status": "Complete",
+      "notes": "Species design, typing, abilities, base stats, evolution levels and level-up moveset approved. Evolution species, TM compatibility and other optional mechanics to be determined separately."
     }
   ]
 }
