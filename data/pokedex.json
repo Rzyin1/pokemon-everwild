@@ -64,6 +64,10 @@
         {
           "level": 15,
           "name": "Bite"
+        },
+        {
+          "level": 19,
+          "name": "Taunt"
         }
       ],
       "design_status": "Approved",
