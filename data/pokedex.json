@@ -72,6 +72,10 @@
         {
           "level": 23,
           "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Crunch"
         }
       ],
       "design_status": "Approved",
