@@ -88,6 +88,10 @@
         {
           "level": 39,
           "name": "Dig"
+        },
+        {
+          "level": 43,
+          "name": "Swords Dance"
         }
       ],
       "design_status": "Approved",
