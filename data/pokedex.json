@@ -55,11 +55,15 @@
         },
         {
           "level": 10,
-          "name": "Bite"
+          "name": "Hone Claws"
         },
         {
           "level": 13,
           "name": "Fury Swipes"
+        },
+        {
+          "level": 15,
+          "name": "Bite"
         }
       ],
       "design_status": "Approved",
