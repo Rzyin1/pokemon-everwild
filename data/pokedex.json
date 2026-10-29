@@ -68,6 +68,10 @@
         {
           "level": 19,
           "name": "Taunt"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
         }
       ],
       "design_status": "Approved",
