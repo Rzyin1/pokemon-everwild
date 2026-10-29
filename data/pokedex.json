@@ -48,6 +48,10 @@
         {
           "level": 1,
           "name": "Leer"
+        },
+        {
+          "level": 7,
+          "name": "Quick Attack"
         }
       ],
       "design_status": "Approved",
