@@ -40,7 +40,16 @@
         "speed": 70,
         "total": 310
       },
-      "moves": [],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        }
+      ],
       "design_status": "Approved",
       "mechanics_status": "To be determined"
     }
