@@ -21,7 +21,16 @@
       "appearance": "Shaggy brown fur, cream facial and chest markings, dark oversized paws, fluffy cream-tipped tail, mischievous expression.",
       "personality": "Fearless, mischievous, stubborn",
       "pokedex_entry": "Wolvyn is small, but it never backs down from a challenge. It fearlessly takes on Pokémon much larger than itself, using its sharp instincts and quick movements to get the upper hand. Its playful and mischievous nature often gets it into trouble, but its determination always helps it push through.",
-      "abilities": [],
+      "abilities": [
+        {
+          "name": "Defiant",
+          "slot": "regular"
+        },
+        {
+          "name": "Guts",
+          "slot": "hidden"
+        }
+      ],
       "base_stats": null,
       "moves": [],
       "design_status": "Approved",
