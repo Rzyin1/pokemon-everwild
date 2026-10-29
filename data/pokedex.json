@@ -56,6 +56,10 @@
         {
           "level": 10,
           "name": "Bite"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
         }
       ],
       "design_status": "Approved",
