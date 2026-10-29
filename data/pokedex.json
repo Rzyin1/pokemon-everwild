@@ -80,6 +80,10 @@
         {
           "level": 31,
           "name": "Agility"
+        },
+        {
+          "level": 35,
+          "name": "Body Slam"
         }
       ],
       "design_status": "Approved",
