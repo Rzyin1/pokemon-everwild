@@ -3,7 +3,7 @@
 </style></head><body><header><div><a href="index.html">← Back to Pokédex</a><h1 id="title">Pokémon Details</h1><span id="type"></span></div></header><main id="content"><p>Loading Pokémon details…</p></main><footer>Pokémon Everwild · Unofficial fan project</footer><script>
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const id=Number(new URLSearchParams(location.search).get('id')||1);
-fetch('data/pokedex.json').then(r=>{if(!r.ok)throw Error('Unable to load Pokédex');return r.json()}).then(data=>{
+fetch('data/pokedex.json?v=20261030-wolvage-stats', {cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Unable to load Pokédex');return r.json()}).then(data=>{
 const p=data.pokemon.find(x=>x.number===id);if(!p){document.getElementById('content').textContent='Pokémon not found.';return}
 document.title=p.name+' | Pokémon Everwild';document.getElementById('title').textContent='#'+String(p.number).padStart(3,'0')+' — '+p.name;
 document.getElementById('type').innerHTML='<span class="tag">'+esc([p.type1,p.type2].filter(Boolean).join(' / '))+'</span>';
