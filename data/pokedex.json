@@ -114,6 +114,37 @@
       },
       "level_up_moveset_status": "Complete",
       "notes": "Species design, typing, abilities, base stats, evolution levels and level-up moveset approved. Evolution species, TM compatibility and other optional mechanics to be determined separately."
+    },
+    {
+      "number": 2,
+      "name": "Wolvigor",
+      "category": "Tenacious Pokémon",
+      "type1": "Normal",
+      "type2": null,
+      "inspiration": "Wolverine",
+      "stage": 2,
+      "evolution_line": [
+        1,
+        2,
+        3
+      ],
+      "height_m": 0.8,
+      "weight_kg": 28.5,
+      "appearance": "Larger muscular wolverine, broad shoulders, oversized claws, thick brown fur and cream face and chest markings, bushy tail.",
+      "personality": "Territorial, aggressive, determined",
+      "pokedex_entry": "Wolvigor’s strength and endurance have grown dramatically. It is highly territorial and will relentlessly pursue any perceived threat across long distances. Its sharp claws and powerful build allow it to take on opponents much larger than itself. Once it locks onto a target, its determination makes it incredibly difficult to deter.",
+      "abilities": [],
+      "base_stats": {},
+      "moves": [],
+      "design_status": "Appearance approved; gameplay details pending",
+      "evolution_levels": {
+        "from_stage_1": 17,
+        "to_stage_3": 35
+      },
+      "images": {
+        "card": "002-Wolvigor-card.png",
+        "concept": "002-Wolvigor.png"
+      }
     }
   ]
 }
