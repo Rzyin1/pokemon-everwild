@@ -333,8 +333,8 @@
           "name": "Double-Edge"
         }
       ],
-      "level_up_moveset_status": "Shared family learnset; subject to review",
-      "design_status": "Artwork and base stats approved; balance subject to playtesting",
+      "level_up_moveset_status": "Complete",
+      "design_status": "Finalized (subject to future playtesting balance)",
       "evolution_levels": {
         "from_stage_2": 35
       },
@@ -342,7 +342,7 @@
         "card": "003-Wolvage.png",
         "concept": "003-Wolvage-card.png"
       },
-      "notes": "Approved provisional 530 BST (90/115/90/45/75/115); can rebalance during development and playtesting. Shared family moveset currently recorded."
+      "notes": "Abilities Defiant/Guts and exact Wolvyn family learnset approved. Stats 530 BST provisional and may be rebalanced after playtesting."
     }
   ]
 }
