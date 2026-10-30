@@ -258,7 +258,15 @@
           "slot": "hidden"
         }
       ],
-      "base_stats": {},
+      "base_stats": {
+        "hp": 90,
+        "attack": 115,
+        "defense": 90,
+        "special_attack": 45,
+        "special_defense": 75,
+        "speed": 115,
+        "total": 530
+      },
       "moves": [
         {
           "level": 1,
@@ -326,7 +334,7 @@
         }
       ],
       "level_up_moveset_status": "Shared family learnset; subject to review",
-      "design_status": "Artwork approved; base stats pending",
+      "design_status": "Artwork and base stats approved; balance subject to playtesting",
       "evolution_levels": {
         "from_stage_2": 35
       },
@@ -334,7 +342,7 @@
         "card": "003-Wolvage.png",
         "concept": "003-Wolvage-card.png"
       },
-      "notes": "Art and height approved. Weight and abilities drawn from concept sheet and evolution line; base stats pending. Main page uses 003-Wolvage.png and details page uses 003-Wolvage-card.png."
+      "notes": "Approved provisional 530 BST (90/115/90/45/75/115); can rebalance during development and playtesting. Shared family moveset currently recorded."
     }
   ]
 }
