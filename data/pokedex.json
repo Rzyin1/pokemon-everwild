@@ -152,7 +152,72 @@
         "speed": 95,
         "total": 415
       },
-      "moves": [],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 7,
+          "name": "Quick Attack"
+        },
+        {
+          "level": 10,
+          "name": "Hone Claws"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
+        },
+        {
+          "level": 15,
+          "name": "Bite"
+        },
+        {
+          "level": 19,
+          "name": "Taunt"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Crunch"
+        },
+        {
+          "level": 31,
+          "name": "Agility"
+        },
+        {
+          "level": 35,
+          "name": "Body Slam"
+        },
+        {
+          "level": 39,
+          "name": "Dig"
+        },
+        {
+          "level": 43,
+          "name": "Swords Dance"
+        },
+        {
+          "level": 47,
+          "name": "Thrash"
+        },
+        {
+          "level": 51,
+          "name": "Endure"
+        },
+        {
+          "level": 55,
+          "name": "Double-Edge"
+        }
+      ],
       "design_status": "Appearance approved; gameplay details pending",
       "evolution_levels": {
         "from_stage_1": 17,
@@ -162,7 +227,8 @@
         "card": "002-Wolvigor-card.png",
         "concept": "002-Wolvigor.png"
       },
-      "notes": "Fast physical attacker stats and Defiant/Guts abilities approved. Level-up moves pending."
+      "notes": "Wolvyn's exact level-up learnset retained for Wolvigor; stats and abilities separately approved.",
+      "level_up_moveset_status": "Complete"
     }
   ]
 }
