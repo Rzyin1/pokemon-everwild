@@ -133,7 +133,16 @@
       "appearance": "Larger muscular wolverine, broad shoulders, oversized claws, thick brown fur and cream face and chest markings, bushy tail.",
       "personality": "Territorial, aggressive, determined",
       "pokedex_entry": "Wolvigor’s strength and endurance have grown dramatically. It is highly territorial and will relentlessly pursue any perceived threat across long distances. Its sharp claws and powerful build allow it to take on opponents much larger than itself. Once it locks onto a target, its determination makes it incredibly difficult to deter.",
-      "abilities": [],
+      "abilities": [
+        {
+          "name": "Defiant",
+          "slot": "regular"
+        },
+        {
+          "name": "Guts",
+          "slot": "hidden"
+        }
+      ],
       "base_stats": {
         "hp": 65,
         "attack": 95,
@@ -153,7 +162,7 @@
         "card": "002-Wolvigor-card.png",
         "concept": "002-Wolvigor.png"
       },
-      "notes": "Fast physical attacker stat spread approved. Abilities and moveset pending."
+      "notes": "Fast physical attacker stats and Defiant/Guts abilities approved. Level-up moves pending."
     }
   ]
 }
