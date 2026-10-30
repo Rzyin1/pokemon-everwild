@@ -229,6 +229,112 @@
       },
       "notes": "Wolvyn's exact level-up learnset retained for Wolvigor; stats and abilities separately approved.",
       "level_up_moveset_status": "Complete"
+    },
+    {
+      "number": 3,
+      "name": "Wolvage",
+      "category": "Relentless Pokémon",
+      "type1": "Normal",
+      "type2": null,
+      "inspiration": "Wolverine",
+      "stage": 3,
+      "evolution_line": [
+        1,
+        2,
+        3
+      ],
+      "height_m": 1.4,
+      "weight_kg": 82,
+      "appearance": "Massive quadrupedal wolverine with a thick brown-and-cream mane, broad shoulders, huge forepaws and long ivory claws.",
+      "personality": "Relentless, territorial, fearless",
+      "pokedex_entry": "Wolvage never backs down from a challenge. Its incredible stamina and powerful claws allow it to overcome foes far stronger than itself. It relentlessly pursues any perceived threat across long distances, protecting its territory with unmatched determination.",
+      "abilities": [
+        {
+          "name": "Defiant",
+          "slot": "regular"
+        },
+        {
+          "name": "Guts",
+          "slot": "hidden"
+        }
+      ],
+      "base_stats": {},
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 7,
+          "name": "Quick Attack"
+        },
+        {
+          "level": 10,
+          "name": "Hone Claws"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
+        },
+        {
+          "level": 15,
+          "name": "Bite"
+        },
+        {
+          "level": 19,
+          "name": "Taunt"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Crunch"
+        },
+        {
+          "level": 31,
+          "name": "Agility"
+        },
+        {
+          "level": 35,
+          "name": "Body Slam"
+        },
+        {
+          "level": 39,
+          "name": "Dig"
+        },
+        {
+          "level": 43,
+          "name": "Swords Dance"
+        },
+        {
+          "level": 47,
+          "name": "Thrash"
+        },
+        {
+          "level": 51,
+          "name": "Endure"
+        },
+        {
+          "level": 55,
+          "name": "Double-Edge"
+        }
+      ],
+      "level_up_moveset_status": "Shared family learnset; subject to review",
+      "design_status": "Artwork approved; base stats pending",
+      "evolution_levels": {
+        "from_stage_2": 35
+      },
+      "images": {
+        "card": "003-Wolvage.png",
+        "concept": "003-Wolvage-card.png"
+      },
+      "notes": "Art and height approved. Weight and abilities drawn from concept sheet and evolution line; base stats pending. Main page uses 003-Wolvage.png and details page uses 003-Wolvage-card.png."
     }
   ]
 }
