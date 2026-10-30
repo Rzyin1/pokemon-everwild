@@ -134,7 +134,15 @@
       "personality": "Territorial, aggressive, determined",
       "pokedex_entry": "Wolvigor’s strength and endurance have grown dramatically. It is highly territorial and will relentlessly pursue any perceived threat across long distances. Its sharp claws and powerful build allow it to take on opponents much larger than itself. Once it locks onto a target, its determination makes it incredibly difficult to deter.",
       "abilities": [],
-      "base_stats": {},
+      "base_stats": {
+        "hp": 65,
+        "attack": 95,
+        "defense": 65,
+        "special_attack": 40,
+        "special_defense": 55,
+        "speed": 95,
+        "total": 415
+      },
       "moves": [],
       "design_status": "Appearance approved; gameplay details pending",
       "evolution_levels": {
@@ -144,7 +152,8 @@
       "images": {
         "card": "002-Wolvigor-card.png",
         "concept": "002-Wolvigor.png"
-      }
+      },
+      "notes": "Fast physical attacker stat spread approved. Abilities and moveset pending."
     }
   ]
 }
