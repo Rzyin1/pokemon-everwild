@@ -699,6 +699,81 @@
         "concept": "#006 Solursus.png",
         "card": "#006 Solursus card.png"
       }
+    },
+    {
+      "number": 7,
+      "name": "Ripplet",
+      "stage": 1,
+      "type1": "Water",
+      "type2": null,
+      "inspiration": "Giant salamander",
+      "evolution_line": [
+        7,
+        8,
+        9
+      ],
+      "height_m": 0.4,
+      "weight_kg": 4.5,
+      "category": "Ripple Pokémon",
+      "pokedex_entry": "Ripplet uses its wide paddle-shaped tail to create gentle ripples as it moves silently through streams.",
+      "abilities": [],
+      "moves": [],
+      "base_stats": null,
+      "personality": null,
+      "design_status": "Artwork approved; remaining details pending",
+      "images": {
+        "concept": "#007 Ripplet.png"
+      }
+    },
+    {
+      "number": 8,
+      "name": "Ripplash",
+      "stage": 2,
+      "type1": "Water",
+      "type2": null,
+      "inspiration": "Giant salamander",
+      "evolution_line": [
+        7,
+        8,
+        9
+      ],
+      "height_m": 0.9,
+      "weight_kg": 22,
+      "category": "Splash Pokémon",
+      "pokedex_entry": "Ripplash uses its stronger tail to create splashes and surging waves as it swims.",
+      "abilities": [],
+      "moves": [],
+      "base_stats": null,
+      "personality": null,
+      "design_status": "Artwork approved; remaining details pending",
+      "images": {
+        "concept": "#008 Ripplash.png"
+      }
+    },
+    {
+      "number": 9,
+      "name": "Riptorrent",
+      "stage": 3,
+      "type1": "Water",
+      "type2": null,
+      "inspiration": "Giant salamander",
+      "evolution_line": [
+        7,
+        8,
+        9
+      ],
+      "height_m": 1.8,
+      "weight_kg": 85,
+      "category": "Current Pokémon",
+      "pokedex_entry": "Riptorrent uses its enormous tail to generate powerful currents and waves.",
+      "abilities": [],
+      "moves": [],
+      "base_stats": null,
+      "personality": null,
+      "design_status": "Artwork approved; remaining details pending",
+      "images": {
+        "concept": "#009 Riptorrent.png"
+      }
     }
   ]
 }
