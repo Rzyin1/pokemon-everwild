@@ -1007,6 +1007,94 @@
           "signature": true
         }
       ]
+    },
+    {
+      "number": 10,
+      "name": "Foliko",
+      "category": "Leaf-Tail Pokémon",
+      "type1": "Grass",
+      "type2": null,
+      "inspiration": "Leaf-tailed gecko",
+      "stage": 1,
+      "evolution_line": [
+        10,
+        11,
+        12
+      ],
+      "height_m": 0.4,
+      "weight_kg": 6.8,
+      "appearance": "Small cute leaf-tailed gecko with golden eyes, cream underside, green-and-brown leaf camouflage, leafy head frills, wide gripping toes and broad leaf-shaped tail.",
+      "evolution_levels": {
+        "to_stage_2": 16,
+        "to_stage_3": 32
+      },
+      "design_status": "Design and solo artwork approved; image upload pending",
+      "base_stats": null,
+      "abilities": [],
+      "moves": [],
+      "pokedex_entry": null,
+      "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later."
+    },
+    {
+      "number": 11,
+      "name": "Folisk",
+      "category": "Forest Gecko Pokémon",
+      "type1": "Grass",
+      "type2": null,
+      "inspiration": "Leaf-tailed gecko",
+      "stage": 2,
+      "evolution_line": [
+        10,
+        11,
+        12
+      ],
+      "height_m": 0.7,
+      "weight_kg": 14.2,
+      "appearance": "Agile adolescent leaf-tailed gecko with longer limbs, more angular leafy crest, green-brown camouflage and a larger raised leaf-shaped tail.",
+      "evolution_levels": {
+        "from_stage_1": 16,
+        "to_stage_3": 32
+      },
+      "design_status": "Evolution concept approved; solo artwork pending",
+      "base_stats": null,
+      "abilities": [],
+      "moves": [],
+      "pokedex_entry": null,
+      "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later."
+    },
+    {
+      "number": 12,
+      "name": "Foliraptor",
+      "category": "Canopy Gecko Pokémon",
+      "type1": "Grass",
+      "type2": null,
+      "inspiration": "Leaf-tailed gecko",
+      "stage": 3,
+      "evolution_line": [
+        10,
+        11,
+        12
+      ],
+      "height_m": 1,
+      "weight_kg": 24.6,
+      "appearance": "Athletic mature canopy gecko with elaborate layered leafy frills, elongated limbs, golden eyes and a large camouflage leaf-shaped tail.",
+      "evolution_levels": {
+        "from_stage_2": 32
+      },
+      "design_status": "Evolution concept approved; solo artwork pending",
+      "base_stats": {
+        "hp": 75,
+        "attack": 65,
+        "defense": 70,
+        "special_attack": 125,
+        "special_defense": 85,
+        "speed": 110,
+        "total": 530
+      },
+      "abilities": [],
+      "moves": [],
+      "pokedex_entry": null,
+      "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later."
     }
   ]
 }
