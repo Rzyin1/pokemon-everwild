@@ -508,7 +508,7 @@
       "number": 6,
       "name": "Solursus",
       "stage": 3,
-      "height_m": null,
+      "height_m": 1.8,
       "appearance": null,
       "evolution_levels": {
         "from_stage_2": 36
