@@ -703,10 +703,11 @@
     {
       "number": 7,
       "name": "Ripplet",
-      "stage": 1,
+      "category": "Ripple Pokémon",
       "type1": "Water",
       "type2": null,
       "inspiration": "Giant salamander",
+      "stage": 1,
       "evolution_line": [
         7,
         8,
@@ -714,24 +715,82 @@
       ],
       "height_m": 0.4,
       "weight_kg": 4.5,
-      "category": "Ripple Pokémon",
-      "pokedex_entry": "Ripplet uses its wide paddle-shaped tail to create gentle ripples as it moves silently through streams.",
-      "abilities": [],
-      "moves": [],
-      "base_stats": null,
-      "personality": null,
-      "design_status": "Artwork approved; remaining details pending",
+      "appearance": "Small, primarily quadrupedal giant-salamander Pokémon with smooth deep-teal skin, a lighter cream-blue underside, expressive golden eyes, short sturdy legs and a broad paddle-shaped tail with translucent blue fin edges.",
+      "personality": "Cautious, curious, patient, skittish",
+      "pokedex_entry": "Ripplet spends much of its time hiding beneath smooth stones in shallow streams. Its broad, paddle-shaped tail allows it to glide quietly through the water, creating gentle ripples along the surface. Although usually cautious, Ripplet becomes surprisingly energetic when hunting small aquatic creatures. When startled, it darts toward shelter with a sudden burst of speed.",
+      "abilities": [
+        {
+          "name": "Torrent",
+          "slot": "regular"
+        },
+        {
+          "name": "Water Absorb",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 65,
+        "attack": 45,
+        "defense": 55,
+        "special_attack": 75,
+        "special_defense": 55,
+        "speed": 30,
+        "total": 325
+      },
+      "evolution_levels": {
+        "to_stage_2": 20,
+        "to_stage_3": 40
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Water Gun"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Mud-Slap"
+        },
+        {
+          "level": 7,
+          "name": "Withdraw"
+        },
+        {
+          "level": 10,
+          "name": "Bite"
+        },
+        {
+          "level": 13,
+          "name": "Water Pulse"
+        },
+        {
+          "level": 16,
+          "name": "Aqua Ring"
+        },
+        {
+          "level": 20,
+          "name": "Mud Shot"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved evolutionary-line progression)",
+      "design_status": "Finalized; approved for Pokédex",
+      "ability_assignment": "One ability is randomly assigned when generated; each available ability has an equal chance. The assigned ability carries through evolution.",
       "images": {
         "concept": "#007 Ripplet.png"
-      }
+      },
+      "notes": "No hidden abilities. Available abilities: Torrent and Water Absorb, each with equal probability. Evolution line and approved details finalized; no GitHub upload beyond this data update is pending."
     },
     {
       "number": 8,
       "name": "Ripplash",
-      "stage": 2,
+      "category": "Splash Pokémon",
       "type1": "Water",
       "type2": null,
       "inspiration": "Giant salamander",
+      "stage": 2,
       "evolution_line": [
         7,
         8,
@@ -739,24 +798,98 @@
       ],
       "height_m": 0.9,
       "weight_kg": 22,
-      "category": "Splash Pokémon",
-      "pokedex_entry": "Ripplash uses its stronger tail to create splashes and surging waves as it swims.",
-      "abilities": [],
-      "moves": [],
-      "base_stats": null,
-      "personality": null,
-      "design_status": "Artwork approved; remaining details pending",
+      "appearance": "Adolescent, primarily quadrupedal giant-salamander Pokémon with a broader head, thicker body, stronger legs and shoulders, deep-teal skin, a lighter underside, golden eyes and a larger muscular paddle-shaped tail with translucent fin edges.",
+      "personality": "Confident, territorial, patient, independent",
+      "pokedex_entry": "Ripplash has grown increasingly confident as its body and tail become stronger. It patrols the deeper sections of rivers, using its broad tail to stir up sediment and flush hidden prey from the riverbed. Despite its powerful swimming bursts, Ripplash prefers waiting patiently beneath submerged rocks before ambushing its prey. When defending its territory, it slams its tail against the water, producing a thunderous splash that warns intruders to stay away.",
+      "abilities": [
+        {
+          "name": "Torrent",
+          "slot": "regular"
+        },
+        {
+          "name": "Water Absorb",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 85,
+        "attack": 60,
+        "defense": 75,
+        "special_attack": 100,
+        "special_defense": 75,
+        "speed": 40,
+        "total": 435
+      },
+      "evolution_levels": {
+        "from_stage_1": 20,
+        "to_stage_3": 40
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Water Gun"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Mud-Slap"
+        },
+        {
+          "level": 7,
+          "name": "Withdraw"
+        },
+        {
+          "level": 10,
+          "name": "Bite"
+        },
+        {
+          "level": 13,
+          "name": "Water Pulse"
+        },
+        {
+          "level": 16,
+          "name": "Aqua Ring"
+        },
+        {
+          "level": 20,
+          "name": "Mud Shot"
+        },
+        {
+          "level": 24,
+          "name": "Brine"
+        },
+        {
+          "level": 28,
+          "name": "Crunch"
+        },
+        {
+          "level": 32,
+          "name": "Rain Dance"
+        },
+        {
+          "level": 36,
+          "name": "Hydro Pump"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved evolutionary-line progression)",
+      "design_status": "Finalized; approved for Pokédex",
+      "ability_assignment": "One ability is randomly assigned when generated; each available ability has an equal chance. The assigned ability carries through evolution.",
       "images": {
         "concept": "#008 Ripplash.png"
-      }
+      },
+      "notes": "No hidden abilities. Available abilities: Torrent and Water Absorb, each with equal probability. Evolution line and approved details finalized; no GitHub upload beyond this data update is pending."
     },
     {
       "number": 9,
       "name": "Riptorrent",
-      "stage": 3,
+      "category": "Torrent Pokémon",
       "type1": "Water",
       "type2": null,
       "inspiration": "Giant salamander",
+      "stage": 3,
       "evolution_line": [
         7,
         8,
@@ -764,16 +897,116 @@
       ],
       "height_m": 1.8,
       "weight_kg": 85,
-      "category": "Current Pokémon",
-      "pokedex_entry": "Riptorrent uses its enormous tail to generate powerful currents and waves.",
-      "abilities": [],
-      "moves": [],
-      "base_stats": null,
-      "personality": null,
-      "design_status": "Artwork approved; remaining details pending",
+      "appearance": "Massive, primarily quadrupedal giant-salamander Pokémon with a broad powerful head, heavily muscled body and limbs, deep-teal skin, a lighter underside, golden eyes and an enormous fan-shaped paddle tail with flowing translucent fins.",
+      "personality": "Calm, patient, territorial, formidable",
+      "pokedex_entry": "Riptorrent rules the deepest stretches of rivers, where its enormous body remains nearly motionless beneath the current. Its powerful tail can generate torrents strong enough to sweep away large obstacles and reshape sections of the riverbed. Despite its tremendous strength, Riptorrent is a patient ambush predator that rarely pursues prey over long distances. When its territory is threatened, it unleashes a violent surge of water before disappearing into the depths.",
+      "abilities": [
+        {
+          "name": "Torrent",
+          "slot": "regular"
+        },
+        {
+          "name": "Water Absorb",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 110,
+        "attack": 75,
+        "defense": 100,
+        "special_attack": 125,
+        "special_defense": 95,
+        "speed": 45,
+        "total": 550
+      },
+      "evolution_levels": {
+        "from_stage_2": 40
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Water Gun"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Mud-Slap"
+        },
+        {
+          "level": 7,
+          "name": "Withdraw"
+        },
+        {
+          "level": 10,
+          "name": "Bite"
+        },
+        {
+          "level": 13,
+          "name": "Water Pulse"
+        },
+        {
+          "level": 16,
+          "name": "Aqua Ring"
+        },
+        {
+          "level": 20,
+          "name": "Mud Shot"
+        },
+        {
+          "level": 24,
+          "name": "Brine"
+        },
+        {
+          "level": 28,
+          "name": "Crunch"
+        },
+        {
+          "level": 32,
+          "name": "Rain Dance"
+        },
+        {
+          "level": 36,
+          "name": "Hydro Pump"
+        },
+        {
+          "level": 40,
+          "name": "Torrent Break"
+        },
+        {
+          "level": 44,
+          "name": "Dive"
+        },
+        {
+          "level": 49,
+          "name": "Whirlpool"
+        },
+        {
+          "level": 55,
+          "name": "Hydro Cannon"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved evolutionary-line progression)",
+      "design_status": "Finalized; approved for Pokédex",
+      "ability_assignment": "One ability is randomly assigned when generated; each available ability has an equal chance. The assigned ability carries through evolution.",
       "images": {
         "concept": "#009 Riptorrent.png"
-      }
+      },
+      "notes": "No hidden abilities. Available abilities: Torrent and Water Absorb, each with equal probability. Evolution line and approved details finalized; no GitHub upload beyond this data update is pending.",
+      "custom_moves": [
+        {
+          "name": "Torrent Break",
+          "type": "Water",
+          "category": "Special",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 10,
+          "effect": "30% chance to lower the target's Speed by one stage.",
+          "signature": true
+        }
+      ]
     }
   ]
 }
