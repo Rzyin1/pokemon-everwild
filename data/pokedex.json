@@ -498,7 +498,11 @@
       "base_stats": null,
       "moves": [],
       "level_up_moveset_status": "Shared family progression approved; individual species allocation pending",
-      "notes": "Evolution name approved. Other species details will be designed and approved separately."
+      "notes": "Evolution name approved. Other species details will be designed and approved separately. Artwork uploaded to GitHub.",
+      "images": {
+        "concept": "#005 Solbruin.png",
+        "card": "#005 Solbruin-card.png"
+      }
     },
     {
       "number": 6,
@@ -526,7 +530,11 @@
       "base_stats": null,
       "moves": [],
       "level_up_moveset_status": "Shared family progression approved; individual species allocation pending",
-      "notes": "Evolution name approved. Other species details will be designed and approved separately."
+      "notes": "Evolution name approved. Other species details will be designed and approved separately. Artwork uploaded to GitHub.",
+      "images": {
+        "concept": "#006 Solursus.png",
+        "card": "#006 Solursus card.png"
+      }
     }
   ]
 }
