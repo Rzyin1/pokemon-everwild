@@ -1760,7 +1760,10 @@
         "concept": "016-arctix.png",
         "artwork": "#016 Arctix.png"
       },
-      "notes": "Names, pure Ice typing, and artwork approved. Evolution levels shown on concept art are provisional; heights, weights, stats, abilities and moves pending."
+      "notes": "Names, pure Ice typing, artwork and evolution levels approved. Heights, weights, stats, abilities and moves pending.",
+      "evolution_levels": {
+        "to_stage_2": 16
+      }
     },
     {
       "number": 17,
@@ -1782,7 +1785,11 @@
         "concept": "017-arctivar.png",
         "artwork": "#017 Arctivar.png"
       },
-      "notes": "Names, pure Ice typing, and artwork approved. Evolution levels shown on concept art are provisional; heights, weights, stats, abilities and moves pending."
+      "notes": "Names, pure Ice typing, artwork and evolution levels approved. Heights, weights, stats, abilities and moves pending.",
+      "evolution_levels": {
+        "from_stage_1": 16,
+        "to_stage_3": 32
+      }
     },
     {
       "number": 18,
@@ -1804,7 +1811,10 @@
         "concept": "018-arctivale.png",
         "artwork": "#018 Arctivale.png"
       },
-      "notes": "Names, pure Ice typing, and artwork approved. Evolution levels shown on concept art are provisional; heights, weights, stats, abilities and moves pending."
+      "notes": "Names, pure Ice typing, artwork and evolution levels approved. Heights, weights, stats, abilities and moves pending.",
+      "evolution_levels": {
+        "from_stage_2": 32
+      }
     }
   ]
 }
