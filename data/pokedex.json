@@ -1395,7 +1395,16 @@
       "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
       "pokedex_entry": "Kivolt is a playful Pokémon that generates static electricity as it runs through tall grass. Its spotted fur releases tiny sparks whenever it becomes excited. Young Kivolt frequently chase one another, unknowingly developing the extraordinary speed they will possess as adults.",
       "height_m": 0.5,
-      "weight_kg": 12
+      "weight_kg": 12,
+      "base_stats": {
+        "hp": 45,
+        "attack": 65,
+        "defense": 35,
+        "special_attack": 45,
+        "special_defense": 40,
+        "speed": 80,
+        "total": 310
+      }
     },
     {
       "number": 14,
@@ -1420,7 +1429,16 @@
       "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
       "pokedex_entry": "Kivarra spends much of its day racing across open grasslands, strengthening its legs and refining its hunting instincts. Specialized pads on its paws absorb the impact of high-speed movement while its fur stores electrical energy. When approaching its maximum speed, bright sparks race along its body.",
       "height_m": 0.9,
-      "weight_kg": 32
+      "weight_kg": 32,
+      "base_stats": {
+        "hp": 60,
+        "attack": 90,
+        "defense": 45,
+        "special_attack": 55,
+        "special_defense": 50,
+        "speed": 115,
+        "total": 415
+      }
     },
     {
       "number": 15,
@@ -1444,7 +1462,16 @@
       "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
       "pokedex_entry": "Kivarion is an exceptionally fast predator capable of crossing vast grasslands in seconds. Its powerful legs generate tremendous electrical energy with every stride, causing its markings to glow brilliantly. When pursuing prey, Kivarion can release a concentrated burst of electricity to accelerate beyond its normal limits.",
       "height_m": 1.4,
-      "weight_kg": 65
+      "weight_kg": 65,
+      "base_stats": {
+        "hp": 75,
+        "attack": 120,
+        "defense": 60,
+        "special_attack": 70,
+        "special_defense": 65,
+        "speed": 140,
+        "total": 530
+      }
     }
   ]
 }
