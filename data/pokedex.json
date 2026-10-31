@@ -28,7 +28,7 @@
         },
         {
           "name": "Guts",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "base_stats": {
@@ -140,7 +140,7 @@
         },
         {
           "name": "Guts",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "base_stats": {
@@ -255,7 +255,7 @@
         },
         {
           "name": "Guts",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "base_stats": {
@@ -369,7 +369,7 @@
         },
         {
           "name": "Solar Power",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "base_stats": {
@@ -501,7 +501,7 @@
         },
         {
           "name": "Solar Power",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "base_stats": {
@@ -615,7 +615,7 @@
         },
         {
           "name": "Solar Power",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "base_stats": {
@@ -1045,7 +1045,7 @@
         },
         {
           "name": "Infiltrator",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "moves": [
@@ -1167,7 +1167,7 @@
         },
         {
           "name": "Infiltrator",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "moves": [
@@ -1288,7 +1288,7 @@
         },
         {
           "name": "Infiltrator",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ],
       "moves": [
@@ -1412,7 +1412,7 @@
         },
         {
           "name": "Motor Drive",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ]
     },
@@ -1456,7 +1456,7 @@
         },
         {
           "name": "Motor Drive",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ]
     },
@@ -1499,7 +1499,7 @@
         },
         {
           "name": "Motor Drive",
-          "slot": "hidden"
+          "slot": "regular"
         }
       ]
     }
