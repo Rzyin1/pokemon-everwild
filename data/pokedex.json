@@ -1739,6 +1739,72 @@
         }
       ],
       "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Extreme Speed learned on evolution to Kivarion at level 36)"
+    },
+    {
+      "number": 16,
+      "name": "Arctix",
+      "stage": 1,
+      "category": "Arctic Fox Pokémon",
+      "pokedex_entry": "A curious and playful Pokémon that loves to bound through the snow. Its thick fur keeps it warm, even in the harshest cold.",
+      "appearance": "Small white arctic fox kit with oversized blue-lined ears, bright blue eyes, fluffy neck ruff, blue-tipped paws and large bushy tail with pale blue markings.",
+      "type1": "Ice",
+      "type2": null,
+      "inspiration": "Arctic fox",
+      "evolution_line": [
+        16,
+        17,
+        18
+      ],
+      "design_status": "Approved concept and solo artwork uploaded",
+      "images": {
+        "concept": "016-arctix.png",
+        "artwork": "#016 Arctix.png"
+      },
+      "notes": "Names, pure Ice typing, and artwork approved. Evolution levels shown on concept art are provisional; heights, weights, stats, abilities and moves pending."
+    },
+    {
+      "number": 17,
+      "name": "Arctivar",
+      "stage": 2,
+      "category": "Arctic Fox Pokémon",
+      "pokedex_entry": "A nimble and intelligent Pokémon. It moves silently across snowy terrain, using its keen senses to track prey and navigate blizzards.",
+      "appearance": "Lean adolescent white arctic fox with sharp blue eyes, icy-blue markings, spiky fur collar and large bushy tail.",
+      "type1": "Ice",
+      "type2": null,
+      "inspiration": "Arctic fox",
+      "evolution_line": [
+        16,
+        17,
+        18
+      ],
+      "design_status": "Approved concept and solo artwork uploaded",
+      "images": {
+        "concept": "017-arctivar.png",
+        "artwork": "#017 Arctivar.png"
+      },
+      "notes": "Names, pure Ice typing, and artwork approved. Evolution levels shown on concept art are provisional; heights, weights, stats, abilities and moves pending."
+    },
+    {
+      "number": 18,
+      "name": "Arctivale",
+      "stage": 3,
+      "category": "Arctic Fox Pokémon",
+      "pokedex_entry": "A majestic Pokémon that commands the cold. It can generate intense cold air, creating ice and snowstorms to protect its territory.",
+      "appearance": "Majestic large white arctic fox with thick layered mane, blue crystalline formations along shoulders and back, intense blue eyes and huge bushy tail.",
+      "type1": "Ice",
+      "type2": null,
+      "inspiration": "Arctic fox",
+      "evolution_line": [
+        16,
+        17,
+        18
+      ],
+      "design_status": "Approved concept and solo artwork uploaded",
+      "images": {
+        "concept": "018-arctivale.png",
+        "artwork": "#018 Arctivale.png"
+      },
+      "notes": "Names, pure Ice typing, and artwork approved. Evolution levels shown on concept art are provisional; heights, weights, stats, abilities and moves pending."
     }
   ]
 }
