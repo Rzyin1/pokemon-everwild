@@ -1372,6 +1372,70 @@
       "pokedex_entry": "Foliraptor is a master of camouflage, capable of remaining completely undetected among dense forest vegetation. Its elaborate leaf-like scales blend seamlessly into the canopy, allowing it to ambush prey without warning. Despite its intimidating appearance, Foliraptor rarely confronts larger Pokémon, preferring to use its exceptional agility to escape danger.",
       "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later.",
       "level_up_moveset_status": "Complete (approved shared evolutionary-line progression)"
+    },
+    {
+      "number": 13,
+      "name": "Kivolt",
+      "stage": 1,
+      "appearance": "Playful golden cheetah cub with black spots, rounded ears, cream chest and paws, dark tear markings, banded lightning-tipped tail, and small static discharges.",
+      "evolution_levels": {
+        "to_stage_2": 18
+      },
+      "category": "Cheetah Pokémon",
+      "type1": "Electric",
+      "type2": null,
+      "inspiration": "Cheetah",
+      "evolution_line": [
+        13,
+        14,
+        15
+      ],
+      "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
+      "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
+      "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval."
+    },
+    {
+      "number": 14,
+      "name": "Kivarra",
+      "stage": 2,
+      "appearance": "Lean adolescent electric cheetah with longer sprinting limbs, angular black markings, spiky fur tufts, banded lightning-tipped tail and bright electrical arcs.",
+      "evolution_levels": {
+        "from_stage_1": 18,
+        "to_stage_3": 36
+      },
+      "category": "Cheetah Pokémon",
+      "type1": "Electric",
+      "type2": null,
+      "inspiration": "Cheetah",
+      "evolution_line": [
+        13,
+        14,
+        15
+      ],
+      "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
+      "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
+      "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval."
+    },
+    {
+      "number": 15,
+      "name": "Kivarion",
+      "stage": 3,
+      "appearance": "Athletic adult electric cheetah with a cream chest ruff, swept-back lightning-shaped fur, bold black markings, powerful running limbs, banded tail and vivid electrical arcs.",
+      "evolution_levels": {
+        "from_stage_2": 36
+      },
+      "category": "Cheetah Pokémon",
+      "type1": "Electric",
+      "type2": null,
+      "inspiration": "Cheetah",
+      "evolution_line": [
+        13,
+        14,
+        15
+      ],
+      "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
+      "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
+      "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval."
     }
   ]
 }
