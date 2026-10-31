@@ -1404,7 +1404,17 @@
         "special_defense": 40,
         "speed": 80,
         "total": 310
-      }
+      },
+      "abilities": [
+        {
+          "name": "Static",
+          "slot": "regular"
+        },
+        {
+          "name": "Motor Drive",
+          "slot": "hidden"
+        }
+      ]
     },
     {
       "number": 14,
@@ -1438,7 +1448,17 @@
         "special_defense": 50,
         "speed": 115,
         "total": 415
-      }
+      },
+      "abilities": [
+        {
+          "name": "Static",
+          "slot": "regular"
+        },
+        {
+          "name": "Motor Drive",
+          "slot": "hidden"
+        }
+      ]
     },
     {
       "number": 15,
@@ -1471,7 +1491,17 @@
         "special_defense": 65,
         "speed": 140,
         "total": 530
-      }
+      },
+      "abilities": [
+        {
+          "name": "Static",
+          "slot": "regular"
+        },
+        {
+          "name": "Motor Drive",
+          "slot": "hidden"
+        }
+      ]
     }
   ]
 }
