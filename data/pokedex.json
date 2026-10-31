@@ -1029,10 +1029,27 @@
         "to_stage_3": 32
       },
       "design_status": "Design and solo artwork approved; image upload pending",
-      "base_stats": null,
-      "abilities": [],
+      "base_stats": {
+        "hp": 45,
+        "attack": 35,
+        "defense": 40,
+        "special_attack": 65,
+        "special_defense": 50,
+        "speed": 75,
+        "total": 310
+      },
+      "abilities": [
+        {
+          "name": "Overgrow",
+          "slot": "regular"
+        },
+        {
+          "name": "Infiltrator",
+          "slot": "hidden"
+        }
+      ],
       "moves": [],
-      "pokedex_entry": null,
+      "pokedex_entry": "Foliko spends most of its day hiding among fallen leaves and low branches. Its leaf-shaped tail and mottled skin make it nearly impossible to distinguish from surrounding foliage. When startled, it freezes completely, relying on its camouflage to escape detection. Curious by nature, it often follows unfamiliar sounds before quickly retreating into hiding.",
       "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later."
     },
     {
@@ -1056,10 +1073,27 @@
         "to_stage_3": 32
       },
       "design_status": "Evolution concept approved; solo artwork pending",
-      "base_stats": null,
-      "abilities": [],
+      "base_stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 55,
+        "special_attack": 95,
+        "special_defense": 65,
+        "speed": 90,
+        "total": 415
+      },
+      "abilities": [
+        {
+          "name": "Overgrow",
+          "slot": "regular"
+        },
+        {
+          "name": "Infiltrator",
+          "slot": "hidden"
+        }
+      ],
       "moves": [],
-      "pokedex_entry": null,
+      "pokedex_entry": "Folisk is an agile climber that spends much of its life high in the forest canopy. Its enlarged toe pads allow it to cling securely to branches, even while hanging upside down. It patiently waits among the leaves for unsuspecting prey, striking with remarkable speed before disappearing back into the foliage.",
       "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later."
     },
     {
@@ -1091,9 +1125,18 @@
         "speed": 110,
         "total": 530
       },
-      "abilities": [],
+      "abilities": [
+        {
+          "name": "Overgrow",
+          "slot": "regular"
+        },
+        {
+          "name": "Infiltrator",
+          "slot": "hidden"
+        }
+      ],
       "moves": [],
-      "pokedex_entry": null,
+      "pokedex_entry": "Foliraptor is a master of camouflage, capable of remaining completely undetected among dense forest vegetation. Its elaborate leaf-like scales blend seamlessly into the canopy, allowing it to ambush prey without warning. Despite its intimidating appearance, Foliraptor rarely confronts larger Pokémon, preferring to use its exceptional agility to escape danger.",
       "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later."
     }
   ]
