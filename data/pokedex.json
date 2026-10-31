@@ -1760,7 +1760,7 @@
         "concept": "016-arctix.png",
         "artwork": "#016 Arctix.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and early moves approved. Later moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and moves through level 31 approved. Later moves pending.",
       "evolution_levels": {
         "to_stage_2": 16
       },
@@ -1809,9 +1809,33 @@
         {
           "level": 13,
           "name": "Double Team"
+        },
+        {
+          "level": 16,
+          "name": "Ice Fang"
+        },
+        {
+          "level": 19,
+          "name": "Swift"
+        },
+        {
+          "level": 22,
+          "name": "Aurora Beam"
+        },
+        {
+          "level": 25,
+          "name": "Agility"
+        },
+        {
+          "level": 28,
+          "name": "Snowscape"
+        },
+        {
+          "level": 31,
+          "name": "Ice Beam"
         }
       ],
-      "level_up_moveset_status": "Approved through level 13; later moves pending"
+      "level_up_moveset_status": "Approved through level 31; later moves pending"
     },
     {
       "number": 17,
@@ -1833,7 +1857,7 @@
         "concept": "017-arctivar.png",
         "artwork": "#017 Arctivar.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and early moves approved. Later moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and moves through level 31 approved. Later moves pending.",
       "evolution_levels": {
         "from_stage_1": 16,
         "to_stage_3": 32
@@ -1883,9 +1907,33 @@
         {
           "level": 13,
           "name": "Double Team"
+        },
+        {
+          "level": 16,
+          "name": "Ice Fang"
+        },
+        {
+          "level": 19,
+          "name": "Swift"
+        },
+        {
+          "level": 22,
+          "name": "Aurora Beam"
+        },
+        {
+          "level": 25,
+          "name": "Agility"
+        },
+        {
+          "level": 28,
+          "name": "Snowscape"
+        },
+        {
+          "level": 31,
+          "name": "Ice Beam"
         }
       ],
-      "level_up_moveset_status": "Approved through level 13; later moves pending"
+      "level_up_moveset_status": "Approved through level 31; later moves pending"
     },
     {
       "number": 18,
@@ -1907,7 +1955,7 @@
         "concept": "018-arctivale.png",
         "artwork": "#018 Arctivale.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and early moves approved. Later moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and moves through level 31 approved. Later moves pending.",
       "evolution_levels": {
         "from_stage_2": 32
       },
@@ -1956,9 +2004,33 @@
         {
           "level": 13,
           "name": "Double Team"
+        },
+        {
+          "level": 16,
+          "name": "Ice Fang"
+        },
+        {
+          "level": 19,
+          "name": "Swift"
+        },
+        {
+          "level": 22,
+          "name": "Aurora Beam"
+        },
+        {
+          "level": 25,
+          "name": "Agility"
+        },
+        {
+          "level": 28,
+          "name": "Snowscape"
+        },
+        {
+          "level": 31,
+          "name": "Ice Beam"
         }
       ],
-      "level_up_moveset_status": "Approved through level 13; later moves pending"
+      "level_up_moveset_status": "Approved through level 31; later moves pending"
     }
   ]
 }
