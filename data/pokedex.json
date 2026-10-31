@@ -343,6 +343,129 @@
         "concept": "003-Wolvage-card.png"
       },
       "notes": "Abilities Defiant/Guts and exact Wolvyn family learnset approved. Stats 530 BST provisional and may be rebalanced after playtesting."
+    },
+    {
+      "number": 4,
+      "name": "Solcub",
+      "category": "Ember Cub Pokémon",
+      "type1": "Fire",
+      "type2": null,
+      "inspiration": "Sun bear cub",
+      "stage": 1,
+      "evolution_line": [
+        4,
+        5,
+        6
+      ],
+      "height_m": 0.5,
+      "weight_kg": 9.5,
+      "appearance": "Small charcoal-black sun bear cub with orange-red fiery highlights, flames around rounded ears, bright yellow crescent chest marking, ember-like claws and paw pads, and amber eyes.",
+      "personality": "Playful, energetic, curious, mischievous and slightly hotheaded; affectionate toward trusted trainers.",
+      "pokedex_entry": "Solcub is a playful and energetic Pokémon whose flames react to its emotions. When excited, the flames on its ears burn brightly, scattering tiny sparks into the air. Its crescent-shaped chest marking stores solar energy, allowing it to maintain its body heat even during the coldest nights. Although mischievous and quick-tempered, Solcub forms strong bonds with trainers who earn its trust.",
+      "abilities": [
+        {
+          "name": "Flash Fire",
+          "slot": "regular"
+        },
+        {
+          "name": "Solar Power",
+          "slot": "hidden"
+        }
+      ],
+      "base_stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 55,
+        "special_attack": 60,
+        "special_defense": 45,
+        "speed": 25,
+        "total": 310
+      },
+      "evolution_levels": {
+        "to_stage_2": 18,
+        "to_stage_3": 36
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Ember Claw"
+        },
+        {
+          "level": 7,
+          "name": "Lick"
+        },
+        {
+          "level": 10,
+          "name": "Hone Claws"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
+        },
+        {
+          "level": 16,
+          "name": "Fire Fang"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Sunny Day"
+        },
+        {
+          "level": 31,
+          "name": "Fire Punch"
+        },
+        {
+          "level": 35,
+          "name": "Crunch"
+        },
+        {
+          "level": 39,
+          "name": "Heat Crash"
+        },
+        {
+          "level": 44,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 49,
+          "name": "Flare Blitz"
+        },
+        {
+          "level": 55,
+          "name": "Solar Beam"
+        }
+      ],
+      "custom_moves": [
+        {
+          "name": "Ember Claw",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 25,
+          "contact": true,
+          "burn_chance_percent": 10
+        }
+      ],
+      "level_up_moveset_status": "Complete (shared evolutionary line progression)",
+      "design_status": "Approved; artwork file pending upload",
+      "notes": "Artwork concept approved in conversation but not yet uploaded to GitHub. Move distribution among evolutions can be refined."
     }
   ]
 }
