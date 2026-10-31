@@ -1760,7 +1760,7 @@
         "concept": "016-arctix.png",
         "artwork": "#016 Arctix.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, stats and abilities approved. Moves pending.",
       "evolution_levels": {
         "to_stage_2": 16
       },
@@ -1774,7 +1774,17 @@
         "special_defense": 50,
         "speed": 65,
         "total": 310
-      }
+      },
+      "abilities": [
+        {
+          "name": "Snow Cloak",
+          "slot": "regular"
+        },
+        {
+          "name": "Ice Body",
+          "slot": "regular"
+        }
+      ]
     },
     {
       "number": 17,
@@ -1796,7 +1806,7 @@
         "concept": "017-arctivar.png",
         "artwork": "#017 Arctivar.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, stats and abilities approved. Moves pending.",
       "evolution_levels": {
         "from_stage_1": 16,
         "to_stage_3": 32
@@ -1811,7 +1821,17 @@
         "special_defense": 65,
         "speed": 95,
         "total": 415
-      }
+      },
+      "abilities": [
+        {
+          "name": "Snow Cloak",
+          "slot": "regular"
+        },
+        {
+          "name": "Ice Body",
+          "slot": "regular"
+        }
+      ]
     },
     {
       "number": 18,
@@ -1833,7 +1853,7 @@
         "concept": "018-arctivale.png",
         "artwork": "#018 Arctivale.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, stats and abilities approved. Moves pending.",
       "evolution_levels": {
         "from_stage_2": 32
       },
@@ -1847,7 +1867,17 @@
         "special_defense": 85,
         "speed": 120,
         "total": 530
-      }
+      },
+      "abilities": [
+        {
+          "name": "Snow Cloak",
+          "slot": "regular"
+        },
+        {
+          "name": "Ice Body",
+          "slot": "regular"
+        }
+      ]
     }
   ]
 }
