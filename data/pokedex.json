@@ -464,8 +464,69 @@
         }
       ],
       "level_up_moveset_status": "Complete (shared evolutionary line progression)",
-      "design_status": "Approved; artwork file pending upload",
-      "notes": "Artwork concept approved in conversation but not yet uploaded to GitHub. Move distribution among evolutions can be refined."
+      "design_status": "Approved; artwork uploaded",
+      "notes": "Artwork uploaded. Evolution names: Solbruin (#005), Solursus (#006).",
+      "images": {
+        "concept": "004-Solcub.png",
+        "card": "004-Solcub-card.png"
+      }
+    },
+    {
+      "number": 5,
+      "name": "Solbruin",
+      "stage": 2,
+      "height_m": 0.9,
+      "appearance": "Adolescent quadrupedal sun bear with charcoal-black fur, a fiery orange-red ridge along its spine, pronounced flaming ears and shoulders, strong forelegs, broad shoulders, glowing crescent chest marking and long ember-lit claws.",
+      "evolution_levels": {
+        "from_stage_1": 18,
+        "to_stage_3": 36
+      },
+      "design_status": "Name and general visual direction approved; other details pending",
+      "category": null,
+      "type1": "Fire",
+      "type2": null,
+      "inspiration": "Sun bear",
+      "evolution_line": [
+        4,
+        5,
+        6
+      ],
+      "weight_kg": null,
+      "personality": null,
+      "pokedex_entry": null,
+      "abilities": [],
+      "base_stats": null,
+      "moves": [],
+      "level_up_moveset_status": "Shared family progression approved; individual species allocation pending",
+      "notes": "Evolution name approved. Other species details will be designed and approved separately."
+    },
+    {
+      "number": 6,
+      "name": "Solursus",
+      "stage": 3,
+      "height_m": null,
+      "appearance": null,
+      "evolution_levels": {
+        "from_stage_2": 36
+      },
+      "design_status": "Name approved; appearance and other details pending",
+      "category": null,
+      "type1": "Fire",
+      "type2": null,
+      "inspiration": "Sun bear",
+      "evolution_line": [
+        4,
+        5,
+        6
+      ],
+      "weight_kg": null,
+      "personality": null,
+      "pokedex_entry": null,
+      "abilities": [],
+      "base_stats": null,
+      "moves": [],
+      "level_up_moveset_status": "Shared family progression approved; individual species allocation pending",
+      "notes": "Evolution name approved. Other species details will be designed and approved separately."
     }
   ]
 }
