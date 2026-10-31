@@ -1760,7 +1760,7 @@
         "concept": "016-arctix.png",
         "artwork": "#016 Arctix.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and moves through level 31 approved. Later moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, base stats, abilities and level-up moves approved.",
       "evolution_levels": {
         "to_stage_2": 16
       },
@@ -1833,9 +1833,37 @@
         {
           "level": 31,
           "name": "Ice Beam"
+        },
+        {
+          "level": 32,
+          "name": "Blizzard"
+        },
+        {
+          "level": 35,
+          "name": "Calm Mind"
+        },
+        {
+          "level": 39,
+          "name": "Freeze-Dry"
+        },
+        {
+          "level": 43,
+          "name": "Extrasensory"
+        },
+        {
+          "level": 47,
+          "name": "Mist"
+        },
+        {
+          "level": 51,
+          "name": "Hyper Voice"
+        },
+        {
+          "level": 55,
+          "name": "Sheer Cold"
         }
       ],
-      "level_up_moveset_status": "Approved through level 31; later moves pending"
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Blizzard learned at level 32 upon evolution to Arctivale)"
     },
     {
       "number": 17,
@@ -1857,7 +1885,7 @@
         "concept": "017-arctivar.png",
         "artwork": "#017 Arctivar.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and moves through level 31 approved. Later moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, base stats, abilities and level-up moves approved.",
       "evolution_levels": {
         "from_stage_1": 16,
         "to_stage_3": 32
@@ -1931,9 +1959,37 @@
         {
           "level": 31,
           "name": "Ice Beam"
+        },
+        {
+          "level": 32,
+          "name": "Blizzard"
+        },
+        {
+          "level": 35,
+          "name": "Calm Mind"
+        },
+        {
+          "level": 39,
+          "name": "Freeze-Dry"
+        },
+        {
+          "level": 43,
+          "name": "Extrasensory"
+        },
+        {
+          "level": 47,
+          "name": "Mist"
+        },
+        {
+          "level": 51,
+          "name": "Hyper Voice"
+        },
+        {
+          "level": 55,
+          "name": "Sheer Cold"
         }
       ],
-      "level_up_moveset_status": "Approved through level 31; later moves pending"
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Blizzard learned at level 32 upon evolution to Arctivale)"
     },
     {
       "number": 18,
@@ -1955,7 +2011,7 @@
         "concept": "018-arctivale.png",
         "artwork": "#018 Arctivale.png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements, stats, abilities and moves through level 31 approved. Later moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, measurements, base stats, abilities and level-up moves approved.",
       "evolution_levels": {
         "from_stage_2": 32
       },
@@ -2028,9 +2084,37 @@
         {
           "level": 31,
           "name": "Ice Beam"
+        },
+        {
+          "level": 32,
+          "name": "Blizzard"
+        },
+        {
+          "level": 35,
+          "name": "Calm Mind"
+        },
+        {
+          "level": 39,
+          "name": "Freeze-Dry"
+        },
+        {
+          "level": 43,
+          "name": "Extrasensory"
+        },
+        {
+          "level": 47,
+          "name": "Mist"
+        },
+        {
+          "level": 51,
+          "name": "Hyper Voice"
+        },
+        {
+          "level": 55,
+          "name": "Sheer Cold"
         }
       ],
-      "level_up_moveset_status": "Approved through level 31; later moves pending"
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Blizzard learned at level 32 upon evolution to Arctivale)"
     }
   ]
 }
