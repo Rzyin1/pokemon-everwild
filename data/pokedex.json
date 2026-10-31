@@ -1760,10 +1760,12 @@
         "concept": "016-arctix.png",
         "artwork": "#016 Arctix.png"
       },
-      "notes": "Names, pure Ice typing, artwork and evolution levels approved. Heights, weights, stats, abilities and moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, height and weight approved. Stats, abilities and moves pending.",
       "evolution_levels": {
         "to_stage_2": 16
-      }
+      },
+      "height_m": 0.4,
+      "weight_kg": 5
     },
     {
       "number": 17,
@@ -1785,11 +1787,13 @@
         "concept": "017-arctivar.png",
         "artwork": "#017 Arctivar.png"
       },
-      "notes": "Names, pure Ice typing, artwork and evolution levels approved. Heights, weights, stats, abilities and moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, height and weight approved. Stats, abilities and moves pending.",
       "evolution_levels": {
         "from_stage_1": 16,
         "to_stage_3": 32
-      }
+      },
+      "height_m": 0.8,
+      "weight_kg": 16
     },
     {
       "number": 18,
@@ -1811,10 +1815,12 @@
         "concept": "018-arctivale.png",
         "artwork": "#018 Arctivale.png"
       },
-      "notes": "Names, pure Ice typing, artwork and evolution levels approved. Heights, weights, stats, abilities and moves pending.",
+      "notes": "Names, typing, artwork, evolution levels, height and weight approved. Stats, abilities and moves pending.",
       "evolution_levels": {
         "from_stage_2": 32
-      }
+      },
+      "height_m": 1.3,
+      "weight_kg": 42
     }
   ]
 }
