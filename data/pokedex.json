@@ -513,8 +513,73 @@
         "speed": 35,
         "total": 415
       },
-      "moves": [],
-      "level_up_moveset_status": "Shared family progression approved; individual species allocation pending",
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Ember Claw"
+        },
+        {
+          "level": 7,
+          "name": "Lick"
+        },
+        {
+          "level": 10,
+          "name": "Hone Claws"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
+        },
+        {
+          "level": 16,
+          "name": "Fire Fang"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Sunny Day"
+        },
+        {
+          "level": 31,
+          "name": "Fire Punch"
+        },
+        {
+          "level": 35,
+          "name": "Crunch"
+        },
+        {
+          "level": 39,
+          "name": "Heat Crash"
+        },
+        {
+          "level": 44,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 49,
+          "name": "Flare Blitz"
+        },
+        {
+          "level": 55,
+          "name": "Solar Beam"
+        }
+      ],
+      "level_up_moveset_status": "Complete (shared evolutionary line progression)",
       "notes": "Evolution name approved. Other species details will be designed and approved separately. Artwork uploaded to GitHub.",
       "images": {
         "concept": "#005 Solbruin.png",
@@ -562,8 +627,73 @@
         "speed": 40,
         "total": 530
       },
-      "moves": [],
-      "level_up_moveset_status": "Shared family progression approved; individual species allocation pending",
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Ember Claw"
+        },
+        {
+          "level": 7,
+          "name": "Lick"
+        },
+        {
+          "level": 10,
+          "name": "Hone Claws"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
+        },
+        {
+          "level": 16,
+          "name": "Fire Fang"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Sunny Day"
+        },
+        {
+          "level": 31,
+          "name": "Fire Punch"
+        },
+        {
+          "level": 35,
+          "name": "Crunch"
+        },
+        {
+          "level": 39,
+          "name": "Heat Crash"
+        },
+        {
+          "level": 44,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 49,
+          "name": "Flare Blitz"
+        },
+        {
+          "level": 55,
+          "name": "Solar Beam"
+        }
+      ],
+      "level_up_moveset_status": "Complete (shared evolutionary line progression)",
       "notes": "Evolution name approved. Other species details will be designed and approved separately. Artwork uploaded to GitHub.",
       "images": {
         "concept": "#006 Solursus.png",
