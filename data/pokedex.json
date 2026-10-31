@@ -1393,7 +1393,9 @@
       "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
       "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
       "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
-      "pokedex_entry": "Kivolt is a playful Pokémon that generates static electricity as it runs through tall grass. Its spotted fur releases tiny sparks whenever it becomes excited. Young Kivolt frequently chase one another, unknowingly developing the extraordinary speed they will possess as adults."
+      "pokedex_entry": "Kivolt is a playful Pokémon that generates static electricity as it runs through tall grass. Its spotted fur releases tiny sparks whenever it becomes excited. Young Kivolt frequently chase one another, unknowingly developing the extraordinary speed they will possess as adults.",
+      "height_m": 0.5,
+      "weight_kg": 12
     },
     {
       "number": 14,
@@ -1416,7 +1418,9 @@
       "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
       "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
       "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
-      "pokedex_entry": "Kivarra spends much of its day racing across open grasslands, strengthening its legs and refining its hunting instincts. Specialized pads on its paws absorb the impact of high-speed movement while its fur stores electrical energy. When approaching its maximum speed, bright sparks race along its body."
+      "pokedex_entry": "Kivarra spends much of its day racing across open grasslands, strengthening its legs and refining its hunting instincts. Specialized pads on its paws absorb the impact of high-speed movement while its fur stores electrical energy. When approaching its maximum speed, bright sparks race along its body.",
+      "height_m": 0.9,
+      "weight_kg": 32
     },
     {
       "number": 15,
@@ -1438,7 +1442,9 @@
       "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
       "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
       "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
-      "pokedex_entry": "Kivarion is an exceptionally fast predator capable of crossing vast grasslands in seconds. Its powerful legs generate tremendous electrical energy with every stride, causing its markings to glow brilliantly. When pursuing prey, Kivarion can release a concentrated burst of electricity to accelerate beyond its normal limits."
+      "pokedex_entry": "Kivarion is an exceptionally fast predator capable of crossing vast grasslands in seconds. Its powerful legs generate tremendous electrical energy with every stride, causing its markings to glow brilliantly. When pursuing prey, Kivarion can release a concentrated burst of electricity to accelerate beyond its normal limits.",
+      "height_m": 1.4,
+      "weight_kg": 65
     }
   ]
 }
