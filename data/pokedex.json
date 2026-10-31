@@ -553,7 +553,15 @@
           "slot": "hidden"
         }
       ],
-      "base_stats": null,
+      "base_stats": {
+        "hp": 105,
+        "attack": 120,
+        "defense": 100,
+        "special_attack": 90,
+        "special_defense": 75,
+        "speed": 40,
+        "total": 530
+      },
       "moves": [],
       "level_up_moveset_status": "Shared family progression approved; individual species allocation pending",
       "notes": "Evolution name approved. Other species details will be designed and approved separately. Artwork uploaded to GitHub.",
