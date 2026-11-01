@@ -73,7 +73,8 @@
         "to_stage_3": 35
       },
       "level_up_moveset_status": "Complete",
-      "notes": "Species design, typing, abilities, base stats, and mandatory evolution at level 17 approved. Wolvyn learns moves only before evolving; later moves belong to evolved species."
+      "notes": "Species design, typing, abilities, base stats, and mandatory evolution at level 17 approved. Wolvyn learns moves only before evolving; later moves belong to evolved species.",
+      "experience_growth_rate": "Medium Slow"
     }
   ]
 }
