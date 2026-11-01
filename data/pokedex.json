@@ -97,7 +97,10 @@
         ],
         "same_for_both_genders": true
       },
-      "evolution_exp_retained": true
+      "evolution_exp_retained": true,
+      "ev_yield": {
+        "attack": 1
+      }
     }
   ]
 }
