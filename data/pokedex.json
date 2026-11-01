@@ -115,7 +115,8 @@
         3
       ],
       "images": {
-        "solo": "002-Wolvigor.png"
+        "solo": "002-Wolvigor.png",
+        "shiny": "#002-Wolvigor (Shiny).png"
       },
       "evolution_levels": {
         "from_stage_1": 17,
@@ -367,7 +368,8 @@
         3
       ],
       "images": {
-        "solo": "003-Wolvage.png"
+        "solo": "003-Wolvage.png",
+        "shiny": "#003-Wolvage (Shiny).png"
       },
       "evolution_levels": {
         "from_stage_2": 35
