@@ -134,6 +134,38 @@
       "design_status": "In review",
       "mechanics_status": "Pending approval",
       "notes": "Wolvyn evolves into Wolvigor at level 17. Gender ratio and no gender-based visual differences carry through evolutionary line. Individual base EXP yield, catch rate, EV yield, abilities, moves, and stats await approval."
+    },
+    {
+      "number": 3,
+      "name": "Wolvage",
+      "category": null,
+      "type1": "Normal",
+      "type2": null,
+      "stage": 3,
+      "evolution_line": [
+        1,
+        2,
+        3
+      ],
+      "images": {
+        "solo": "003-Wolvage.png"
+      },
+      "evolution_levels": {
+        "from_stage_2": 35
+      },
+      "experience_growth_rate": "Medium Slow",
+      "evolution_exp_retained": true,
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "abilities": [],
+      "base_stats": {},
+      "moves": [],
+      "design_status": "In review",
+      "mechanics_status": "Pending approval",
+      "notes": "Final evolution of Wolvyn, evolving from Wolvigor at level 35. Shares the approved gender ratio and no gender-based appearance differences. Individual category, size, abilities, stats, moves, base EXP yield, catch rate, and EV yield await approval."
     }
   ]
 }
