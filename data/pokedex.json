@@ -789,6 +789,72 @@
           "exp_to_next": null
         }
       ]
+    },
+    {
+      "number": 4,
+      "name": "Solcub",
+      "category": null,
+      "type1": "Fire",
+      "type2": null,
+      "stage": 1,
+      "evolution_line": [
+        4,
+        5,
+        6
+      ],
+      "images": {
+        "solo": "004-Solcub.png"
+      },
+      "abilities": [],
+      "base_stats": {},
+      "moves": [],
+      "design_status": "Artwork previously created",
+      "mechanics_status": "Pending profile review",
+      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review."
+    },
+    {
+      "number": 5,
+      "name": "Solbruin",
+      "category": null,
+      "type1": "Fire",
+      "type2": null,
+      "stage": 2,
+      "evolution_line": [
+        4,
+        5,
+        6
+      ],
+      "images": {
+        "solo": "#005 Solbruin.png"
+      },
+      "abilities": [],
+      "base_stats": {},
+      "moves": [],
+      "design_status": "Artwork previously created",
+      "mechanics_status": "Pending profile review",
+      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review."
+    },
+    {
+      "number": 6,
+      "name": "Solursus",
+      "category": null,
+      "type1": "Fire",
+      "type2": null,
+      "stage": 3,
+      "evolution_line": [
+        4,
+        5,
+        6
+      ],
+      "images": {
+        "solo": "#006 Solursus.png"
+      },
+      "abilities": [],
+      "base_stats": {},
+      "moves": [],
+      "design_status": "Artwork previously created",
+      "mechanics_status": "Pending profile review",
+      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review."
     }
   ]
 }
