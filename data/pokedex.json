@@ -805,16 +805,19 @@
       "images": {
         "concept": "004-Solcub.png",
         "card": "004-Solcub-card.png",
-        "solo": "004-Solcub.png"
+        "solo": "004-Solcub.png",
+        "shiny": "#004-Solcub (Shiny).png"
       },
       "abilities": [
         {
           "name": "Flash Fire",
-          "slot": "regular"
+          "slot": "A",
+          "description": "Grants immunity to damaging Fire-type moves and boosts the power of the user's Fire-type attacks by 50% after activation."
         },
         {
           "name": "Solar Power",
-          "slot": "regular"
+          "slot": "B",
+          "description": "In harsh sunlight, increases Special Attack by 50%, but removes ⅛ of maximum HP at the end of each turn."
         }
       ],
       "base_stats": {
@@ -829,73 +832,52 @@
       "moves": [
         {
           "level": 1,
-          "name": "Scratch"
+          "name": "Scratch",
+          "type": "Normal",
+          "category": "Physical"
         },
         {
           "level": 1,
-          "name": "Leer"
+          "name": "Leer",
+          "type": "Normal",
+          "category": "Status"
         },
         {
           "level": 4,
-          "name": "Ember Claw"
+          "name": "Ember Claw",
+          "type": "Fire",
+          "category": "Physical",
+          "custom": true
         },
         {
           "level": 7,
-          "name": "Lick"
+          "name": "Lick",
+          "type": "Ghost",
+          "category": "Physical"
         },
         {
           "level": 10,
-          "name": "Hone Claws"
+          "name": "Hone Claws",
+          "type": "Dark",
+          "category": "Status"
         },
         {
           "level": 13,
-          "name": "Fury Swipes"
+          "name": "Fury Swipes",
+          "type": "Normal",
+          "category": "Physical"
         },
         {
           "level": 16,
-          "name": "Fire Fang"
-        },
-        {
-          "level": 19,
-          "name": "Bite"
-        },
-        {
-          "level": 23,
-          "name": "Slash"
-        },
-        {
-          "level": 27,
-          "name": "Sunny Day"
-        },
-        {
-          "level": 31,
-          "name": "Fire Punch"
-        },
-        {
-          "level": 35,
-          "name": "Crunch"
-        },
-        {
-          "level": 39,
-          "name": "Heat Crash"
-        },
-        {
-          "level": 44,
-          "name": "Bulk Up"
-        },
-        {
-          "level": 49,
-          "name": "Flare Blitz"
-        },
-        {
-          "level": 55,
-          "name": "Solar Beam"
+          "name": "Fire Fang",
+          "type": "Fire",
+          "category": "Physical"
         }
       ],
-      "design_status": "Artwork previously created",
-      "mechanics_status": "Pending profile review",
-      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review.",
-      "inspiration": "Sun bear cub",
+      "design_status": "Approved",
+      "mechanics_status": "Approved for website implementation",
+      "notes": "Approved #004 Solcub profile. Preserve exact Pokédex entry and existing normal artwork. Level-up moves on this profile stop before its automatic evolution at Level 18. Evolution EXP is retained.",
+      "inspiration": "Sun Bear",
       "height_m": 0.5,
       "weight_kg": 9.5,
       "appearance": "Small charcoal-black sun bear cub with orange-red fiery highlights, flames around rounded ears, bright yellow crescent chest marking, ember-like claws and paw pads, and amber eyes.",
@@ -914,10 +896,117 @@
           "accuracy": 100,
           "pp": 25,
           "contact": true,
-          "burn_chance_percent": 10
+          "burn_chance_percent": 10,
+          "description": "The user slashes the target with a claw engulfed in flames. This may also leave the target with a burn."
         }
       ],
-      "level_up_moveset_status": "Complete (shared evolutionary line progression)"
+      "level_up_moveset_status": "Complete (Solcub stage Levels 1–17)",
+      "battle_role": "Slow physical attacker",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 62,
+      "ev_yield": {
+        "attack": 1
+      },
+      "experience_growth_rate": "Medium Slow",
+      "evolution_exp_retained": true,
+      "evolution_forced": true,
+      "experience_table": [
+        {
+          "level": 1,
+          "total_exp": 0,
+          "exp_to_next": 9
+        },
+        {
+          "level": 2,
+          "total_exp": 9,
+          "exp_to_next": 48
+        },
+        {
+          "level": 3,
+          "total_exp": 57,
+          "exp_to_next": 39
+        },
+        {
+          "level": 4,
+          "total_exp": 96,
+          "exp_to_next": 39
+        },
+        {
+          "level": 5,
+          "total_exp": 135,
+          "exp_to_next": 44
+        },
+        {
+          "level": 6,
+          "total_exp": 179,
+          "exp_to_next": 57
+        },
+        {
+          "level": 7,
+          "total_exp": 236,
+          "exp_to_next": 78
+        },
+        {
+          "level": 8,
+          "total_exp": 314,
+          "exp_to_next": 105
+        },
+        {
+          "level": 9,
+          "total_exp": 419,
+          "exp_to_next": 141
+        },
+        {
+          "level": 10,
+          "total_exp": 560,
+          "exp_to_next": 182
+        },
+        {
+          "level": 11,
+          "total_exp": 742,
+          "exp_to_next": 231
+        },
+        {
+          "level": 12,
+          "total_exp": 973,
+          "exp_to_next": 288
+        },
+        {
+          "level": 13,
+          "total_exp": 1261,
+          "exp_to_next": 351
+        },
+        {
+          "level": 14,
+          "total_exp": 1612,
+          "exp_to_next": 423
+        },
+        {
+          "level": 15,
+          "total_exp": 2035,
+          "exp_to_next": 500
+        },
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": 585
+        },
+        {
+          "level": 17,
+          "total_exp": 3120,
+          "exp_to_next": 678
+        },
+        {
+          "level": 18,
+          "total_exp": 3798,
+          "exp_to_next": null
+        }
+      ]
     },
     {
       "number": 5,
