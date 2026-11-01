@@ -64,46 +64,6 @@
         {
           "level": 15,
           "name": "Bite"
-        },
-        {
-          "level": 19,
-          "name": "Taunt"
-        },
-        {
-          "level": 23,
-          "name": "Slash"
-        },
-        {
-          "level": 27,
-          "name": "Crunch"
-        },
-        {
-          "level": 31,
-          "name": "Agility"
-        },
-        {
-          "level": 35,
-          "name": "Body Slam"
-        },
-        {
-          "level": 39,
-          "name": "Dig"
-        },
-        {
-          "level": 43,
-          "name": "Swords Dance"
-        },
-        {
-          "level": 47,
-          "name": "Thrash"
-        },
-        {
-          "level": 51,
-          "name": "Endure"
-        },
-        {
-          "level": 55,
-          "name": "Double-Edge"
         }
       ],
       "design_status": "Finalized",
@@ -113,7 +73,7 @@
         "to_stage_3": 35
       },
       "level_up_moveset_status": "Complete",
-      "notes": "Species design, typing, abilities, base stats, evolution levels and level-up moveset approved. Evolution species, TM compatibility and other optional mechanics to be determined separately."
+      "notes": "Species design, typing, abilities, base stats, and mandatory evolution at level 17 approved. Wolvyn learns moves only before evolving; later moves belong to evolved species."
     }
   ]
 }
