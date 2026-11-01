@@ -357,7 +357,7 @@
     {
       "number": 3,
       "name": "Wolvage",
-      "category": null,
+      "category": "Relentless Pokémon",
       "type1": "Normal",
       "type2": null,
       "stage": 3,
@@ -379,12 +379,82 @@
         "female": 12.5
       },
       "gender_appearance_differences": false,
-      "abilities": [],
-      "base_stats": {},
-      "moves": [],
-      "design_status": "In review",
-      "mechanics_status": "Pending approval",
-      "notes": "Final evolution of Wolvyn, evolving from Wolvigor at level 35. Shares the approved gender ratio and no gender-based appearance differences. Individual category, size, abilities, stats, moves, base EXP yield, catch rate, and EV yield await approval."
+      "abilities": [
+        {
+          "name": "Defiant",
+          "slot": "regular"
+        },
+        {
+          "name": "Guts",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 90,
+        "attack": 115,
+        "defense": 90,
+        "special_attack": 45,
+        "special_defense": 75,
+        "speed": 115,
+        "total": 530
+      },
+      "moves": [
+        {
+          "level": 35,
+          "name": "Body Slam",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "level": 39,
+          "name": "Dig",
+          "type": "Ground",
+          "category": "Physical"
+        },
+        {
+          "level": 43,
+          "name": "Swords Dance",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "level": 47,
+          "name": "Thrash",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "level": 51,
+          "name": "Endure",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "level": 55,
+          "name": "Double-Edge",
+          "type": "Normal",
+          "category": "Physical"
+        }
+      ],
+      "design_status": "Approved",
+      "mechanics_status": "Approved for handoff",
+      "notes": "Final stage, evolves from Wolvigor at level 35. No hidden abilities. No gender-based appearance differences.",
+      "inspiration": "Wolverine",
+      "height_m": 1.4,
+      "weight_kg": 68,
+      "battle_role": "Fast physical attacker",
+      "pokedex_entry": "Wolvage is a relentless fighter that refuses to surrender, even against overwhelming odds. Its massive claws can tear through solid rock, and its powerful muscles allow it to overpower opponents much larger than itself. Once it sets its sights on a challenge, nothing can convince it to back down.",
+      "catch_rate": 45,
+      "base_exp_yield": 230,
+      "ev_yield": {
+        "hp": 0,
+        "attack": 3,
+        "defense": 0,
+        "special_attack": 0,
+        "special_defense": 0,
+        "speed": 0
+      },
+      "max_level": 100
     }
   ]
 }
