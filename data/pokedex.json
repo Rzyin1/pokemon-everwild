@@ -855,6 +855,1155 @@
       "design_status": "Artwork previously created",
       "mechanics_status": "Pending profile review",
       "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review."
+    },
+    {
+      "number": 7,
+      "name": "Ripplet",
+      "category": "Ripple Pokémon",
+      "type1": "Water",
+      "type2": null,
+      "inspiration": "Giant salamander",
+      "stage": 1,
+      "evolution_line": [
+        7,
+        8,
+        9
+      ],
+      "height_m": 0.4,
+      "weight_kg": 4.5,
+      "appearance": "Small, primarily quadrupedal giant-salamander Pokémon with smooth deep-teal skin, a lighter cream-blue underside, expressive golden eyes, short sturdy legs and a broad paddle-shaped tail with translucent blue fin edges.",
+      "personality": "Cautious, curious, patient, skittish",
+      "pokedex_entry": "Ripplet spends much of its time hiding beneath smooth stones in shallow streams. Its broad, paddle-shaped tail allows it to glide quietly through the water, creating gentle ripples along the surface. Although usually cautious, Ripplet becomes surprisingly energetic when hunting small aquatic creatures. When startled, it darts toward shelter with a sudden burst of speed.",
+      "abilities": [
+        {
+          "name": "Torrent",
+          "slot": "regular"
+        },
+        {
+          "name": "Water Absorb",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 65,
+        "attack": 45,
+        "defense": 55,
+        "special_attack": 75,
+        "special_defense": 55,
+        "speed": 30,
+        "total": 325
+      },
+      "evolution_levels": {
+        "to_stage_2": 20,
+        "to_stage_3": 40
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Water Gun"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Mud-Slap"
+        },
+        {
+          "level": 7,
+          "name": "Withdraw"
+        },
+        {
+          "level": 10,
+          "name": "Bite"
+        },
+        {
+          "level": 13,
+          "name": "Water Pulse"
+        },
+        {
+          "level": 16,
+          "name": "Aqua Ring"
+        },
+        {
+          "level": 20,
+          "name": "Mud Shot"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved evolutionary-line progression)",
+      "design_status": "Finalized; approved for Pokédex",
+      "ability_assignment": "One ability is randomly assigned when generated; each available ability has an equal chance. The assigned ability carries through evolution.",
+      "images": {
+        "concept": "#007 Ripplet.png"
+      },
+      "notes": "No hidden abilities. Available abilities: Torrent and Water Absorb, each with equal probability. Evolution line and approved details finalized; no GitHub upload beyond this data update is pending."
+    },
+    {
+      "number": 8,
+      "name": "Ripplash",
+      "category": "Splash Pokémon",
+      "type1": "Water",
+      "type2": null,
+      "inspiration": "Giant salamander",
+      "stage": 2,
+      "evolution_line": [
+        7,
+        8,
+        9
+      ],
+      "height_m": 0.9,
+      "weight_kg": 22,
+      "appearance": "Adolescent, primarily quadrupedal giant-salamander Pokémon with a broader head, thicker body, stronger legs and shoulders, deep-teal skin, a lighter underside, golden eyes and a larger muscular paddle-shaped tail with translucent fin edges.",
+      "personality": "Confident, territorial, patient, independent",
+      "pokedex_entry": "Ripplash has grown increasingly confident as its body and tail become stronger. It patrols the deeper sections of rivers, using its broad tail to stir up sediment and flush hidden prey from the riverbed. Despite its powerful swimming bursts, Ripplash prefers waiting patiently beneath submerged rocks before ambushing its prey. When defending its territory, it slams its tail against the water, producing a thunderous splash that warns intruders to stay away.",
+      "abilities": [
+        {
+          "name": "Torrent",
+          "slot": "regular"
+        },
+        {
+          "name": "Water Absorb",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 85,
+        "attack": 60,
+        "defense": 75,
+        "special_attack": 100,
+        "special_defense": 75,
+        "speed": 40,
+        "total": 435
+      },
+      "evolution_levels": {
+        "from_stage_1": 20,
+        "to_stage_3": 40
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Water Gun"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Mud-Slap"
+        },
+        {
+          "level": 7,
+          "name": "Withdraw"
+        },
+        {
+          "level": 10,
+          "name": "Bite"
+        },
+        {
+          "level": 13,
+          "name": "Water Pulse"
+        },
+        {
+          "level": 16,
+          "name": "Aqua Ring"
+        },
+        {
+          "level": 20,
+          "name": "Mud Shot"
+        },
+        {
+          "level": 24,
+          "name": "Brine"
+        },
+        {
+          "level": 28,
+          "name": "Crunch"
+        },
+        {
+          "level": 32,
+          "name": "Rain Dance"
+        },
+        {
+          "level": 36,
+          "name": "Hydro Pump"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved evolutionary-line progression)",
+      "design_status": "Finalized; approved for Pokédex",
+      "ability_assignment": "One ability is randomly assigned when generated; each available ability has an equal chance. The assigned ability carries through evolution.",
+      "images": {
+        "concept": "#008 Ripplash.png"
+      },
+      "notes": "No hidden abilities. Available abilities: Torrent and Water Absorb, each with equal probability. Evolution line and approved details finalized; no GitHub upload beyond this data update is pending."
+    },
+    {
+      "number": 9,
+      "name": "Riptorrent",
+      "category": "Torrent Pokémon",
+      "type1": "Water",
+      "type2": null,
+      "inspiration": "Giant salamander",
+      "stage": 3,
+      "evolution_line": [
+        7,
+        8,
+        9
+      ],
+      "height_m": 1.8,
+      "weight_kg": 85,
+      "appearance": "Massive, primarily quadrupedal giant-salamander Pokémon with a broad powerful head, heavily muscled body and limbs, deep-teal skin, a lighter underside, golden eyes and an enormous fan-shaped paddle tail with flowing translucent fins.",
+      "personality": "Calm, patient, territorial, formidable",
+      "pokedex_entry": "Riptorrent rules the deepest stretches of rivers, where its enormous body remains nearly motionless beneath the current. Its powerful tail can generate torrents strong enough to sweep away large obstacles and reshape sections of the riverbed. Despite its tremendous strength, Riptorrent is a patient ambush predator that rarely pursues prey over long distances. When its territory is threatened, it unleashes a violent surge of water before disappearing into the depths.",
+      "abilities": [
+        {
+          "name": "Torrent",
+          "slot": "regular"
+        },
+        {
+          "name": "Water Absorb",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 110,
+        "attack": 75,
+        "defense": 100,
+        "special_attack": 125,
+        "special_defense": 95,
+        "speed": 45,
+        "total": 550
+      },
+      "evolution_levels": {
+        "from_stage_2": 40
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Water Gun"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Mud-Slap"
+        },
+        {
+          "level": 7,
+          "name": "Withdraw"
+        },
+        {
+          "level": 10,
+          "name": "Bite"
+        },
+        {
+          "level": 13,
+          "name": "Water Pulse"
+        },
+        {
+          "level": 16,
+          "name": "Aqua Ring"
+        },
+        {
+          "level": 20,
+          "name": "Mud Shot"
+        },
+        {
+          "level": 24,
+          "name": "Brine"
+        },
+        {
+          "level": 28,
+          "name": "Crunch"
+        },
+        {
+          "level": 32,
+          "name": "Rain Dance"
+        },
+        {
+          "level": 36,
+          "name": "Hydro Pump"
+        },
+        {
+          "level": 40,
+          "name": "Torrent Break"
+        },
+        {
+          "level": 44,
+          "name": "Dive"
+        },
+        {
+          "level": 49,
+          "name": "Whirlpool"
+        },
+        {
+          "level": 55,
+          "name": "Hydro Cannon"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved evolutionary-line progression)",
+      "design_status": "Finalized; approved for Pokédex",
+      "ability_assignment": "One ability is randomly assigned when generated; each available ability has an equal chance. The assigned ability carries through evolution.",
+      "images": {
+        "concept": "#009 Riptorrent.png"
+      },
+      "notes": "No hidden abilities. Available abilities: Torrent and Water Absorb, each with equal probability. Evolution line and approved details finalized; no GitHub upload beyond this data update is pending.",
+      "custom_moves": [
+        {
+          "name": "Torrent Break",
+          "type": "Water",
+          "category": "Special",
+          "power": 85,
+          "accuracy": 100,
+          "pp": 10,
+          "effect": "30% chance to lower the target's Speed by one stage.",
+          "signature": true
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "name": "Foliko",
+      "category": "Leaf-Tail Pokémon",
+      "type1": "Grass",
+      "type2": null,
+      "inspiration": "Leaf-tailed gecko",
+      "stage": 1,
+      "evolution_line": [
+        10,
+        11,
+        12
+      ],
+      "height_m": 0.4,
+      "weight_kg": 6.8,
+      "appearance": "Small cute leaf-tailed gecko with golden eyes, cream underside, green-and-brown leaf camouflage, leafy head frills, wide gripping toes and broad leaf-shaped tail.",
+      "evolution_levels": {
+        "to_stage_2": 16,
+        "to_stage_3": 32
+      },
+      "design_status": "Design and solo artwork approved; image upload pending",
+      "base_stats": {
+        "hp": 45,
+        "attack": 35,
+        "defense": 40,
+        "special_attack": 65,
+        "special_defense": 50,
+        "speed": 75,
+        "total": 310
+      },
+      "abilities": [
+        {
+          "name": "Overgrow",
+          "slot": "regular"
+        },
+        {
+          "name": "Infiltrator",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Pound"
+        },
+        {
+          "level": 1,
+          "name": "Growth"
+        },
+        {
+          "level": 4,
+          "name": "Absorb"
+        },
+        {
+          "level": 7,
+          "name": "Sweet Scent"
+        },
+        {
+          "level": 10,
+          "name": "Mega Drain"
+        },
+        {
+          "level": 13,
+          "name": "Magical Leaf"
+        },
+        {
+          "level": 16,
+          "name": "Leech Seed"
+        },
+        {
+          "level": 19,
+          "name": "Giga Drain"
+        },
+        {
+          "level": 22,
+          "name": "Synthesis"
+        },
+        {
+          "level": 25,
+          "name": "Energy Ball"
+        },
+        {
+          "level": 28,
+          "name": "Double Team"
+        },
+        {
+          "level": 31,
+          "name": "Petal Blizzard"
+        },
+        {
+          "level": 32,
+          "name": "Leaf Storm"
+        },
+        {
+          "level": 35,
+          "name": "Leaf Blade"
+        },
+        {
+          "level": 39,
+          "name": "Grassy Terrain"
+        },
+        {
+          "level": 43,
+          "name": "Solar Beam"
+        },
+        {
+          "level": 47,
+          "name": "Petal Dance"
+        },
+        {
+          "level": 51,
+          "name": "Aromatherapy"
+        },
+        {
+          "level": 55,
+          "name": "Frenzy Plant"
+        }
+      ],
+      "pokedex_entry": "Foliko spends most of its day hiding among fallen leaves and low branches. Its leaf-shaped tail and mottled skin make it nearly impossible to distinguish from surrounding foliage. When startled, it freezes completely, relying on its camouflage to escape detection. Curious by nature, it often follows unfamiliar sounds before quickly retreating into hiding.",
+      "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later.",
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression)"
+    },
+    {
+      "number": 11,
+      "name": "Folisk",
+      "category": "Forest Gecko Pokémon",
+      "type1": "Grass",
+      "type2": null,
+      "inspiration": "Leaf-tailed gecko",
+      "stage": 2,
+      "evolution_line": [
+        10,
+        11,
+        12
+      ],
+      "height_m": 0.7,
+      "weight_kg": 14.2,
+      "appearance": "Agile adolescent leaf-tailed gecko with longer limbs, more angular leafy crest, green-brown camouflage and a larger raised leaf-shaped tail.",
+      "evolution_levels": {
+        "from_stage_1": 16,
+        "to_stage_3": 32
+      },
+      "design_status": "Evolution concept approved; solo artwork pending",
+      "base_stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 55,
+        "special_attack": 95,
+        "special_defense": 65,
+        "speed": 90,
+        "total": 415
+      },
+      "abilities": [
+        {
+          "name": "Overgrow",
+          "slot": "regular"
+        },
+        {
+          "name": "Infiltrator",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Pound"
+        },
+        {
+          "level": 1,
+          "name": "Growth"
+        },
+        {
+          "level": 4,
+          "name": "Absorb"
+        },
+        {
+          "level": 7,
+          "name": "Sweet Scent"
+        },
+        {
+          "level": 10,
+          "name": "Mega Drain"
+        },
+        {
+          "level": 13,
+          "name": "Magical Leaf"
+        },
+        {
+          "level": 16,
+          "name": "Leech Seed"
+        },
+        {
+          "level": 19,
+          "name": "Giga Drain"
+        },
+        {
+          "level": 22,
+          "name": "Synthesis"
+        },
+        {
+          "level": 25,
+          "name": "Energy Ball"
+        },
+        {
+          "level": 28,
+          "name": "Double Team"
+        },
+        {
+          "level": 31,
+          "name": "Petal Blizzard"
+        },
+        {
+          "level": 32,
+          "name": "Leaf Storm"
+        },
+        {
+          "level": 35,
+          "name": "Leaf Blade"
+        },
+        {
+          "level": 39,
+          "name": "Grassy Terrain"
+        },
+        {
+          "level": 43,
+          "name": "Solar Beam"
+        },
+        {
+          "level": 47,
+          "name": "Petal Dance"
+        },
+        {
+          "level": 51,
+          "name": "Aromatherapy"
+        },
+        {
+          "level": 55,
+          "name": "Frenzy Plant"
+        }
+      ],
+      "pokedex_entry": "Folisk is an agile climber that spends much of its life high in the forest canopy. Its enlarged toe pads allow it to cling securely to branches, even while hanging upside down. It patiently waits among the leaves for unsuspecting prey, striking with remarkable speed before disappearing back into the foliage.",
+      "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later.",
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression)"
+    },
+    {
+      "number": 12,
+      "name": "Foliraptor",
+      "category": "Canopy Gecko Pokémon",
+      "type1": "Grass",
+      "type2": null,
+      "inspiration": "Leaf-tailed gecko",
+      "stage": 3,
+      "evolution_line": [
+        10,
+        11,
+        12
+      ],
+      "height_m": 1,
+      "weight_kg": 24.6,
+      "appearance": "Athletic mature canopy gecko with elaborate layered leafy frills, elongated limbs, golden eyes and a large camouflage leaf-shaped tail.",
+      "evolution_levels": {
+        "from_stage_2": 32
+      },
+      "design_status": "Evolution concept approved; solo artwork pending",
+      "base_stats": {
+        "hp": 75,
+        "attack": 65,
+        "defense": 70,
+        "special_attack": 125,
+        "special_defense": 85,
+        "speed": 110,
+        "total": 530
+      },
+      "abilities": [
+        {
+          "name": "Overgrow",
+          "slot": "regular"
+        },
+        {
+          "name": "Infiltrator",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Pound"
+        },
+        {
+          "level": 1,
+          "name": "Growth"
+        },
+        {
+          "level": 4,
+          "name": "Absorb"
+        },
+        {
+          "level": 7,
+          "name": "Sweet Scent"
+        },
+        {
+          "level": 10,
+          "name": "Mega Drain"
+        },
+        {
+          "level": 13,
+          "name": "Magical Leaf"
+        },
+        {
+          "level": 16,
+          "name": "Leech Seed"
+        },
+        {
+          "level": 19,
+          "name": "Giga Drain"
+        },
+        {
+          "level": 22,
+          "name": "Synthesis"
+        },
+        {
+          "level": 25,
+          "name": "Energy Ball"
+        },
+        {
+          "level": 28,
+          "name": "Double Team"
+        },
+        {
+          "level": 31,
+          "name": "Petal Blizzard"
+        },
+        {
+          "level": 32,
+          "name": "Leaf Storm"
+        },
+        {
+          "level": 35,
+          "name": "Leaf Blade"
+        },
+        {
+          "level": 39,
+          "name": "Grassy Terrain"
+        },
+        {
+          "level": 43,
+          "name": "Solar Beam"
+        },
+        {
+          "level": 47,
+          "name": "Petal Dance"
+        },
+        {
+          "level": 51,
+          "name": "Aromatherapy"
+        },
+        {
+          "level": 55,
+          "name": "Frenzy Plant"
+        }
+      ],
+      "pokedex_entry": "Foliraptor is a master of camouflage, capable of remaining completely undetected among dense forest vegetation. Its elaborate leaf-like scales blend seamlessly into the canopy, allowing it to ambush prey without warning. Despite its intimidating appearance, Foliraptor rarely confronts larger Pokémon, preferring to use its exceptional agility to escape danger.",
+      "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later.",
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression)"
+    },
+    {
+      "number": 13,
+      "name": "Kivolt",
+      "stage": 1,
+      "appearance": "Playful golden cheetah cub with black spots, rounded ears, cream chest and paws, dark tear markings, banded lightning-tipped tail, and small static discharges.",
+      "evolution_levels": {
+        "to_stage_2": 18
+      },
+      "category": "Cheetah Cub Pokémon",
+      "type1": "Electric",
+      "type2": null,
+      "inspiration": "Cheetah",
+      "evolution_line": [
+        13,
+        14,
+        15
+      ],
+      "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
+      "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
+      "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
+      "pokedex_entry": "Kivolt is a playful Pokémon that generates static electricity as it runs through tall grass. Its spotted fur releases tiny sparks whenever it becomes excited. Young Kivolt frequently chase one another, unknowingly developing the extraordinary speed they will possess as adults.",
+      "height_m": 0.5,
+      "weight_kg": 12,
+      "base_stats": {
+        "hp": 45,
+        "attack": 65,
+        "defense": 35,
+        "special_attack": 45,
+        "special_defense": 40,
+        "speed": 80,
+        "total": 310
+      },
+      "abilities": [
+        {
+          "name": "Static",
+          "slot": "regular"
+        },
+        {
+          "name": "Motor Drive",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Tackle"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Quick Attack"
+        },
+        {
+          "level": 7,
+          "name": "Thunder Shock"
+        },
+        {
+          "level": 10,
+          "name": "Thunder Wave"
+        },
+        {
+          "level": 13,
+          "name": "Spark"
+        },
+        {
+          "level": 16,
+          "name": "Agility"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 22,
+          "name": "Double Kick"
+        },
+        {
+          "level": 25,
+          "name": "Electro Ball"
+        },
+        {
+          "level": 28,
+          "name": "Thunder Fang"
+        },
+        {
+          "level": 31,
+          "name": "Crunch"
+        },
+        {
+          "level": 34,
+          "name": "Wild Charge"
+        },
+        {
+          "level": 36,
+          "name": "Extreme Speed"
+        },
+        {
+          "level": 39,
+          "name": "Discharge"
+        },
+        {
+          "level": 43,
+          "name": "Electric Terrain"
+        },
+        {
+          "level": 47,
+          "name": "Volt Switch"
+        },
+        {
+          "level": 51,
+          "name": "Thunder"
+        },
+        {
+          "level": 55,
+          "name": "Giga Impact"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Extreme Speed learned on evolution to Kivarion at level 36)"
+    },
+    {
+      "number": 14,
+      "name": "Kivarra",
+      "stage": 2,
+      "appearance": "Lean adolescent electric cheetah with longer sprinting limbs, angular black markings, spiky fur tufts, banded lightning-tipped tail and bright electrical arcs.",
+      "evolution_levels": {
+        "from_stage_1": 18,
+        "to_stage_3": 36
+      },
+      "category": "Sprint Pokémon",
+      "type1": "Electric",
+      "type2": null,
+      "inspiration": "Cheetah",
+      "evolution_line": [
+        13,
+        14,
+        15
+      ],
+      "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
+      "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
+      "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
+      "pokedex_entry": "Kivarra spends much of its day racing across open grasslands, strengthening its legs and refining its hunting instincts. Specialized pads on its paws absorb the impact of high-speed movement while its fur stores electrical energy. When approaching its maximum speed, bright sparks race along its body.",
+      "height_m": 0.9,
+      "weight_kg": 32,
+      "base_stats": {
+        "hp": 60,
+        "attack": 90,
+        "defense": 45,
+        "special_attack": 55,
+        "special_defense": 50,
+        "speed": 115,
+        "total": 415
+      },
+      "abilities": [
+        {
+          "name": "Static",
+          "slot": "regular"
+        },
+        {
+          "name": "Motor Drive",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Tackle"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Quick Attack"
+        },
+        {
+          "level": 7,
+          "name": "Thunder Shock"
+        },
+        {
+          "level": 10,
+          "name": "Thunder Wave"
+        },
+        {
+          "level": 13,
+          "name": "Spark"
+        },
+        {
+          "level": 16,
+          "name": "Agility"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 22,
+          "name": "Double Kick"
+        },
+        {
+          "level": 25,
+          "name": "Electro Ball"
+        },
+        {
+          "level": 28,
+          "name": "Thunder Fang"
+        },
+        {
+          "level": 31,
+          "name": "Crunch"
+        },
+        {
+          "level": 34,
+          "name": "Wild Charge"
+        },
+        {
+          "level": 36,
+          "name": "Extreme Speed"
+        },
+        {
+          "level": 39,
+          "name": "Discharge"
+        },
+        {
+          "level": 43,
+          "name": "Electric Terrain"
+        },
+        {
+          "level": 47,
+          "name": "Volt Switch"
+        },
+        {
+          "level": 51,
+          "name": "Thunder"
+        },
+        {
+          "level": 55,
+          "name": "Giga Impact"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Extreme Speed learned on evolution to Kivarion at level 36)"
+    },
+    {
+      "number": 15,
+      "name": "Kivarion",
+      "stage": 3,
+      "appearance": "Athletic adult electric cheetah with a cream chest ruff, swept-back lightning-shaped fur, bold black markings, powerful running limbs, banded tail and vivid electrical arcs.",
+      "evolution_levels": {
+        "from_stage_2": 36
+      },
+      "category": "Lightning Predator Pokémon",
+      "type1": "Electric",
+      "type2": null,
+      "inspiration": "Cheetah",
+      "evolution_line": [
+        13,
+        14,
+        15
+      ],
+      "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
+      "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
+      "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
+      "pokedex_entry": "Kivarion is an exceptionally fast predator capable of crossing vast grasslands in seconds. Its powerful legs generate tremendous electrical energy with every stride, causing its markings to glow brilliantly. When pursuing prey, Kivarion can release a concentrated burst of electricity to accelerate beyond its normal limits.",
+      "height_m": 1.4,
+      "weight_kg": 65,
+      "base_stats": {
+        "hp": 75,
+        "attack": 120,
+        "defense": 60,
+        "special_attack": 70,
+        "special_defense": 65,
+        "speed": 140,
+        "total": 530
+      },
+      "abilities": [
+        {
+          "name": "Static",
+          "slot": "regular"
+        },
+        {
+          "name": "Motor Drive",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Tackle"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip"
+        },
+        {
+          "level": 4,
+          "name": "Quick Attack"
+        },
+        {
+          "level": 7,
+          "name": "Thunder Shock"
+        },
+        {
+          "level": 10,
+          "name": "Thunder Wave"
+        },
+        {
+          "level": 13,
+          "name": "Spark"
+        },
+        {
+          "level": 16,
+          "name": "Agility"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 22,
+          "name": "Double Kick"
+        },
+        {
+          "level": 25,
+          "name": "Electro Ball"
+        },
+        {
+          "level": 28,
+          "name": "Thunder Fang"
+        },
+        {
+          "level": 31,
+          "name": "Crunch"
+        },
+        {
+          "level": 34,
+          "name": "Wild Charge"
+        },
+        {
+          "level": 36,
+          "name": "Extreme Speed"
+        },
+        {
+          "level": 39,
+          "name": "Discharge"
+        },
+        {
+          "level": 43,
+          "name": "Electric Terrain"
+        },
+        {
+          "level": 47,
+          "name": "Volt Switch"
+        },
+        {
+          "level": 51,
+          "name": "Thunder"
+        },
+        {
+          "level": 55,
+          "name": "Giga Impact"
+        }
+      ],
+      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Extreme Speed learned on evolution to Kivarion at level 36)"
+    },
+    {
+      "number": 16,
+      "name": "Arctix",
+      "stage": 1,
+      "category": "Arctic Fox Pokémon",
+      "pokedex_entry": "A curious and playful Pokémon that loves to bound through the snow. Its thick fur keeps it warm, even in the harshest cold.",
+      "appearance": "Small white arctic fox kit with oversized blue-lined ears, bright blue eyes, fluffy neck ruff, blue-tipped paws and large bushy tail with pale blue markings.",
+      "type1": "Ice",
+      "type2": null,
+      "inspiration": "Arctic fox",
+      "evolution_line": [
+        16,
+        17,
+        18
+      ],
+      "design_status": "Approved concept and solo artwork uploaded",
+      "images": {
+        "concept": "016-arctix.png",
+        "artwork": "#016 Arctix.png"
+      },
+      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "evolution_levels": {
+        "to_stage_2": 16
+      },
+      "height_m": 0.4,
+      "weight_kg": 5,
+      "base_stats": {
+        "hp": 45,
+        "attack": 45,
+        "defense": 40,
+        "special_attack": 65,
+        "special_defense": 50,
+        "speed": 65,
+        "total": 310
+      }
+    },
+    {
+      "number": 17,
+      "name": "Arctivar",
+      "stage": 2,
+      "category": "Arctic Fox Pokémon",
+      "pokedex_entry": "A nimble and intelligent Pokémon. It moves silently across snowy terrain, using its keen senses to track prey and navigate blizzards.",
+      "appearance": "Lean adolescent white arctic fox with sharp blue eyes, icy-blue markings, spiky fur collar and large bushy tail.",
+      "type1": "Ice",
+      "type2": null,
+      "inspiration": "Arctic fox",
+      "evolution_line": [
+        16,
+        17,
+        18
+      ],
+      "design_status": "Approved concept and solo artwork uploaded",
+      "images": {
+        "concept": "017-arctivar.png",
+        "artwork": "#017 Arctivar.png"
+      },
+      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "evolution_levels": {
+        "from_stage_1": 16,
+        "to_stage_3": 32
+      },
+      "height_m": 0.8,
+      "weight_kg": 16,
+      "base_stats": {
+        "hp": 60,
+        "attack": 55,
+        "defense": 50,
+        "special_attack": 90,
+        "special_defense": 65,
+        "speed": 95,
+        "total": 415
+      }
+    },
+    {
+      "number": 18,
+      "name": "Arctivale",
+      "stage": 3,
+      "category": "Arctic Fox Pokémon",
+      "pokedex_entry": "A majestic Pokémon that commands the cold. It can generate intense cold air, creating ice and snowstorms to protect its territory.",
+      "appearance": "Majestic large white arctic fox with thick layered mane, blue crystalline formations along shoulders and back, intense blue eyes and huge bushy tail.",
+      "type1": "Ice",
+      "type2": null,
+      "inspiration": "Arctic fox",
+      "evolution_line": [
+        16,
+        17,
+        18
+      ],
+      "design_status": "Approved concept and solo artwork uploaded",
+      "images": {
+        "concept": "018-arctivale.png",
+        "artwork": "#018 Arctivale.png"
+      },
+      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "evolution_levels": {
+        "from_stage_2": 32
+      },
+      "height_m": 1.3,
+      "weight_kg": 42,
+      "base_stats": {
+        "hp": 75,
+        "attack": 65,
+        "defense": 65,
+        "special_attack": 120,
+        "special_defense": 85,
+        "speed": 120,
+        "total": 530
+      }
     }
   ]
 }
