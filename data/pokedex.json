@@ -75,7 +75,29 @@
       "level_up_moveset_status": "Complete",
       "notes": "Species design, typing, abilities, base stats, and mandatory evolution at level 17 approved. Wolvyn learns moves only before evolving; later moves belong to evolved species.",
       "experience_growth_rate": "Medium Slow",
-      "base_exp_yield": 62
+      "base_exp_yield": 62,
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "shiny_artwork": "#001-Wolvyn (Shiny).png",
+      "shiny_appearance": {
+        "brown_fur": "silver-gray",
+        "cream_markings": "icy white",
+        "dark_brown_fur_and_paws": "charcoal-gray",
+        "unchanged": [
+          "eyes",
+          "claws",
+          "nose",
+          "mouth",
+          "anatomy",
+          "markings"
+        ],
+        "same_for_both_genders": true
+      },
+      "evolution_exp_retained": true
     }
   ]
 }
