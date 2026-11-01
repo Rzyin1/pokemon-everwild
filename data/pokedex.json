@@ -825,7 +825,7 @@
         6
       ],
       "images": {
-        "solo": "#005 Solbruin.png"
+        "solo": "https://raw.githubusercontent.com/Rzyin1/pokemon-everwild/main/%23005%20Solbruin.png"
       },
       "abilities": [],
       "base_stats": {},
@@ -847,7 +847,7 @@
         6
       ],
       "images": {
-        "solo": "#006 Solursus.png"
+        "solo": "https://raw.githubusercontent.com/Rzyin1/pokemon-everwild/main/%23006%20Solursus.png"
       },
       "abilities": [],
       "base_stats": {},
