@@ -2115,6 +2115,403 @@
         }
       ],
       "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Blizzard learned at level 32 upon evolution to Arctivale)"
+    },
+    {
+      "number": 19,
+      "name": "Joeyjab",
+      "stage": 1,
+      "category": "Boxing Joey Creature",
+      "pokedex_entry": "Joeyjab practices its punches and kicks from the moment it learns to stand. Although its strikes are still weak, its determination often surprises much larger opponents.",
+      "appearance": "Small energetic brown kangaroo joey with cream belly, large ears and red padded fists, practicing basic punches and kicks.",
+      "type1": "Fighting",
+      "type2": null,
+      "inspiration": "Kangaroo",
+      "evolution_line": [
+        19,
+        20,
+        21
+      ],
+      "design_status": "Approved; solo artwork uploaded",
+      "images": {
+        "artwork": "019_Joeyjab.png"
+      },
+      "evolution_levels": {
+        "to_stage_2": 20
+      },
+      "height_m": 0.6,
+      "weight_kg": 9.5,
+      "base_stats": {
+        "hp": 55,
+        "attack": 75,
+        "defense": 45,
+        "special_attack": 30,
+        "special_defense": 45,
+        "speed": 75,
+        "total": 325
+      },
+      "abilities": [
+        {
+          "name": "Iron Fist",
+          "slot": "regular"
+        },
+        {
+          "name": "Reckless",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Pound"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Quick Attack"
+        },
+        {
+          "level": 7,
+          "name": "Double Kick"
+        },
+        {
+          "level": 10,
+          "name": "Mach Punch"
+        },
+        {
+          "level": 13,
+          "name": "Focus Energy"
+        },
+        {
+          "level": 16,
+          "name": "Arm Thrust"
+        },
+        {
+          "level": 19,
+          "name": "Low Sweep"
+        },
+        {
+          "level": 20,
+          "name": "Brick Break"
+        },
+        {
+          "level": 23,
+          "name": "Bullet Punch"
+        },
+        {
+          "level": 26,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 29,
+          "name": "Jump Kick"
+        },
+        {
+          "level": 32,
+          "name": "Detect"
+        },
+        {
+          "level": 35,
+          "name": "Drain Punch"
+        },
+        {
+          "level": 38,
+          "name": "High Jump Kick"
+        },
+        {
+          "level": 40,
+          "name": "Close Combat"
+        },
+        {
+          "level": 43,
+          "name": "Thunder Punch"
+        },
+        {
+          "level": 46,
+          "name": "Blaze Kick"
+        },
+        {
+          "level": 49,
+          "name": "Double-Edge"
+        },
+        {
+          "level": 52,
+          "name": "Swords Dance"
+        },
+        {
+          "level": 55,
+          "name": "Focus Punch"
+        }
+      ],
+      "level_up_moveset_status": "Complete (shared evolutionary-line progression; Brick Break at 20 and Close Combat at 40)",
+      "notes": "All design details approved. Kickboxing Fighting-type starter."
+    },
+    {
+      "number": 20,
+      "name": "Rookick",
+      "stage": 2,
+      "category": "Kickboxing Creature",
+      "pokedex_entry": "Rookick uses its powerful tail to maintain balance while delivering rapid combinations of punches and kicks. It trains relentlessly, perfecting its technique through constant sparring.",
+      "appearance": "Athletic adolescent kangaroo kickboxer with powerful legs, practiced stance, wrapped fists and strong balancing tail.",
+      "type1": "Fighting",
+      "type2": null,
+      "inspiration": "Kangaroo",
+      "evolution_line": [
+        19,
+        20,
+        21
+      ],
+      "design_status": "Approved; solo artwork uploaded",
+      "images": {
+        "artwork": "020_Rookick.png"
+      },
+      "evolution_levels": {
+        "from_stage_1": 20,
+        "to_stage_3": 40
+      },
+      "height_m": 1.2,
+      "weight_kg": 32,
+      "base_stats": {
+        "hp": 75,
+        "attack": 105,
+        "defense": 60,
+        "special_attack": 35,
+        "special_defense": 60,
+        "speed": 100,
+        "total": 435
+      },
+      "abilities": [
+        {
+          "name": "Iron Fist",
+          "slot": "regular"
+        },
+        {
+          "name": "Reckless",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Pound"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Quick Attack"
+        },
+        {
+          "level": 7,
+          "name": "Double Kick"
+        },
+        {
+          "level": 10,
+          "name": "Mach Punch"
+        },
+        {
+          "level": 13,
+          "name": "Focus Energy"
+        },
+        {
+          "level": 16,
+          "name": "Arm Thrust"
+        },
+        {
+          "level": 19,
+          "name": "Low Sweep"
+        },
+        {
+          "level": 20,
+          "name": "Brick Break"
+        },
+        {
+          "level": 23,
+          "name": "Bullet Punch"
+        },
+        {
+          "level": 26,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 29,
+          "name": "Jump Kick"
+        },
+        {
+          "level": 32,
+          "name": "Detect"
+        },
+        {
+          "level": 35,
+          "name": "Drain Punch"
+        },
+        {
+          "level": 38,
+          "name": "High Jump Kick"
+        },
+        {
+          "level": 40,
+          "name": "Close Combat"
+        },
+        {
+          "level": 43,
+          "name": "Thunder Punch"
+        },
+        {
+          "level": 46,
+          "name": "Blaze Kick"
+        },
+        {
+          "level": 49,
+          "name": "Double-Edge"
+        },
+        {
+          "level": 52,
+          "name": "Swords Dance"
+        },
+        {
+          "level": 55,
+          "name": "Focus Punch"
+        }
+      ],
+      "level_up_moveset_status": "Complete (shared evolutionary-line progression; Brick Break at 20 and Close Combat at 40)",
+      "notes": "All design details approved. Kickboxing Fighting-type starter."
+    },
+    {
+      "number": 21,
+      "name": "Kangarush",
+      "stage": 3,
+      "category": "Champion Fighter Creature",
+      "pokedex_entry": "Kangarush combines tremendous physical strength with exceptional fighting discipline. Its devastating kicks can shatter solid rock, but it never strikes an opponent that has already surrendered.",
+      "appearance": "Muscular adult kangaroo kickboxer with cream mane, red accents, powerful hind legs, padded fists and a strong balancing tail.",
+      "type1": "Fighting",
+      "type2": null,
+      "inspiration": "Kangaroo",
+      "evolution_line": [
+        19,
+        20,
+        21
+      ],
+      "design_status": "Approved; solo artwork uploaded",
+      "images": {
+        "artwork": "021_Kangarush.png"
+      },
+      "evolution_levels": {
+        "from_stage_2": 40
+      },
+      "height_m": 2,
+      "weight_kg": 85,
+      "base_stats": {
+        "hp": 100,
+        "attack": 135,
+        "defense": 90,
+        "special_attack": 40,
+        "special_defense": 85,
+        "speed": 100,
+        "total": 550
+      },
+      "abilities": [
+        {
+          "name": "Iron Fist",
+          "slot": "regular"
+        },
+        {
+          "name": "Reckless",
+          "slot": "regular"
+        }
+      ],
+      "moves": [
+        {
+          "level": 1,
+          "name": "Pound"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Quick Attack"
+        },
+        {
+          "level": 7,
+          "name": "Double Kick"
+        },
+        {
+          "level": 10,
+          "name": "Mach Punch"
+        },
+        {
+          "level": 13,
+          "name": "Focus Energy"
+        },
+        {
+          "level": 16,
+          "name": "Arm Thrust"
+        },
+        {
+          "level": 19,
+          "name": "Low Sweep"
+        },
+        {
+          "level": 20,
+          "name": "Brick Break"
+        },
+        {
+          "level": 23,
+          "name": "Bullet Punch"
+        },
+        {
+          "level": 26,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 29,
+          "name": "Jump Kick"
+        },
+        {
+          "level": 32,
+          "name": "Detect"
+        },
+        {
+          "level": 35,
+          "name": "Drain Punch"
+        },
+        {
+          "level": 38,
+          "name": "High Jump Kick"
+        },
+        {
+          "level": 40,
+          "name": "Close Combat"
+        },
+        {
+          "level": 43,
+          "name": "Thunder Punch"
+        },
+        {
+          "level": 46,
+          "name": "Blaze Kick"
+        },
+        {
+          "level": 49,
+          "name": "Double-Edge"
+        },
+        {
+          "level": 52,
+          "name": "Swords Dance"
+        },
+        {
+          "level": 55,
+          "name": "Focus Punch"
+        }
+      ],
+      "level_up_moveset_status": "Complete (shared evolutionary-line progression; Brick Break at 20 and Close Combat at 40)",
+      "notes": "All design details approved. Kickboxing Fighting-type starter."
     }
   ]
 }
