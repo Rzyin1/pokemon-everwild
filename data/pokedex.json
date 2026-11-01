@@ -793,7 +793,7 @@
     {
       "number": 4,
       "name": "Solcub",
-      "category": null,
+      "category": "Ember Cub Pokémon",
       "type1": "Fire",
       "type2": null,
       "stage": 1,
@@ -803,19 +803,126 @@
         6
       ],
       "images": {
+        "concept": "004-Solcub.png",
+        "card": "004-Solcub-card.png",
         "solo": "004-Solcub.png"
       },
-      "abilities": [],
-      "base_stats": {},
-      "moves": [],
+      "abilities": [
+        {
+          "name": "Flash Fire",
+          "slot": "regular"
+        },
+        {
+          "name": "Solar Power",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 55,
+        "special_attack": 60,
+        "special_defense": 45,
+        "speed": 25,
+        "total": 310
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Ember Claw"
+        },
+        {
+          "level": 7,
+          "name": "Lick"
+        },
+        {
+          "level": 10,
+          "name": "Hone Claws"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
+        },
+        {
+          "level": 16,
+          "name": "Fire Fang"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Sunny Day"
+        },
+        {
+          "level": 31,
+          "name": "Fire Punch"
+        },
+        {
+          "level": 35,
+          "name": "Crunch"
+        },
+        {
+          "level": 39,
+          "name": "Heat Crash"
+        },
+        {
+          "level": 44,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 49,
+          "name": "Flare Blitz"
+        },
+        {
+          "level": 55,
+          "name": "Solar Beam"
+        }
+      ],
       "design_status": "Artwork previously created",
       "mechanics_status": "Pending profile review",
-      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review."
+      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review.",
+      "inspiration": "Sun bear cub",
+      "height_m": 0.5,
+      "weight_kg": 9.5,
+      "appearance": "Small charcoal-black sun bear cub with orange-red fiery highlights, flames around rounded ears, bright yellow crescent chest marking, ember-like claws and paw pads, and amber eyes.",
+      "personality": "Playful, energetic, curious, mischievous and slightly hotheaded; affectionate toward trusted trainers.",
+      "pokedex_entry": "Solcub is an energetic and curious Pokémon that constantly investigates its surroundings. Its playful nature often leads it into trouble, causing the flames on its ears to flare with excitement. The golden crescent marking on its chest absorbs and stores energy from sunlight, serving as the source of its fiery power. When fully charged, the marking glows brightly, strengthening its flames and allowing Solcub to maintain its body heat even during the coldest nights. Despite its mischievous behavior, Solcub forms strong bonds with those it trusts.",
+      "evolution_levels": {
+        "to_stage_2": 18,
+        "to_stage_3": 36
+      },
+      "custom_moves": [
+        {
+          "name": "Ember Claw",
+          "type": "Fire",
+          "category": "Physical",
+          "power": 40,
+          "accuracy": 100,
+          "pp": 25,
+          "contact": true,
+          "burn_chance_percent": 10
+        }
+      ],
+      "level_up_moveset_status": "Complete (shared evolutionary line progression)"
     },
     {
       "number": 5,
       "name": "Solbruin",
-      "category": null,
+      "category": "Blazing Bear Pokémon",
       "type1": "Fire",
       "type2": null,
       "stage": 2,
@@ -825,19 +932,114 @@
         6
       ],
       "images": {
+        "concept": "#005 Solbruin.png",
+        "card": "#005 Solbruin-card.png",
         "solo": "https://raw.githubusercontent.com/Rzyin1/pokemon-everwild/main/%23005%20Solbruin.png"
       },
-      "abilities": [],
-      "base_stats": {},
-      "moves": [],
+      "abilities": [
+        {
+          "name": "Flash Fire",
+          "slot": "regular"
+        },
+        {
+          "name": "Solar Power",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 80,
+        "attack": 90,
+        "defense": 75,
+        "special_attack": 75,
+        "special_defense": 60,
+        "speed": 35,
+        "total": 415
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Ember Claw"
+        },
+        {
+          "level": 7,
+          "name": "Lick"
+        },
+        {
+          "level": 10,
+          "name": "Hone Claws"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
+        },
+        {
+          "level": 16,
+          "name": "Fire Fang"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Sunny Day"
+        },
+        {
+          "level": 31,
+          "name": "Fire Punch"
+        },
+        {
+          "level": 35,
+          "name": "Crunch"
+        },
+        {
+          "level": 39,
+          "name": "Heat Crash"
+        },
+        {
+          "level": 44,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 49,
+          "name": "Flare Blitz"
+        },
+        {
+          "level": 55,
+          "name": "Solar Beam"
+        }
+      ],
       "design_status": "Artwork previously created",
       "mechanics_status": "Pending profile review",
-      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review."
+      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review.",
+      "height_m": 0.9,
+      "appearance": "Adolescent quadrupedal sun bear with charcoal-black fur, a fiery orange-red ridge along its spine, pronounced flaming ears and shoulders, strong forelegs, broad shoulders, glowing crescent chest marking and long ember-lit claws.",
+      "evolution_levels": {
+        "from_stage_1": 18,
+        "to_stage_3": 36
+      },
+      "inspiration": "Sun bear",
+      "weight_kg": 38,
+      "personality": "Intelligent, resourceful, inquisitive and independent",
+      "pokedex_entry": "Solbruin is an intelligent and resourceful Pokémon that uses its powerful claws to break apart fallen logs and uncover hidden food. The golden crescent on its chest has grown larger, allowing it to absorb and store far more sunlight than Solcub. This energy fuels the intense flames along its back and shoulders, which burn brighter as its reserves increase. Despite its imposing appearance, Solbruin prefers investigating unfamiliar things over confronting them.",
+      "level_up_moveset_status": "Complete (shared evolutionary line progression)"
     },
     {
       "number": 6,
       "name": "Solursus",
-      "category": null,
+      "category": "Inferno Bear Pokémon",
       "type1": "Fire",
       "type2": null,
       "stage": 3,
@@ -847,14 +1049,108 @@
         6
       ],
       "images": {
+        "concept": "#006 Solursus.png",
+        "card": "#006 Solursus card.png",
         "solo": "https://raw.githubusercontent.com/Rzyin1/pokemon-everwild/main/%23006%20Solursus.png"
       },
-      "abilities": [],
-      "base_stats": {},
-      "moves": [],
+      "abilities": [
+        {
+          "name": "Flash Fire",
+          "slot": "regular"
+        },
+        {
+          "name": "Solar Power",
+          "slot": "regular"
+        }
+      ],
+      "base_stats": {
+        "hp": 105,
+        "attack": 120,
+        "defense": 100,
+        "special_attack": 90,
+        "special_defense": 75,
+        "speed": 40,
+        "total": 530
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Scratch"
+        },
+        {
+          "level": 1,
+          "name": "Leer"
+        },
+        {
+          "level": 4,
+          "name": "Ember Claw"
+        },
+        {
+          "level": 7,
+          "name": "Lick"
+        },
+        {
+          "level": 10,
+          "name": "Hone Claws"
+        },
+        {
+          "level": 13,
+          "name": "Fury Swipes"
+        },
+        {
+          "level": 16,
+          "name": "Fire Fang"
+        },
+        {
+          "level": 19,
+          "name": "Bite"
+        },
+        {
+          "level": 23,
+          "name": "Slash"
+        },
+        {
+          "level": 27,
+          "name": "Sunny Day"
+        },
+        {
+          "level": 31,
+          "name": "Fire Punch"
+        },
+        {
+          "level": 35,
+          "name": "Crunch"
+        },
+        {
+          "level": 39,
+          "name": "Heat Crash"
+        },
+        {
+          "level": 44,
+          "name": "Bulk Up"
+        },
+        {
+          "level": 49,
+          "name": "Flare Blitz"
+        },
+        {
+          "level": 55,
+          "name": "Solar Beam"
+        }
+      ],
       "design_status": "Artwork previously created",
       "mechanics_status": "Pending profile review",
-      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review."
+      "notes": "Fire starter Sun Bear evolutionary line. Full profile details will be added after review.",
+      "height_m": 1.8,
+      "appearance": null,
+      "evolution_levels": {
+        "from_stage_2": 36
+      },
+      "inspiration": "Sun bear",
+      "weight_kg": 180,
+      "personality": "Calm, patient, disciplined, and formidable when threatened",
+      "pokedex_entry": "Solursus possesses an enormous reserve of solar energy within the golden crescent on its chest. When fully charged, the marking radiates intense heat, fueling the roaring flames that surround its massive body. Despite its fearsome appearance, Solursus is remarkably patient and rarely wastes energy on unnecessary confrontations. When threatened, however, it releases its stored power in devastating bursts of fire capable of scorching the ground beneath its paws.",
+      "level_up_moveset_status": "Complete (shared evolutionary line progression)"
     },
     {
       "number": 7,
