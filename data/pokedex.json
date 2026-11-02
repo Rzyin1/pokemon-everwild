@@ -2055,7 +2055,7 @@
       "category": "Splash Pokémon",
       "type1": "Water",
       "type2": null,
-      "inspiration": "Giant salamander",
+      "inspiration": "Giant Salamander",
       "stage": 2,
       "evolution_line": [
         7,
@@ -2070,11 +2070,13 @@
       "abilities": [
         {
           "name": "Torrent",
-          "slot": "regular"
+          "slot": "A",
+          "description": "Increases the power of Water-type moves by 50% when the Pokémon has one-third or less of its maximum HP remaining."
         },
         {
           "name": "Water Absorb",
-          "slot": "regular"
+          "slot": "B",
+          "description": "Grants immunity to applicable Water-type moves and restores 25% of maximum HP when affected by one."
         }
       ],
       "base_stats": {
@@ -2091,6 +2093,62 @@
         "to_stage_3": 40
       },
       "moves": [
+        {
+          "level": 20,
+          "name": "Mud Shot",
+          "type": "Ground",
+          "category": "Special"
+        },
+        {
+          "level": 24,
+          "name": "Brine",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "level": 28,
+          "name": "Crunch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "level": 32,
+          "name": "Rain Dance",
+          "type": "Water",
+          "category": "Status"
+        },
+        {
+          "level": 36,
+          "name": "Hydro Pump",
+          "type": "Water",
+          "category": "Special"
+        }
+      ],
+      "level_up_moveset_status": "Complete (Ripplash stage Levels 20–39)",
+      "design_status": "Approved",
+      "ability_assignment": "One regular ability (Torrent or Water Absorb) is assigned with equal 50% probability and retained from Ripplet through Ripplash and Riptorrent. No hidden ability.",
+      "images": {
+        "concept": "#008 Ripplash.png",
+        "solo": "#008 Ripplash.png",
+        "shiny": "#008 Ripplash (Shiny).png"
+      },
+      "notes": "Approved #008 Ripplash. Original normal artwork and exact Pokédex entry preserved. Retains 435 BST (higher than Normal/Fire middle evolutions). Learns five new moves at Levels 20,24,28,32,36; Torrent Break at Level 40 belongs to Riptorrent. Inherits previously learned Ripplet moves. Evolves automatically at Level 40 with retained cumulative EXP. Both genders use the same normal and shiny artwork. Approved shiny palette: deep purple body, pale silver underside, bright turquoise tail fins, original golden eyes.",
+      "battle_role": "Slow, durable special attacker",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 150,
+      "ev_yield": {
+        "special_attack": 2
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "original_family_moveset": [
         {
           "level": 1,
           "name": "Water Gun"
@@ -2140,14 +2198,116 @@
           "name": "Hydro Pump"
         }
       ],
-      "level_up_moveset_status": "Complete (approved evolutionary-line progression)",
-      "design_status": "Finalized; approved for Pokédex",
-      "ability_assignment": "One ability is randomly assigned when generated; each available ability has an equal chance. The assigned ability carries through evolution.",
-      "images": {
-        "concept": "#008 Ripplash.png",
-        "solo": "#008 Ripplash.png"
-      },
-      "notes": "No hidden abilities. Available abilities: Torrent and Water Absorb, each with equal probability. Evolution line and approved details finalized; no GitHub upload beyond this data update is pending."
+      "retains_previous_moves": true,
+      "inherited_level_up_moves_from": 7,
+      "experience_table": [
+        {
+          "level": 20,
+          "total_exp": 5460,
+          "exp_to_next": 998
+        },
+        {
+          "level": 21,
+          "total_exp": 6458,
+          "exp_to_next": 1119
+        },
+        {
+          "level": 22,
+          "total_exp": 7577,
+          "exp_to_next": 1248
+        },
+        {
+          "level": 23,
+          "total_exp": 8825,
+          "exp_to_next": 1383
+        },
+        {
+          "level": 24,
+          "total_exp": 10208,
+          "exp_to_next": 1527
+        },
+        {
+          "level": 25,
+          "total_exp": 11735,
+          "exp_to_next": 1676
+        },
+        {
+          "level": 26,
+          "total_exp": 13411,
+          "exp_to_next": 1833
+        },
+        {
+          "level": 27,
+          "total_exp": 15244,
+          "exp_to_next": 1998
+        },
+        {
+          "level": 28,
+          "total_exp": 17242,
+          "exp_to_next": 2169
+        },
+        {
+          "level": 29,
+          "total_exp": 19411,
+          "exp_to_next": 2349
+        },
+        {
+          "level": 30,
+          "total_exp": 21760,
+          "exp_to_next": 2534
+        },
+        {
+          "level": 31,
+          "total_exp": 24294,
+          "exp_to_next": 2727
+        },
+        {
+          "level": 32,
+          "total_exp": 27021,
+          "exp_to_next": 2928
+        },
+        {
+          "level": 33,
+          "total_exp": 29949,
+          "exp_to_next": 3135
+        },
+        {
+          "level": 34,
+          "total_exp": 33084,
+          "exp_to_next": 3351
+        },
+        {
+          "level": 35,
+          "total_exp": 36435,
+          "exp_to_next": 3572
+        },
+        {
+          "level": 36,
+          "total_exp": 40007,
+          "exp_to_next": 3801
+        },
+        {
+          "level": 37,
+          "total_exp": 43808,
+          "exp_to_next": 4038
+        },
+        {
+          "level": 38,
+          "total_exp": 47846,
+          "exp_to_next": 4281
+        },
+        {
+          "level": 39,
+          "total_exp": 52127,
+          "exp_to_next": 4533
+        },
+        {
+          "level": 40,
+          "total_exp": 56660,
+          "exp_to_next": null
+        }
+      ],
+      "mechanics_status": "Approved for website implementation"
     },
     {
       "number": 9,
