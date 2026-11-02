@@ -5279,8 +5279,8 @@
       "number": 17,
       "name": "Arctivar",
       "stage": 2,
-      "category": "Arctic Fox Pokémon",
-      "pokedex_entry": "A nimble and intelligent Pokémon. It moves silently across snowy terrain, using its keen senses to track prey and navigate blizzards.",
+      "category": "Snowrunner Pokémon",
+      "pokedex_entry": "Arctivar races effortlessly across frozen landscapes, using its powerful legs to navigate even the deepest snow. Its keen senses allow it to detect approaching danger through violent blizzards. As it runs, icy energy gathers around its paws, briefly freezing the snow beneath each step.",
       "appearance": "Lean adolescent white arctic fox with sharp blue eyes, icy-blue markings, spiky fur collar and large bushy tail.",
       "type1": "Ice",
       "type2": null,
@@ -5290,13 +5290,14 @@
         17,
         18
       ],
-      "design_status": "Approved concept and solo artwork uploaded",
+      "design_status": "Approved",
       "images": {
         "concept": "017-arctivar.png",
         "artwork": "#017 Arctivar.png",
-        "solo": "#017 Arctivar.png"
+        "solo": "#017 Arctivar.png",
+        "shiny": "#017 Arctivar (Shiny).png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "notes": "Approved #017 Arctivar. Classification and entire Pokédex description deliberately replaced with newly approved Snowrunner Pokémon entry. Preserve existing concept image 017-arctivar.png, normal solo and artwork #017 Arctivar.png. Link the existing stage-specific charcoal-and-purple shiny #017 Arctivar (Shiny).png. Retain prior Arctix moves, assigned ability and cumulative Medium Slow EXP. Arctivar's stage-only moves are Levels 18, 21, 24, 27, 30. Level 32 Ice Beam belongs to Arctivale. No additional evolution-exclusive moves. The standard type chart is unchanged by weather abilities.",
       "evolution_levels": {
         "from_stage_1": 16,
         "to_stage_3": 32
@@ -5311,7 +5312,194 @@
         "special_defense": 65,
         "speed": 95,
         "total": 415
-      }
+      },
+      "battle_role": "Fast special attacker",
+      "abilities": [
+        {
+          "name": "Snow Cloak",
+          "slot": "A",
+          "description": "While snow is active, multiplies the accuracy of affected incoming moves by 0.8, effectively reducing their accuracy by 20%."
+        },
+        {
+          "name": "Ice Body",
+          "slot": "B",
+          "description": "Restores 1/16 of maximum HP at the end of each turn while snow is active, following the game's normal HP rounding rules."
+        }
+      ],
+      "ability_assignment": "An individual Arctivar has either Snow Cloak or Ice Body, not both. Each has an equal 50% assignment chance when Arctix is generated, and the assigned ability is retained through evolution. No hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 142,
+      "ev_yield": {
+        "special_attack": 2
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "retains_previous_moves": true,
+      "inherited_level_up_moves_from": 16,
+      "evolution_move_at_16": false,
+      "evolution_move_at_32": false,
+      "moves": [
+        {
+          "level": 18,
+          "name": "Bite",
+          "type": "Dark",
+          "category": "Physical",
+          "description": "Dark-type physical coverage."
+        },
+        {
+          "level": 21,
+          "name": "Swift",
+          "type": "Normal",
+          "category": "Special",
+          "description": "A reliable Normal-type special attack."
+        },
+        {
+          "level": 24,
+          "name": "Ice Shard",
+          "type": "Ice",
+          "category": "Physical",
+          "description": "An Ice-type priority attack under normal move priority conditions."
+        },
+        {
+          "level": 27,
+          "name": "Freeze-Dry",
+          "type": "Ice",
+          "category": "Special",
+          "description": "An Ice-type special attack that is also super effective against Water-type Pokémon."
+        },
+        {
+          "level": 30,
+          "name": "Agility",
+          "type": "Psychic",
+          "category": "Status",
+          "description": "Raises the user's Speed by two stages."
+        }
+      ],
+      "experience_table": [
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": 585
+        },
+        {
+          "level": 17,
+          "total_exp": 3120,
+          "exp_to_next": 678
+        },
+        {
+          "level": 18,
+          "total_exp": 3798,
+          "exp_to_next": 777
+        },
+        {
+          "level": 19,
+          "total_exp": 4575,
+          "exp_to_next": 885
+        },
+        {
+          "level": 20,
+          "total_exp": 5460,
+          "exp_to_next": 998
+        },
+        {
+          "level": 21,
+          "total_exp": 6458,
+          "exp_to_next": 1119
+        },
+        {
+          "level": 22,
+          "total_exp": 7577,
+          "exp_to_next": 1248
+        },
+        {
+          "level": 23,
+          "total_exp": 8825,
+          "exp_to_next": 1383
+        },
+        {
+          "level": 24,
+          "total_exp": 10208,
+          "exp_to_next": 1527
+        },
+        {
+          "level": 25,
+          "total_exp": 11735,
+          "exp_to_next": 1676
+        },
+        {
+          "level": 26,
+          "total_exp": 13411,
+          "exp_to_next": 1833
+        },
+        {
+          "level": 27,
+          "total_exp": 15244,
+          "exp_to_next": 1998
+        },
+        {
+          "level": 28,
+          "total_exp": 17242,
+          "exp_to_next": 2169
+        },
+        {
+          "level": 29,
+          "total_exp": 19411,
+          "exp_to_next": 2349
+        },
+        {
+          "level": 30,
+          "total_exp": 21760,
+          "exp_to_next": 2534
+        },
+        {
+          "level": 31,
+          "total_exp": 24294,
+          "exp_to_next": 2727
+        },
+        {
+          "level": 32,
+          "total_exp": 27021,
+          "exp_to_next": null
+        }
+      ],
+      "type_effectiveness": {
+        "offensive": {
+          "super_effective": [
+            "Grass",
+            "Ground",
+            "Flying",
+            "Dragon"
+          ],
+          "not_very_effective": [
+            "Fire",
+            "Water",
+            "Ice",
+            "Steel"
+          ],
+          "no_effect": []
+        },
+        "defensive": {
+          "weaknesses": [
+            "Fire",
+            "Fighting",
+            "Rock",
+            "Steel"
+          ],
+          "resistances": [
+            "Ice"
+          ],
+          "immunities_from_typing": []
+        }
+      },
+      "mechanics_status": "Approved for website implementation",
+      "level_up_moveset_status": "Complete (Arctivar middle stage Levels 16–31)"
     },
     {
       "number": 18,
