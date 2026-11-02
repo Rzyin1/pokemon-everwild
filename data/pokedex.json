@@ -5054,8 +5054,8 @@
       "number": 16,
       "name": "Arctix",
       "stage": 1,
-      "category": "Arctic Fox Pokémon",
-      "pokedex_entry": "A curious and playful Pokémon that loves to bound through the snow. Its thick fur keeps it warm, even in the harshest cold.",
+      "category": "Frost Kit Pokémon",
+      "pokedex_entry": "Arctix is a curious and playful Pokémon that spends its days bounding through deep snow. Its thick fur protects it from freezing temperatures, while its sensitive ears can detect movement beneath the ice. When excited, tiny snowflakes form around its paws, often leaving a sparkling trail wherever it runs.",
       "appearance": "Small white arctic fox kit with oversized blue-lined ears, bright blue eyes, fluffy neck ruff, blue-tipped paws and large bushy tail with pale blue markings.",
       "type1": "Ice",
       "type2": null,
@@ -5065,15 +5065,17 @@
         17,
         18
       ],
-      "design_status": "Approved concept and solo artwork uploaded",
+      "design_status": "Approved",
       "images": {
         "concept": "016-arctix.png",
         "artwork": "#016 Arctix.png",
-        "solo": "#016 Arctix.png"
+        "solo": "#016 Arctix.png",
+        "shiny": "#016 Arctix (Shiny).png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "notes": "Approved #016 Arctix. Replace previous website entry with exact new approval and rename classification to Frost Kit Pokémon. Preserve solo and artwork #016 Arctix.png and concept assignment 016-arctix.png. Approved existing shiny is #016 Arctix (Shiny).png. Move list covers seven first-stage moves through Level 15; Level 16 evolves automatically into Arctivar, then Level 32 into Arctivale. Maintain cumulative Medium Slow EXP, previously learned moves and original assigned ability; no hidden ability. No visual gender differences.",
       "evolution_levels": {
-        "to_stage_2": 16
+        "to_stage_2": 16,
+        "to_stage_3": 32
       },
       "height_m": 0.4,
       "weight_kg": 5,
@@ -5085,7 +5087,193 @@
         "special_defense": 50,
         "speed": 65,
         "total": 310
-      }
+      },
+      "battle_role": "Fast special attacker",
+      "abilities": [
+        {
+          "name": "Snow Cloak",
+          "slot": "A",
+          "description": "Raises evasion in snow, effectively reducing the accuracy of applicable incoming moves by 20% while snow is active."
+        },
+        {
+          "name": "Ice Body",
+          "slot": "B",
+          "description": "Restores 1/16 of maximum HP at the end of each turn while snow is active, using standard HP rounding rules."
+        }
+      ],
+      "ability_assignment": "Each Pokémon has either Snow Cloak or Ice Body with equal (50%) assignment probability. The assigned ability is retained through Arctivar and Arctivale; no hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 62,
+      "ev_yield": {
+        "special_attack": 1
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "retains_previous_moves": true,
+      "moves": [
+        {
+          "level": 1,
+          "name": "Tackle",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "level": 4,
+          "name": "Powder Snow",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "level": 7,
+          "name": "Quick Attack",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "level": 10,
+          "name": "Icy Wind",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "level": 13,
+          "name": "Snowscape",
+          "type": "Ice",
+          "category": "Status"
+        },
+        {
+          "level": 15,
+          "name": "Aurora Beam",
+          "type": "Ice",
+          "category": "Special"
+        }
+      ],
+      "experience_table": [
+        {
+          "level": 1,
+          "total_exp": 0,
+          "exp_to_next": 9
+        },
+        {
+          "level": 2,
+          "total_exp": 9,
+          "exp_to_next": 48
+        },
+        {
+          "level": 3,
+          "total_exp": 57,
+          "exp_to_next": 39
+        },
+        {
+          "level": 4,
+          "total_exp": 96,
+          "exp_to_next": 39
+        },
+        {
+          "level": 5,
+          "total_exp": 135,
+          "exp_to_next": 44
+        },
+        {
+          "level": 6,
+          "total_exp": 179,
+          "exp_to_next": 57
+        },
+        {
+          "level": 7,
+          "total_exp": 236,
+          "exp_to_next": 78
+        },
+        {
+          "level": 8,
+          "total_exp": 314,
+          "exp_to_next": 105
+        },
+        {
+          "level": 9,
+          "total_exp": 419,
+          "exp_to_next": 141
+        },
+        {
+          "level": 10,
+          "total_exp": 560,
+          "exp_to_next": 182
+        },
+        {
+          "level": 11,
+          "total_exp": 742,
+          "exp_to_next": 231
+        },
+        {
+          "level": 12,
+          "total_exp": 973,
+          "exp_to_next": 288
+        },
+        {
+          "level": 13,
+          "total_exp": 1261,
+          "exp_to_next": 351
+        },
+        {
+          "level": 14,
+          "total_exp": 1612,
+          "exp_to_next": 423
+        },
+        {
+          "level": 15,
+          "total_exp": 2035,
+          "exp_to_next": 500
+        },
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": null
+        }
+      ],
+      "type_effectiveness": {
+        "offensive": {
+          "super_effective": [
+            "Grass",
+            "Ground",
+            "Flying",
+            "Dragon"
+          ],
+          "not_very_effective": [
+            "Fire",
+            "Water",
+            "Ice",
+            "Steel"
+          ],
+          "no_effect": []
+        },
+        "defensive": {
+          "weaknesses": [
+            "Fire",
+            "Fighting",
+            "Rock",
+            "Steel"
+          ],
+          "resistances": [
+            "Ice"
+          ],
+          "immunities_from_typing": []
+        }
+      },
+      "mechanics_status": "Approved for website implementation",
+      "level_up_moveset_status": "Complete (Arctix first stage Levels 1–15)"
     },
     {
       "number": 17,
