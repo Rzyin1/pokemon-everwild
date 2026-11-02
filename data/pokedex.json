@@ -6092,6 +6092,255 @@
       },
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Complete (Arctivale final stage Levels 32–100)"
+    },
+    {
+      "number": 19,
+      "name": "Joeyjab",
+      "category": "Sparring Pokémon",
+      "type1": "Fighting",
+      "type2": null,
+      "inspiration": "Young kangaroo / Boxer",
+      "stage": 1,
+      "evolution_line": [
+        19,
+        20,
+        21
+      ],
+      "height_m": 0.7,
+      "weight_kg": 18,
+      "appearance": "Small orange-brown kangaroo with large upright ears, cream chest and muzzle, red boxing gloves and body markings, powerful hind legs, a curved tail, and a determined sparring stance.",
+      "pokedex_entry": "Joeyjab is an energetic Pokémon that spends much of its day practicing punches against anything it can find. Its powerful hind legs help it maintain balance while delivering quick combinations with its padded fists. Despite its small size, Joeyjab never backs down from a friendly sparring match.",
+      "battle_role": "Physical attacker and defender",
+      "images": {
+        "solo": "019_Joeyjab.png",
+        "shiny": "019_Joeyjab (Shiny).png"
+      },
+      "shiny_appearance": {
+        "main_fur": "Charcoal gray",
+        "chest_and_muzzle": "Silver-white",
+        "markings": "Bright cyan",
+        "gloves": "Dark charcoal with cyan accents",
+        "eyes": "Bright cyan",
+        "tail_and_paws": "Matching charcoal and silver coloration",
+        "same_for_both_genders": true
+      },
+      "base_stats": {
+        "hp": 55,
+        "attack": 75,
+        "defense": 65,
+        "special_attack": 30,
+        "special_defense": 45,
+        "speed": 40,
+        "total": 310
+      },
+      "abilities": [
+        {
+          "name": "Iron Fist",
+          "slot": "A",
+          "description": "Increases the power of eligible punching moves by 20%. Boosts Mach Punch, but not Arm Thrust."
+        },
+        {
+          "name": "Battle Armor",
+          "slot": "B",
+          "description": "Prevents the Pokémon from receiving critical hits while this ability is active; it does not increase Defense."
+        }
+      ],
+      "ability_assignment": "Each individual receives either Iron Fist or Battle Armor with equal 50% assignment probability; the chosen regular ability is retained through Rookick and Kangarush. No hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "evolution_levels": {
+        "to_stage_2": 16,
+        "to_stage_3": 40
+      },
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "retains_previous_moves": true,
+      "evolution_family_approved_bst": {
+        "Joeyjab": 310,
+        "Rookick": 435,
+        "Kangarush": 550
+      },
+      "catch_rate": 45,
+      "base_exp_yield": 62,
+      "ev_yield": {
+        "attack": 1
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "type_effectiveness": {
+        "offensive": {
+          "super_effective": [
+            "Normal",
+            "Ice",
+            "Rock",
+            "Dark",
+            "Steel"
+          ],
+          "not_very_effective": [
+            "Poison",
+            "Flying",
+            "Psychic",
+            "Bug",
+            "Fairy"
+          ],
+          "no_effect": [
+            "Ghost"
+          ]
+        },
+        "defensive": {
+          "weaknesses": [
+            "Flying",
+            "Psychic",
+            "Fairy"
+          ],
+          "resistances": [
+            "Bug",
+            "Rock",
+            "Dark"
+          ],
+          "immunities_from_typing": []
+        }
+      },
+      "moves": [
+        {
+          "level": 1,
+          "name": "Pound",
+          "type": "Normal",
+          "category": "Physical",
+          "description": "A basic Normal-type physical attack."
+        },
+        {
+          "level": 1,
+          "name": "Leer",
+          "type": "Normal",
+          "category": "Status",
+          "description": "Lowers the opponent's Defense by one stage."
+        },
+        {
+          "level": 4,
+          "name": "Arm Thrust",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A multi-hit Fighting-type physical move. Not boosted by Iron Fist."
+        },
+        {
+          "level": 7,
+          "name": "Focus Energy",
+          "type": "Normal",
+          "category": "Status",
+          "description": "Increases the user's critical-hit ratio."
+        },
+        {
+          "level": 10,
+          "name": "Mach Punch",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A priority Fighting-type punching attack that benefits from Iron Fist."
+        },
+        {
+          "level": 13,
+          "name": "Double Kick",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A Fighting-type physical move that strikes twice."
+        },
+        {
+          "level": 15,
+          "name": "Bulk Up",
+          "type": "Fighting",
+          "category": "Status",
+          "description": "Raises the user's Attack and Defense by one stage each."
+        }
+      ],
+      "experience_table": [
+        {
+          "level": 1,
+          "total_exp": 0,
+          "exp_to_next": 9
+        },
+        {
+          "level": 2,
+          "total_exp": 9,
+          "exp_to_next": 48
+        },
+        {
+          "level": 3,
+          "total_exp": 57,
+          "exp_to_next": 39
+        },
+        {
+          "level": 4,
+          "total_exp": 96,
+          "exp_to_next": 39
+        },
+        {
+          "level": 5,
+          "total_exp": 135,
+          "exp_to_next": 44
+        },
+        {
+          "level": 6,
+          "total_exp": 179,
+          "exp_to_next": 57
+        },
+        {
+          "level": 7,
+          "total_exp": 236,
+          "exp_to_next": 78
+        },
+        {
+          "level": 8,
+          "total_exp": 314,
+          "exp_to_next": 105
+        },
+        {
+          "level": 9,
+          "total_exp": 419,
+          "exp_to_next": 141
+        },
+        {
+          "level": 10,
+          "total_exp": 560,
+          "exp_to_next": 182
+        },
+        {
+          "level": 11,
+          "total_exp": 742,
+          "exp_to_next": 231
+        },
+        {
+          "level": 12,
+          "total_exp": 973,
+          "exp_to_next": 288
+        },
+        {
+          "level": 13,
+          "total_exp": 1261,
+          "exp_to_next": 351
+        },
+        {
+          "level": 14,
+          "total_exp": 1612,
+          "exp_to_next": 423
+        },
+        {
+          "level": 15,
+          "total_exp": 2035,
+          "exp_to_next": 500
+        },
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": null
+        }
+      ],
+      "design_status": "Approved",
+      "mechanics_status": "Approved for website implementation",
+      "level_up_moveset_status": "Complete (Joeyjab first stage Levels 1–15)",
+      "notes": "Approved #019 Joeyjab. Preserve exact approved Sparring Pokémon Pokédex entry. Normal and shiny art from current repository files 019_Joeyjab.png and 019_Joeyjab (Shiny).png; original conversation source filenames were different and do not establish repository paths. This shiny is the only current uploaded Joeyjab shiny. Evolves into Rookick at Level 16 and Kangarush at Level 40; approved BST progression 310→435→550. Evolutions retain ability, moves and cumulative Medium Slow EXP. Mach Punch is boosted by Iron Fist; Arm Thrust is not. No hidden ability or gender appearance differences."
     }
   ]
 }
