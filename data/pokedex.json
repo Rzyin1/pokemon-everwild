@@ -1805,7 +1805,7 @@
       "category": "Ripple Pokémon",
       "type1": "Water",
       "type2": null,
-      "inspiration": "Giant salamander",
+      "inspiration": "Giant Salamander",
       "stage": 1,
       "evolution_line": [
         7,
@@ -1820,11 +1820,13 @@
       "abilities": [
         {
           "name": "Torrent",
-          "slot": "regular"
+          "slot": "A",
+          "description": "Increases the power of Water-type moves by 50% when the Pokémon has one-third or less of its maximum HP remaining."
         },
         {
           "name": "Water Absorb",
-          "slot": "regular"
+          "slot": "B",
+          "description": "Grants immunity to Water-type moves and restores 25% of maximum HP when successfully affected by one."
         }
       ],
       "base_stats": {
@@ -1841,6 +1843,74 @@
         "to_stage_3": 40
       },
       "moves": [
+        {
+          "level": 1,
+          "name": "Water Gun",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "level": 4,
+          "name": "Mud-Slap",
+          "type": "Ground",
+          "category": "Special"
+        },
+        {
+          "level": 7,
+          "name": "Withdraw",
+          "type": "Water",
+          "category": "Status"
+        },
+        {
+          "level": 10,
+          "name": "Bite",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "level": 13,
+          "name": "Water Pulse",
+          "type": "Water",
+          "category": "Special"
+        },
+        {
+          "level": 16,
+          "name": "Aqua Ring",
+          "type": "Water",
+          "category": "Status"
+        }
+      ],
+      "level_up_moveset_status": "Complete (Ripplet stage Levels 1–19)",
+      "design_status": "Approved",
+      "ability_assignment": "Ability A (Torrent) or Ability B (Water Absorb), each with 50% probability. The assigned ability is retained through evolution. No hidden ability.",
+      "images": {
+        "concept": "#007 Ripplet.png",
+        "solo": "#007 Ripplet.png",
+        "shiny": "#007 Ripplet (Shiny).png"
+      },
+      "notes": "Approved #007 Ripplet profile. Preserve exact Pokédex entry and approved normal artwork. Special-attacking 325 BST. Seven level-up moves through Level 16; Level 20 Mud Shot belongs to Ripplash. Automatic evolution at Level 20 retains accumulated EXP and learned moves. Shiny color palette: deep purple body, pale underside, turquoise fins and golden eyes; no gender-based appearance differences.",
+      "battle_role": "Slow, defensive special attacker",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 65,
+      "ev_yield": {
+        "special_attack": 1
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "original_family_moveset": [
         {
           "level": 1,
           "name": "Water Gun"
@@ -1874,14 +1944,110 @@
           "name": "Mud Shot"
         }
       ],
-      "level_up_moveset_status": "Complete (approved evolutionary-line progression)",
-      "design_status": "Finalized; approved for Pokédex",
-      "ability_assignment": "One ability is randomly assigned when generated; each available ability has an equal chance. The assigned ability carries through evolution.",
-      "images": {
-        "concept": "#007 Ripplet.png",
-        "solo": "#007 Ripplet.png"
-      },
-      "notes": "No hidden abilities. Available abilities: Torrent and Water Absorb, each with equal probability. Evolution line and approved details finalized; no GitHub upload beyond this data update is pending."
+      "retains_previous_moves": true,
+      "experience_table": [
+        {
+          "level": 1,
+          "total_exp": 0,
+          "exp_to_next": 9
+        },
+        {
+          "level": 2,
+          "total_exp": 9,
+          "exp_to_next": 48
+        },
+        {
+          "level": 3,
+          "total_exp": 57,
+          "exp_to_next": 39
+        },
+        {
+          "level": 4,
+          "total_exp": 96,
+          "exp_to_next": 39
+        },
+        {
+          "level": 5,
+          "total_exp": 135,
+          "exp_to_next": 44
+        },
+        {
+          "level": 6,
+          "total_exp": 179,
+          "exp_to_next": 57
+        },
+        {
+          "level": 7,
+          "total_exp": 236,
+          "exp_to_next": 78
+        },
+        {
+          "level": 8,
+          "total_exp": 314,
+          "exp_to_next": 105
+        },
+        {
+          "level": 9,
+          "total_exp": 419,
+          "exp_to_next": 141
+        },
+        {
+          "level": 10,
+          "total_exp": 560,
+          "exp_to_next": 182
+        },
+        {
+          "level": 11,
+          "total_exp": 742,
+          "exp_to_next": 231
+        },
+        {
+          "level": 12,
+          "total_exp": 973,
+          "exp_to_next": 288
+        },
+        {
+          "level": 13,
+          "total_exp": 1261,
+          "exp_to_next": 351
+        },
+        {
+          "level": 14,
+          "total_exp": 1612,
+          "exp_to_next": 423
+        },
+        {
+          "level": 15,
+          "total_exp": 2035,
+          "exp_to_next": 500
+        },
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": 585
+        },
+        {
+          "level": 17,
+          "total_exp": 3120,
+          "exp_to_next": 678
+        },
+        {
+          "level": 18,
+          "total_exp": 3798,
+          "exp_to_next": 777
+        },
+        {
+          "level": 19,
+          "total_exp": 4575,
+          "exp_to_next": 885
+        },
+        {
+          "level": 20,
+          "total_exp": 5460,
+          "exp_to_next": null
+        }
+      ],
+      "mechanics_status": "Approved for website implementation"
     },
     {
       "number": 8,
