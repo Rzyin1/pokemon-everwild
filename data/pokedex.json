@@ -4216,9 +4216,9 @@
         14,
         15
       ],
-      "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
-      "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
-      "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
+      "design_status": "Approved",
+      "battle_role": "Very fast physical attacker",
+      "notes": "Approved #014 Kivarra. Exact existing Pokédex entry and intentional NORMAL artwork assignment #015 Kivarion.png preserved (Kivarion normal uses #014 Kivarra.png). Link Kivarra shiny using actual uploaded file #014 Kivarra (Shiny).png. Six new moves at Levels 19, 22, 25, 28, 31 and 34; Level 36 Extreme Speed belongs to Kivarion. Evolves automatically at Level 36 with accumulated EXP, previously learned moves and assigned ability retained. No extra evolution-exclusive move at Level 18. Identical normal and shiny art for both genders.",
       "pokedex_entry": "Kivarra spends much of its day racing across open grasslands, strengthening its legs and refining its hunting instincts. Specialized pads on its paws absorb the impact of high-speed movement while its fur stores electrical energy. When approaching its maximum speed, bright sparks race along its body.",
       "height_m": 0.9,
       "weight_kg": 32,
@@ -4234,14 +4234,75 @@
       "abilities": [
         {
           "name": "Static",
-          "slot": "regular"
+          "slot": "A",
+          "description": "Has a 30% chance to paralyze an opponent when that opponent makes contact."
         },
         {
           "name": "Motor Drive",
-          "slot": "regular"
+          "slot": "B",
+          "description": "Grants immunity to applicable Electric-type moves and raises Speed by one stage when activated."
         }
       ],
       "moves": [
+        {
+          "level": 19,
+          "name": "Bite",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "level": 22,
+          "name": "Double Kick",
+          "type": "Fighting",
+          "category": "Physical"
+        },
+        {
+          "level": 25,
+          "name": "Electro Ball",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "level": 28,
+          "name": "Thunder Fang",
+          "type": "Electric",
+          "category": "Physical"
+        },
+        {
+          "level": 31,
+          "name": "Crunch",
+          "type": "Dark",
+          "category": "Physical"
+        },
+        {
+          "level": 34,
+          "name": "Wild Charge",
+          "type": "Electric",
+          "category": "Physical"
+        }
+      ],
+      "level_up_moveset_status": "Complete (Kivarra middle-stage Levels 18–35)",
+      "images": {
+        "solo": "#015 Kivarion.png",
+        "shiny": "#014 Kivarra (Shiny).png"
+      },
+      "ability_assignment": "One of two regular abilities, Static (Ability A) or Motor Drive (Ability B), assigned with equal 50% probability when Kivolt is generated. The assigned ability carries through Kivarra and Kivarion. No hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 142,
+      "ev_yield": {
+        "speed": 2
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "evolution_move_at_18": false,
+      "original_family_moveset": [
         {
           "level": 1,
           "name": "Tackle"
@@ -4319,10 +4380,133 @@
           "name": "Giga Impact"
         }
       ],
-      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Extreme Speed learned on evolution to Kivarion at level 36)",
-      "images": {
-        "solo": "#015 Kivarion.png"
-      }
+      "retains_previous_moves": true,
+      "inherited_level_up_moves_from": 13,
+      "experience_table": [
+        {
+          "level": 18,
+          "total_exp": 3798,
+          "exp_to_next": 777
+        },
+        {
+          "level": 19,
+          "total_exp": 4575,
+          "exp_to_next": 885
+        },
+        {
+          "level": 20,
+          "total_exp": 5460,
+          "exp_to_next": 998
+        },
+        {
+          "level": 21,
+          "total_exp": 6458,
+          "exp_to_next": 1119
+        },
+        {
+          "level": 22,
+          "total_exp": 7577,
+          "exp_to_next": 1248
+        },
+        {
+          "level": 23,
+          "total_exp": 8825,
+          "exp_to_next": 1383
+        },
+        {
+          "level": 24,
+          "total_exp": 10208,
+          "exp_to_next": 1527
+        },
+        {
+          "level": 25,
+          "total_exp": 11735,
+          "exp_to_next": 1676
+        },
+        {
+          "level": 26,
+          "total_exp": 13411,
+          "exp_to_next": 1833
+        },
+        {
+          "level": 27,
+          "total_exp": 15244,
+          "exp_to_next": 1998
+        },
+        {
+          "level": 28,
+          "total_exp": 17242,
+          "exp_to_next": 2169
+        },
+        {
+          "level": 29,
+          "total_exp": 19411,
+          "exp_to_next": 2349
+        },
+        {
+          "level": 30,
+          "total_exp": 21760,
+          "exp_to_next": 2534
+        },
+        {
+          "level": 31,
+          "total_exp": 24294,
+          "exp_to_next": 2727
+        },
+        {
+          "level": 32,
+          "total_exp": 27021,
+          "exp_to_next": 2928
+        },
+        {
+          "level": 33,
+          "total_exp": 29949,
+          "exp_to_next": 3135
+        },
+        {
+          "level": 34,
+          "total_exp": 33084,
+          "exp_to_next": 3351
+        },
+        {
+          "level": 35,
+          "total_exp": 36435,
+          "exp_to_next": 3572
+        },
+        {
+          "level": 36,
+          "total_exp": 40007,
+          "exp_to_next": null
+        }
+      ],
+      "type_effectiveness": {
+        "offensive": {
+          "super_effective": [
+            "Water",
+            "Flying"
+          ],
+          "not_very_effective": [
+            "Electric",
+            "Grass",
+            "Dragon"
+          ],
+          "no_effect": [
+            "Ground"
+          ]
+        },
+        "defensive": {
+          "weaknesses": [
+            "Ground"
+          ],
+          "resistances": [
+            "Electric",
+            "Flying",
+            "Steel"
+          ],
+          "immunities_from_typing": []
+        }
+      },
+      "mechanics_status": "Approved for website implementation"
     },
     {
       "number": 15,
