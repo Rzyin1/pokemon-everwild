@@ -5505,8 +5505,8 @@
       "number": 18,
       "name": "Arctivale",
       "stage": 3,
-      "category": "Arctic Fox Pokémon",
-      "pokedex_entry": "A majestic Pokémon that commands the cold. It can generate intense cold air, creating ice and snowstorms to protect its territory.",
+      "category": "Glacial Guardian Pokémon",
+      "pokedex_entry": "Arctivale is a majestic Pokémon that watches over vast frozen territories. Its crystalline fur channels powerful icy energy, allowing it to summon fierce blizzards at will. Despite its overwhelming power, Arctivale is known to guide lost travelers through snowstorms, shielding them from the bitter cold.",
       "appearance": "Majestic large white arctic fox with thick layered mane, blue crystalline formations along shoulders and back, intense blue eyes and huge bushy tail.",
       "type1": "Ice",
       "type2": null,
@@ -5516,13 +5516,14 @@
         17,
         18
       ],
-      "design_status": "Approved concept and solo artwork uploaded",
+      "design_status": "Approved",
       "images": {
         "concept": "018-arctivale.png",
         "artwork": "#018 Arctivale.png",
-        "solo": "#018 Arctivale.png"
+        "solo": "#018 Arctivale.png",
+        "shiny": "#018 Arctivale (Shiny).png"
       },
-      "notes": "Names, typing, artwork, evolution levels, measurements and base stats approved. Abilities and moves pending.",
+      "notes": "Approved #018 Arctivale. Classification changed to Glacial Guardian Pokémon and its exact approved Pokédex entry replaced. Existing concept assignment 018-arctivale.png and normal solo/artwork #018 Arctivale.png remain unchanged. Existing stage-specific approved shiny file #018 Arctivale (Shiny).png linked without artwork changes. Seven final-stage moves begin with Ice Beam at Level 32, with no additional evolution-exclusive move. Previously learned moves, accumulated Medium Slow EXP, and assigned Snow Cloak/Ice Body ability persist from Arctix and Arctivar. Pure Ice type. No visual gender differences.",
       "evolution_levels": {
         "from_stage_2": 32
       },
@@ -5536,7 +5537,561 @@
         "special_defense": 85,
         "speed": 120,
         "total": 530
-      }
+      },
+      "battle_role": "Fast special attacker",
+      "abilities": [
+        {
+          "name": "Snow Cloak",
+          "slot": "A",
+          "description": "During snow, multiplies the accuracy of applicable incoming moves by 0.8, effectively reducing their accuracy by 20%."
+        },
+        {
+          "name": "Ice Body",
+          "slot": "B",
+          "description": "Restores 1/16 of maximum HP at the end of each turn while snow is active, using standard HP rounding rules."
+        }
+      ],
+      "ability_assignment": "One of Snow Cloak or Ice Body is selected with equal (50%) probability when Arctix is generated. The original choice is retained through Arctivar and Arctivale. No hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 230,
+      "ev_yield": {
+        "special_attack": 3
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "retains_previous_moves": true,
+      "inherited_level_up_moves_from": [
+        16,
+        17
+      ],
+      "evolution_move_at_32": false,
+      "moves": [
+        {
+          "level": 32,
+          "name": "Ice Beam",
+          "type": "Ice",
+          "category": "Special",
+          "description": "A powerful, reliable Ice-type special attack learned at evolution into Arctivale."
+        },
+        {
+          "level": 36,
+          "name": "Extrasensory",
+          "type": "Psychic",
+          "category": "Special",
+          "description": "Provides Psychic-type special coverage against Fighting- and Poison-type Pokémon."
+        },
+        {
+          "level": 40,
+          "name": "Calm Mind",
+          "type": "Psychic",
+          "category": "Status",
+          "description": "Raises the user's Special Attack and Special Defense by one stage each."
+        },
+        {
+          "level": 44,
+          "name": "Blizzard",
+          "type": "Ice",
+          "category": "Special",
+          "description": "A powerful Ice-type special attack that bypasses accuracy checks during snow."
+        },
+        {
+          "level": 48,
+          "name": "Aurora Veil",
+          "type": "Ice",
+          "category": "Status",
+          "description": "Reduces incoming damage to the user's team while active. Ordinarily requires snow to use successfully."
+        },
+        {
+          "level": 52,
+          "name": "Dazzling Gleam",
+          "type": "Fairy",
+          "category": "Special",
+          "description": "Provides Fairy-type special coverage."
+        },
+        {
+          "level": 56,
+          "name": "Hyper Beam",
+          "type": "Normal",
+          "category": "Special",
+          "description": "A powerful Normal-type special attack that normally requires a recharge turn after a successful use."
+        }
+      ],
+      "original_family_moveset": [
+        {
+          "original_stage": "Arctix",
+          "level": 1,
+          "name": "Tackle",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "original_stage": "Arctix",
+          "level": 1,
+          "name": "Tail Whip",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "original_stage": "Arctix",
+          "level": 4,
+          "name": "Powder Snow",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "original_stage": "Arctix",
+          "level": 7,
+          "name": "Quick Attack",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "original_stage": "Arctix",
+          "level": 10,
+          "name": "Icy Wind",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "original_stage": "Arctix",
+          "level": 13,
+          "name": "Snowscape",
+          "type": "Ice",
+          "category": "Status"
+        },
+        {
+          "original_stage": "Arctix",
+          "level": 15,
+          "name": "Aurora Beam",
+          "type": "Ice",
+          "category": "Special"
+        },
+        {
+          "original_stage": "Arctivar",
+          "level": 18,
+          "name": "Bite",
+          "type": "Dark",
+          "category": "Physical",
+          "description": "Dark-type physical coverage."
+        },
+        {
+          "original_stage": "Arctivar",
+          "level": 21,
+          "name": "Swift",
+          "type": "Normal",
+          "category": "Special",
+          "description": "A reliable Normal-type special attack."
+        },
+        {
+          "original_stage": "Arctivar",
+          "level": 24,
+          "name": "Ice Shard",
+          "type": "Ice",
+          "category": "Physical",
+          "description": "An Ice-type priority attack under normal move priority conditions."
+        },
+        {
+          "original_stage": "Arctivar",
+          "level": 27,
+          "name": "Freeze-Dry",
+          "type": "Ice",
+          "category": "Special",
+          "description": "An Ice-type special attack that is also super effective against Water-type Pokémon."
+        },
+        {
+          "original_stage": "Arctivar",
+          "level": 30,
+          "name": "Agility",
+          "type": "Psychic",
+          "category": "Status",
+          "description": "Raises the user's Speed by two stages."
+        }
+      ],
+      "experience_table": [
+        {
+          "level": 32,
+          "total_exp": 27021,
+          "exp_to_next": 2928
+        },
+        {
+          "level": 33,
+          "total_exp": 29949,
+          "exp_to_next": 3135
+        },
+        {
+          "level": 34,
+          "total_exp": 33084,
+          "exp_to_next": 3351
+        },
+        {
+          "level": 35,
+          "total_exp": 36435,
+          "exp_to_next": 3572
+        },
+        {
+          "level": 36,
+          "total_exp": 40007,
+          "exp_to_next": 3801
+        },
+        {
+          "level": 37,
+          "total_exp": 43808,
+          "exp_to_next": 4038
+        },
+        {
+          "level": 38,
+          "total_exp": 47846,
+          "exp_to_next": 4281
+        },
+        {
+          "level": 39,
+          "total_exp": 52127,
+          "exp_to_next": 4533
+        },
+        {
+          "level": 40,
+          "total_exp": 56660,
+          "exp_to_next": 4790
+        },
+        {
+          "level": 41,
+          "total_exp": 61450,
+          "exp_to_next": 5055
+        },
+        {
+          "level": 42,
+          "total_exp": 66505,
+          "exp_to_next": 5328
+        },
+        {
+          "level": 43,
+          "total_exp": 71833,
+          "exp_to_next": 5607
+        },
+        {
+          "level": 44,
+          "total_exp": 77440,
+          "exp_to_next": 5895
+        },
+        {
+          "level": 45,
+          "total_exp": 83335,
+          "exp_to_next": 6188
+        },
+        {
+          "level": 46,
+          "total_exp": 89523,
+          "exp_to_next": 6489
+        },
+        {
+          "level": 47,
+          "total_exp": 96012,
+          "exp_to_next": 6798
+        },
+        {
+          "level": 48,
+          "total_exp": 102810,
+          "exp_to_next": 7113
+        },
+        {
+          "level": 49,
+          "total_exp": 109923,
+          "exp_to_next": 7437
+        },
+        {
+          "level": 50,
+          "total_exp": 117360,
+          "exp_to_next": 7766
+        },
+        {
+          "level": 51,
+          "total_exp": 125126,
+          "exp_to_next": 8103
+        },
+        {
+          "level": 52,
+          "total_exp": 133229,
+          "exp_to_next": 8448
+        },
+        {
+          "level": 53,
+          "total_exp": 141677,
+          "exp_to_next": 8799
+        },
+        {
+          "level": 54,
+          "total_exp": 150476,
+          "exp_to_next": 9159
+        },
+        {
+          "level": 55,
+          "total_exp": 159635,
+          "exp_to_next": 9524
+        },
+        {
+          "level": 56,
+          "total_exp": 169159,
+          "exp_to_next": 9897
+        },
+        {
+          "level": 57,
+          "total_exp": 179056,
+          "exp_to_next": 10278
+        },
+        {
+          "level": 58,
+          "total_exp": 189334,
+          "exp_to_next": 10665
+        },
+        {
+          "level": 59,
+          "total_exp": 199999,
+          "exp_to_next": 11061
+        },
+        {
+          "level": 60,
+          "total_exp": 211060,
+          "exp_to_next": 11462
+        },
+        {
+          "level": 61,
+          "total_exp": 222522,
+          "exp_to_next": 11871
+        },
+        {
+          "level": 62,
+          "total_exp": 234393,
+          "exp_to_next": 12288
+        },
+        {
+          "level": 63,
+          "total_exp": 246681,
+          "exp_to_next": 12711
+        },
+        {
+          "level": 64,
+          "total_exp": 259392,
+          "exp_to_next": 13143
+        },
+        {
+          "level": 65,
+          "total_exp": 272535,
+          "exp_to_next": 13580
+        },
+        {
+          "level": 66,
+          "total_exp": 286115,
+          "exp_to_next": 14025
+        },
+        {
+          "level": 67,
+          "total_exp": 300140,
+          "exp_to_next": 14478
+        },
+        {
+          "level": 68,
+          "total_exp": 314618,
+          "exp_to_next": 14937
+        },
+        {
+          "level": 69,
+          "total_exp": 329555,
+          "exp_to_next": 15405
+        },
+        {
+          "level": 70,
+          "total_exp": 344960,
+          "exp_to_next": 15878
+        },
+        {
+          "level": 71,
+          "total_exp": 360838,
+          "exp_to_next": 16359
+        },
+        {
+          "level": 72,
+          "total_exp": 377197,
+          "exp_to_next": 16848
+        },
+        {
+          "level": 73,
+          "total_exp": 394045,
+          "exp_to_next": 17343
+        },
+        {
+          "level": 74,
+          "total_exp": 411388,
+          "exp_to_next": 17847
+        },
+        {
+          "level": 75,
+          "total_exp": 429235,
+          "exp_to_next": 18356
+        },
+        {
+          "level": 76,
+          "total_exp": 447591,
+          "exp_to_next": 18873
+        },
+        {
+          "level": 77,
+          "total_exp": 466464,
+          "exp_to_next": 19398
+        },
+        {
+          "level": 78,
+          "total_exp": 485862,
+          "exp_to_next": 19929
+        },
+        {
+          "level": 79,
+          "total_exp": 505791,
+          "exp_to_next": 20469
+        },
+        {
+          "level": 80,
+          "total_exp": 526260,
+          "exp_to_next": 21014
+        },
+        {
+          "level": 81,
+          "total_exp": 547274,
+          "exp_to_next": 21567
+        },
+        {
+          "level": 82,
+          "total_exp": 568841,
+          "exp_to_next": 22128
+        },
+        {
+          "level": 83,
+          "total_exp": 590969,
+          "exp_to_next": 22695
+        },
+        {
+          "level": 84,
+          "total_exp": 613664,
+          "exp_to_next": 23271
+        },
+        {
+          "level": 85,
+          "total_exp": 636935,
+          "exp_to_next": 23852
+        },
+        {
+          "level": 86,
+          "total_exp": 660787,
+          "exp_to_next": 24441
+        },
+        {
+          "level": 87,
+          "total_exp": 685228,
+          "exp_to_next": 25038
+        },
+        {
+          "level": 88,
+          "total_exp": 710266,
+          "exp_to_next": 25641
+        },
+        {
+          "level": 89,
+          "total_exp": 735907,
+          "exp_to_next": 26253
+        },
+        {
+          "level": 90,
+          "total_exp": 762160,
+          "exp_to_next": 26870
+        },
+        {
+          "level": 91,
+          "total_exp": 789030,
+          "exp_to_next": 27495
+        },
+        {
+          "level": 92,
+          "total_exp": 816525,
+          "exp_to_next": 28128
+        },
+        {
+          "level": 93,
+          "total_exp": 844653,
+          "exp_to_next": 28767
+        },
+        {
+          "level": 94,
+          "total_exp": 873420,
+          "exp_to_next": 29415
+        },
+        {
+          "level": 95,
+          "total_exp": 902835,
+          "exp_to_next": 30068
+        },
+        {
+          "level": 96,
+          "total_exp": 932903,
+          "exp_to_next": 30729
+        },
+        {
+          "level": 97,
+          "total_exp": 963632,
+          "exp_to_next": 31398
+        },
+        {
+          "level": 98,
+          "total_exp": 995030,
+          "exp_to_next": 32073
+        },
+        {
+          "level": 99,
+          "total_exp": 1027103,
+          "exp_to_next": 32757
+        },
+        {
+          "level": 100,
+          "total_exp": 1059860,
+          "exp_to_next": null
+        }
+      ],
+      "type_effectiveness": {
+        "offensive": {
+          "super_effective": [
+            "Grass",
+            "Ground",
+            "Flying",
+            "Dragon"
+          ],
+          "not_very_effective": [
+            "Fire",
+            "Water",
+            "Ice",
+            "Steel"
+          ],
+          "no_effect": []
+        },
+        "defensive": {
+          "weaknesses": [
+            "Fire",
+            "Fighting",
+            "Rock",
+            "Steel"
+          ],
+          "resistances": [
+            "Ice"
+          ],
+          "immunities_from_typing": []
+        }
+      },
+      "mechanics_status": "Approved for website implementation",
+      "level_up_moveset_status": "Complete (Arctivale final stage Levels 32–100)"
     }
   ]
 }
