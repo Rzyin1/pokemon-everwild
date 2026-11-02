@@ -7428,6 +7428,90 @@
         "solo": "027 Ravantom.png",
         "shiny": "027 Ravantom (Shiny).png"
       }
+    },
+    {
+      "type1": "Ground",
+      "type2": null,
+      "inspiration": "Pangolin",
+      "evolution_line": [
+        28,
+        29,
+        30
+      ],
+      "appearance": "Golden-brown and reddish-brown overlapping scales, cream-colored undersides, powerful digging claws, and increasingly heavy stone-like armor.",
+      "shiny_appearance": "Dark charcoal-gray scales with burnt-orange accents, pale sandstone-colored skin, and turquoise eyes.",
+      "design_status": "Pokédex design approved",
+      "shiny_artwork_status": "Individual shiny recolor created; final image quality pending approval.",
+      "notes": "Ground starter family design only. Evolution levels, stats, abilities, moves, catch rates, EVs and EXP are not assigned.",
+      "number": 28,
+      "name": "Pangrit",
+      "category": "Pebble Scale Pokémon",
+      "stage": 1,
+      "stage_label": "First",
+      "height_m": 0.4,
+      "weight_kg": 5,
+      "personality": "Playful, curious, and defensive when startled.",
+      "images": {
+        "solo": "028 Pangrit.png",
+        "shiny": "028 Pangrit (Shiny).png"
+      },
+      "pokedex_entry": "Pangrit is a playful Pokémon that spends much of its day digging small tunnels and searching for interesting stones. Its overlapping scales gradually harden as it grows, protecting its body from falling rocks and loose soil. When startled, Pangrit curls into a tight ball, making itself nearly impossible for smaller predators to harm."
+    },
+    {
+      "type1": "Ground",
+      "type2": null,
+      "inspiration": "Pangolin",
+      "evolution_line": [
+        28,
+        29,
+        30
+      ],
+      "appearance": "Golden-brown and reddish-brown overlapping scales, cream-colored undersides, powerful digging claws, and increasingly heavy stone-like armor.",
+      "shiny_appearance": "Dark charcoal-gray scales with burnt-orange accents, pale sandstone-colored skin, and turquoise eyes.",
+      "design_status": "Pokédex design approved",
+      "shiny_artwork_status": "Individual shiny recolor created; final image quality pending approval.",
+      "notes": "Ground starter family design only. Evolution levels, stats, abilities, moves, catch rates, EVs and EXP are not assigned.",
+      "number": 29,
+      "name": "Pangravel",
+      "category": "Gravel Armor Pokémon",
+      "stage": 2,
+      "stage_label": "Middle",
+      "height_m": 0.9,
+      "weight_kg": 28,
+      "personality": "Territorial, protective of its burrow, and increasingly powerful.",
+      "images": {
+        "solo": "029 Pangravel.png",
+        "shiny": "029 Pangravel (Shiny).png"
+      },
+      "pokedex_entry": "Pangravel uses its powerful claws to carve tunnels through even the most compacted soil. Its thick, overlapping scales have hardened into armor resembling rough stone, allowing it to withstand collapsing tunnels. Territorial by nature, Pangravel fiercely defends its burrow and uses its heavily armored tail to drive away intruders."
+    },
+    {
+      "type1": "Ground",
+      "type2": null,
+      "inspiration": "Pangolin",
+      "evolution_line": [
+        28,
+        29,
+        30
+      ],
+      "appearance": "Golden-brown and reddish-brown overlapping scales, cream-colored undersides, powerful digging claws, and increasingly heavy stone-like armor.",
+      "shiny_appearance": "Dark charcoal-gray scales with burnt-orange accents, pale sandstone-colored skin, and turquoise eyes.",
+      "design_status": "Pokédex design approved",
+      "shiny_artwork_status": "Individual shiny recolor created; final image quality pending approval.",
+      "notes": "Ground starter family design only. Evolution levels, stats, abilities, moves, catch rates, EVs and EXP are not assigned.",
+      "number": 30,
+      "name": "Pangranite",
+      "category": "Granite Armor Pokémon",
+      "stage": 3,
+      "stage_label": "Final",
+      "height_m": 1.8,
+      "weight_kg": 120,
+      "personality": "Fiercely territorial, dominant, and capable of causing powerful ground tremors.",
+      "images": {
+        "solo": "030 Pangranite.png",
+        "shiny": "030 Pangranite (Shiny).png"
+      },
+      "pokedex_entry": "Pangranite possesses an enormous body protected by scales as hard as granite. Its massive claws can tear through solid rock, allowing it to carve vast underground tunnels. Fiercely territorial, Pangranite patrols its underground domain and uses its immense strength to drive away intruders. When threatened, it slams its armored tail against the ground, sending powerful tremors through the surrounding area."
     }
   ]
 }
