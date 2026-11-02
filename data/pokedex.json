@@ -6341,6 +6341,355 @@
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Complete (Joeyjab first stage Levels 1–15)",
       "notes": "Approved #019 Joeyjab. Preserve exact approved Sparring Pokémon Pokédex entry. Normal and shiny art from current repository files 019_Joeyjab.png and 019_Joeyjab (Shiny).png; original conversation source filenames were different and do not establish repository paths. This shiny is the only current uploaded Joeyjab shiny. Evolves into Rookick at Level 16 and Kangarush at Level 40; approved BST progression 310→435→550. Evolutions retain ability, moves and cumulative Medium Slow EXP. Mach Punch is boosted by Iron Fist; Arm Thrust is not. No hidden ability or gender appearance differences."
+    },
+    {
+      "number": 20,
+      "name": "Rookick",
+      "category": "Kickboxer Pokémon",
+      "type1": "Fighting",
+      "type2": null,
+      "inspiration": "Kangaroo / Kickboxing",
+      "stage": 2,
+      "evolution_line": [
+        19,
+        20,
+        21
+      ],
+      "height_m": 1.2,
+      "weight_kg": 38,
+      "appearance": "Orange-brown kangaroo kickboxer with upright ears, cream chest and muzzle, red-and-black boxing gloves, red body markings, raised kicking leg, strong hind legs, curved tail and determined expression.",
+      "pokedex_entry": "Rookick is a disciplined fighter that combines lightning-fast punches with devastating kicks. Its powerful hind legs allow it to maintain perfect balance while delivering rapid combinations. It spends hours training against stronger opponents, constantly refining its technique in preparation for tougher battles.",
+      "battle_role": "Physical attacker and defender",
+      "images": {
+        "solo": "020_Rookick.png",
+        "shiny": "020_Rookick (Shiny).png"
+      },
+      "shiny_appearance": {
+        "fur": "Charcoal gray",
+        "chest_and_muzzle": "Silver-white",
+        "body_markings": "Bright cyan",
+        "boxing_gloves": "Dark charcoal with cyan accents",
+        "eyes": "Bright cyan",
+        "tail": "Charcoal with silver-gray shading",
+        "paws": "Silver-white and dark charcoal",
+        "same_for_both_genders": true
+      },
+      "base_stats": {
+        "hp": 75,
+        "attack": 110,
+        "defense": 95,
+        "special_attack": 35,
+        "special_defense": 60,
+        "speed": 60,
+        "total": 435
+      },
+      "abilities": [
+        {
+          "name": "Iron Fist",
+          "slot": "A",
+          "description": "Boosts the power of eligible punching moves by 20%, including Mach Punch, Bullet Punch and Drain Punch, but not Low Sweep, Brick Break, Counter or High Jump Kick."
+        },
+        {
+          "name": "Battle Armor",
+          "slot": "B",
+          "description": "Prevents opponents from landing critical hits while active. Does not directly increase Defense."
+        }
+      ],
+      "ability_assignment": "One mutually exclusive regular ability: either Iron Fist or Battle Armor, assigned with equal 50% probability when Joeyjab is generated and retained through Rookick and Kangarush. No hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "evolution_levels": {
+        "from_stage_1": 16,
+        "to_stage_3": 40
+      },
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "retains_previous_moves": true,
+      "inherited_level_up_moves_from": 19,
+      "evolution_move_at_16": false,
+      "evolution_move_at_40": false,
+      "evolution_family_approved_bst": {
+        "Joeyjab": 310,
+        "Rookick": 435,
+        "Kangarush": 550
+      },
+      "catch_rate": 45,
+      "base_exp_yield": 150,
+      "ev_yield": {
+        "attack": 2
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "type_effectiveness": {
+        "offensive": {
+          "super_effective": [
+            "Normal",
+            "Ice",
+            "Rock",
+            "Dark",
+            "Steel"
+          ],
+          "not_very_effective": [
+            "Poison",
+            "Flying",
+            "Psychic",
+            "Bug",
+            "Fairy"
+          ],
+          "no_effect": [
+            "Ghost"
+          ]
+        },
+        "defensive": {
+          "weaknesses": [
+            "Flying",
+            "Psychic",
+            "Fairy"
+          ],
+          "resistances": [
+            "Bug",
+            "Rock",
+            "Dark"
+          ],
+          "immunities_from_typing": []
+        }
+      },
+      "moves": [
+        {
+          "level": 18,
+          "name": "Low Sweep",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A Fighting-type physical move that lowers the target's Speed by one stage. Not boosted by Iron Fist."
+        },
+        {
+          "level": 22,
+          "name": "Bullet Punch",
+          "type": "Steel",
+          "category": "Physical",
+          "description": "A priority Steel-type punching move boosted by Iron Fist."
+        },
+        {
+          "level": 26,
+          "name": "Brick Break",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A physical attack that removes applicable Reflect, Light Screen, and Aurora Veil effects from the target's side; not boosted by Iron Fist."
+        },
+        {
+          "level": 30,
+          "name": "Counter",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "Returns twice the damage received from a qualifying physical move during the turn under standard conditions; not boosted by Iron Fist."
+        },
+        {
+          "level": 34,
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A punching move that restores HP based on damage dealt and benefits from Iron Fist."
+        },
+        {
+          "level": 38,
+          "name": "High Jump Kick",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A powerful physical attack that causes crash damage when it misses or fails to connect under applicable battle rules. Not boosted by Iron Fist."
+        }
+      ],
+      "original_family_moveset": [
+        {
+          "level": 1,
+          "name": "Pound",
+          "type": "Normal",
+          "category": "Physical",
+          "description": "A basic Normal-type physical attack.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 1,
+          "name": "Leer",
+          "type": "Normal",
+          "category": "Status",
+          "description": "Lowers the opponent's Defense by one stage.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 4,
+          "name": "Arm Thrust",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A multi-hit Fighting-type physical move. Not boosted by Iron Fist.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 7,
+          "name": "Focus Energy",
+          "type": "Normal",
+          "category": "Status",
+          "description": "Increases the user's critical-hit ratio.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 10,
+          "name": "Mach Punch",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A priority Fighting-type punching attack that benefits from Iron Fist.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 13,
+          "name": "Double Kick",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A Fighting-type physical move that strikes twice.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 15,
+          "name": "Bulk Up",
+          "type": "Fighting",
+          "category": "Status",
+          "description": "Raises the user's Attack and Defense by one stage each.",
+          "original_stage": "Joeyjab"
+        }
+      ],
+      "experience_table": [
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": 585
+        },
+        {
+          "level": 17,
+          "total_exp": 3120,
+          "exp_to_next": 678
+        },
+        {
+          "level": 18,
+          "total_exp": 3798,
+          "exp_to_next": 777
+        },
+        {
+          "level": 19,
+          "total_exp": 4575,
+          "exp_to_next": 885
+        },
+        {
+          "level": 20,
+          "total_exp": 5460,
+          "exp_to_next": 998
+        },
+        {
+          "level": 21,
+          "total_exp": 6458,
+          "exp_to_next": 1119
+        },
+        {
+          "level": 22,
+          "total_exp": 7577,
+          "exp_to_next": 1248
+        },
+        {
+          "level": 23,
+          "total_exp": 8825,
+          "exp_to_next": 1383
+        },
+        {
+          "level": 24,
+          "total_exp": 10208,
+          "exp_to_next": 1527
+        },
+        {
+          "level": 25,
+          "total_exp": 11735,
+          "exp_to_next": 1676
+        },
+        {
+          "level": 26,
+          "total_exp": 13411,
+          "exp_to_next": 1833
+        },
+        {
+          "level": 27,
+          "total_exp": 15244,
+          "exp_to_next": 1998
+        },
+        {
+          "level": 28,
+          "total_exp": 17242,
+          "exp_to_next": 2169
+        },
+        {
+          "level": 29,
+          "total_exp": 19411,
+          "exp_to_next": 2349
+        },
+        {
+          "level": 30,
+          "total_exp": 21760,
+          "exp_to_next": 2534
+        },
+        {
+          "level": 31,
+          "total_exp": 24294,
+          "exp_to_next": 2727
+        },
+        {
+          "level": 32,
+          "total_exp": 27021,
+          "exp_to_next": 2928
+        },
+        {
+          "level": 33,
+          "total_exp": 29949,
+          "exp_to_next": 3135
+        },
+        {
+          "level": 34,
+          "total_exp": 33084,
+          "exp_to_next": 3351
+        },
+        {
+          "level": 35,
+          "total_exp": 36435,
+          "exp_to_next": 3572
+        },
+        {
+          "level": 36,
+          "total_exp": 40007,
+          "exp_to_next": 3801
+        },
+        {
+          "level": 37,
+          "total_exp": 43808,
+          "exp_to_next": 4038
+        },
+        {
+          "level": 38,
+          "total_exp": 47846,
+          "exp_to_next": 4281
+        },
+        {
+          "level": 39,
+          "total_exp": 52127,
+          "exp_to_next": 4533
+        },
+        {
+          "level": 40,
+          "total_exp": 56660,
+          "exp_to_next": null
+        }
+      ],
+      "design_status": "Approved",
+      "mechanics_status": "Approved for website implementation",
+      "level_up_moveset_status": "Complete (Rookick middle stage Levels 16–39)",
+      "notes": "Approved #020 Rookick Kickboxer Pokémon. Original normal art is repository file 020_Rookick.png; shiny path is 020_Rookick (Shiny).png, the existing non-rejected filename. The earlier rejected version named 020_Rookick_Shiny.png must not be used. Shiny file's exact visual equivalence to the original source shiny_rookick_mid_kick_pose.png has not been independently verified. Middle stage moves occur at Levels 18,22,26,30,34,38. Rookick evolves to Kangarush at Level 40; Hammer Arm at Level 40 belongs to Kangarush. No extra evolution-only moves. Retain Joeyjab's learned moves and assigned ability, accumulated Medium Slow EXP, and no gender differences."
     }
   ]
 }
