@@ -6690,6 +6690,591 @@
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Complete (Rookick middle stage Levels 16–39)",
       "notes": "Approved #020 Rookick Kickboxer Pokémon. Original normal art is repository file 020_Rookick.png; shiny path is 020_Rookick (Shiny).png, the existing non-rejected filename. The earlier rejected version named 020_Rookick_Shiny.png must not be used. Shiny file's exact visual equivalence to the original source shiny_rookick_mid_kick_pose.png has not been independently verified. Middle stage moves occur at Levels 18,22,26,30,34,38. Rookick evolves to Kangarush at Level 40; Hammer Arm at Level 40 belongs to Kangarush. No extra evolution-only moves. Retain Joeyjab's learned moves and assigned ability, accumulated Medium Slow EXP, and no gender differences."
+    },
+    {
+      "number": 21,
+      "name": "Kangarush",
+      "category": "Knockout Pokémon",
+      "type1": "Fighting",
+      "type2": null,
+      "stage": 3,
+      "inspiration": "Kangaroo / Professional kickboxing",
+      "evolution_line": [
+        19,
+        20,
+        21
+      ],
+      "height_m": 1.9,
+      "weight_kg": 92,
+      "appearance": "Fully grown muscular orange-brown kangaroo fighter with upright ears, powerful arms and shoulders, red-and-black boxing gloves, cream chest and muzzle, red lightning-like markings, strong hind legs with clawed feet, long muscular tail, and a confident fighting stance.",
+      "pokedex_entry": "Kangarush is a formidable fighter whose powerful punches and devastating kicks can overwhelm even the toughest opponents. Years of intense training have sharpened its reflexes, allowing it to anticipate attacks and counter with incredible precision. Despite its intimidating strength, Kangarush respects worthy opponents and refuses to strike those unable to defend themselves.",
+      "battle_role": "Powerful physical attacker and defender",
+      "images": {
+        "solo": "021_Kangarush.png",
+        "shiny": "021_Kangarush (Shiny).png"
+      },
+      "shiny_appearance": {
+        "main_fur": "Dark charcoal gray",
+        "chest_and_muzzle": "Silver-white",
+        "markings": "Bright cyan",
+        "boxing_gloves": "Charcoal black with cyan accents",
+        "eyes": "Bright cyan",
+        "tail": "Charcoal and silver-gray with cyan accents",
+        "paws": "Silver-white with dark claws",
+        "same_for_both_genders": true
+      },
+      "base_stats": {
+        "hp": 100,
+        "attack": 140,
+        "defense": 120,
+        "special_attack": 40,
+        "special_defense": 80,
+        "speed": 70,
+        "total": 550
+      },
+      "abilities": [
+        {
+          "name": "Iron Fist",
+          "slot": "A",
+          "description": "Boosts eligible punching moves by 20%, including Mach Punch, Bullet Punch, Drain Punch, Hammer Arm, Thunder Punch and Focus Punch; does not boost Blaze Kick, Close Combat or Giga Impact."
+        },
+        {
+          "name": "Battle Armor",
+          "slot": "B",
+          "description": "Prevents opposing attacks from landing critical hits while active; it does not directly raise Defense."
+        }
+      ],
+      "ability_assignment": "Exactly one regular ability, Iron Fist or Battle Armor, selected with 50% chance when Joeyjab is generated and preserved on evolution through Rookick and Kangarush. No hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "evolution_levels": {
+        "from_stage_2": 40
+      },
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "retains_previous_moves": true,
+      "inherited_level_up_moves_from": [
+        19,
+        20
+      ],
+      "evolution_move_at_40": false,
+      "evolution_family_approved_bst": {
+        "Joeyjab": 310,
+        "Rookick": 435,
+        "Kangarush": 550
+      },
+      "catch_rate": 45,
+      "base_exp_yield": 240,
+      "ev_yield": {
+        "attack": 3
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "type_effectiveness": {
+        "offensive": {
+          "super_effective": [
+            "Normal",
+            "Ice",
+            "Rock",
+            "Dark",
+            "Steel"
+          ],
+          "not_very_effective": [
+            "Poison",
+            "Flying",
+            "Psychic",
+            "Bug",
+            "Fairy"
+          ],
+          "no_effect": [
+            "Ghost"
+          ]
+        },
+        "defensive": {
+          "weaknesses": [
+            "Flying",
+            "Psychic",
+            "Fairy"
+          ],
+          "resistances": [
+            "Bug",
+            "Rock",
+            "Dark"
+          ],
+          "immunities_from_typing": []
+        }
+      },
+      "moves": [
+        {
+          "level": 40,
+          "name": "Hammer Arm",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A powerful punching attack that benefits from Iron Fist and lowers the user's Speed by one stage."
+        },
+        {
+          "level": 44,
+          "name": "Blaze Kick",
+          "type": "Fire",
+          "category": "Physical",
+          "description": "A physical kicking attack with increased critical-hit ratio and a chance to burn; not boosted by Iron Fist."
+        },
+        {
+          "level": 48,
+          "name": "Iron Defense",
+          "type": "Steel",
+          "category": "Status",
+          "description": "Raises Defense by two stages."
+        },
+        {
+          "level": 52,
+          "name": "Thunder Punch",
+          "type": "Electric",
+          "category": "Physical",
+          "description": "A physical punching attack with a chance to paralyze the target. Boosted by Iron Fist."
+        },
+        {
+          "level": 56,
+          "name": "Close Combat",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A powerful physical move that lowers the user's Defense and Special Defense by one stage each after use. Not boosted by Iron Fist."
+        },
+        {
+          "level": 60,
+          "name": "Focus Punch",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "An exceptionally powerful punch boosted by Iron Fist that normally fails if the user takes qualifying damage before attacking."
+        },
+        {
+          "level": 64,
+          "name": "Giga Impact",
+          "type": "Normal",
+          "category": "Physical",
+          "description": "A very powerful physical move that ordinarily requires recharge after successful use. Not boosted by Iron Fist."
+        }
+      ],
+      "original_family_moveset": [
+        {
+          "level": 1,
+          "name": "Pound",
+          "type": "Normal",
+          "category": "Physical",
+          "description": "A basic Normal-type physical attack.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 1,
+          "name": "Leer",
+          "type": "Normal",
+          "category": "Status",
+          "description": "Lowers the opponent's Defense by one stage.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 4,
+          "name": "Arm Thrust",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A multi-hit Fighting-type physical move. Not boosted by Iron Fist.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 7,
+          "name": "Focus Energy",
+          "type": "Normal",
+          "category": "Status",
+          "description": "Increases the user's critical-hit ratio.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 10,
+          "name": "Mach Punch",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A priority Fighting-type punching attack that benefits from Iron Fist.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 13,
+          "name": "Double Kick",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A Fighting-type physical move that strikes twice.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 15,
+          "name": "Bulk Up",
+          "type": "Fighting",
+          "category": "Status",
+          "description": "Raises the user's Attack and Defense by one stage each.",
+          "original_stage": "Joeyjab"
+        },
+        {
+          "level": 18,
+          "name": "Low Sweep",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A Fighting-type physical move that lowers the target's Speed by one stage. Not boosted by Iron Fist.",
+          "original_stage": "Rookick"
+        },
+        {
+          "level": 22,
+          "name": "Bullet Punch",
+          "type": "Steel",
+          "category": "Physical",
+          "description": "A priority Steel-type punching move boosted by Iron Fist.",
+          "original_stage": "Rookick"
+        },
+        {
+          "level": 26,
+          "name": "Brick Break",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A physical attack that removes applicable Reflect, Light Screen, and Aurora Veil effects from the target's side; not boosted by Iron Fist.",
+          "original_stage": "Rookick"
+        },
+        {
+          "level": 30,
+          "name": "Counter",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "Returns twice the damage received from a qualifying physical move during the turn under standard conditions; not boosted by Iron Fist.",
+          "original_stage": "Rookick"
+        },
+        {
+          "level": 34,
+          "name": "Drain Punch",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A punching move that restores HP based on damage dealt and benefits from Iron Fist.",
+          "original_stage": "Rookick"
+        },
+        {
+          "level": 38,
+          "name": "High Jump Kick",
+          "type": "Fighting",
+          "category": "Physical",
+          "description": "A powerful physical attack that causes crash damage when it misses or fails to connect under applicable battle rules. Not boosted by Iron Fist.",
+          "original_stage": "Rookick"
+        }
+      ],
+      "experience_table": [
+        {
+          "level": 40,
+          "total_exp": 56660,
+          "exp_to_next": 4790
+        },
+        {
+          "level": 41,
+          "total_exp": 61450,
+          "exp_to_next": 5055
+        },
+        {
+          "level": 42,
+          "total_exp": 66505,
+          "exp_to_next": 5328
+        },
+        {
+          "level": 43,
+          "total_exp": 71833,
+          "exp_to_next": 5607
+        },
+        {
+          "level": 44,
+          "total_exp": 77440,
+          "exp_to_next": 5895
+        },
+        {
+          "level": 45,
+          "total_exp": 83335,
+          "exp_to_next": 6188
+        },
+        {
+          "level": 46,
+          "total_exp": 89523,
+          "exp_to_next": 6489
+        },
+        {
+          "level": 47,
+          "total_exp": 96012,
+          "exp_to_next": 6798
+        },
+        {
+          "level": 48,
+          "total_exp": 102810,
+          "exp_to_next": 7113
+        },
+        {
+          "level": 49,
+          "total_exp": 109923,
+          "exp_to_next": 7437
+        },
+        {
+          "level": 50,
+          "total_exp": 117360,
+          "exp_to_next": 7766
+        },
+        {
+          "level": 51,
+          "total_exp": 125126,
+          "exp_to_next": 8103
+        },
+        {
+          "level": 52,
+          "total_exp": 133229,
+          "exp_to_next": 8448
+        },
+        {
+          "level": 53,
+          "total_exp": 141677,
+          "exp_to_next": 8799
+        },
+        {
+          "level": 54,
+          "total_exp": 150476,
+          "exp_to_next": 9159
+        },
+        {
+          "level": 55,
+          "total_exp": 159635,
+          "exp_to_next": 9524
+        },
+        {
+          "level": 56,
+          "total_exp": 169159,
+          "exp_to_next": 9897
+        },
+        {
+          "level": 57,
+          "total_exp": 179056,
+          "exp_to_next": 10278
+        },
+        {
+          "level": 58,
+          "total_exp": 189334,
+          "exp_to_next": 10665
+        },
+        {
+          "level": 59,
+          "total_exp": 199999,
+          "exp_to_next": 11061
+        },
+        {
+          "level": 60,
+          "total_exp": 211060,
+          "exp_to_next": 11462
+        },
+        {
+          "level": 61,
+          "total_exp": 222522,
+          "exp_to_next": 11871
+        },
+        {
+          "level": 62,
+          "total_exp": 234393,
+          "exp_to_next": 12288
+        },
+        {
+          "level": 63,
+          "total_exp": 246681,
+          "exp_to_next": 12711
+        },
+        {
+          "level": 64,
+          "total_exp": 259392,
+          "exp_to_next": 13143
+        },
+        {
+          "level": 65,
+          "total_exp": 272535,
+          "exp_to_next": 13580
+        },
+        {
+          "level": 66,
+          "total_exp": 286115,
+          "exp_to_next": 14025
+        },
+        {
+          "level": 67,
+          "total_exp": 300140,
+          "exp_to_next": 14478
+        },
+        {
+          "level": 68,
+          "total_exp": 314618,
+          "exp_to_next": 14937
+        },
+        {
+          "level": 69,
+          "total_exp": 329555,
+          "exp_to_next": 15405
+        },
+        {
+          "level": 70,
+          "total_exp": 344960,
+          "exp_to_next": 15878
+        },
+        {
+          "level": 71,
+          "total_exp": 360838,
+          "exp_to_next": 16359
+        },
+        {
+          "level": 72,
+          "total_exp": 377197,
+          "exp_to_next": 16848
+        },
+        {
+          "level": 73,
+          "total_exp": 394045,
+          "exp_to_next": 17343
+        },
+        {
+          "level": 74,
+          "total_exp": 411388,
+          "exp_to_next": 17847
+        },
+        {
+          "level": 75,
+          "total_exp": 429235,
+          "exp_to_next": 18356
+        },
+        {
+          "level": 76,
+          "total_exp": 447591,
+          "exp_to_next": 18873
+        },
+        {
+          "level": 77,
+          "total_exp": 466464,
+          "exp_to_next": 19398
+        },
+        {
+          "level": 78,
+          "total_exp": 485862,
+          "exp_to_next": 19929
+        },
+        {
+          "level": 79,
+          "total_exp": 505791,
+          "exp_to_next": 20469
+        },
+        {
+          "level": 80,
+          "total_exp": 526260,
+          "exp_to_next": 21014
+        },
+        {
+          "level": 81,
+          "total_exp": 547274,
+          "exp_to_next": 21567
+        },
+        {
+          "level": 82,
+          "total_exp": 568841,
+          "exp_to_next": 22128
+        },
+        {
+          "level": 83,
+          "total_exp": 590969,
+          "exp_to_next": 22695
+        },
+        {
+          "level": 84,
+          "total_exp": 613664,
+          "exp_to_next": 23271
+        },
+        {
+          "level": 85,
+          "total_exp": 636935,
+          "exp_to_next": 23852
+        },
+        {
+          "level": 86,
+          "total_exp": 660787,
+          "exp_to_next": 24441
+        },
+        {
+          "level": 87,
+          "total_exp": 685228,
+          "exp_to_next": 25038
+        },
+        {
+          "level": 88,
+          "total_exp": 710266,
+          "exp_to_next": 25641
+        },
+        {
+          "level": 89,
+          "total_exp": 735907,
+          "exp_to_next": 26253
+        },
+        {
+          "level": 90,
+          "total_exp": 762160,
+          "exp_to_next": 26870
+        },
+        {
+          "level": 91,
+          "total_exp": 789030,
+          "exp_to_next": 27495
+        },
+        {
+          "level": 92,
+          "total_exp": 816525,
+          "exp_to_next": 28128
+        },
+        {
+          "level": 93,
+          "total_exp": 844653,
+          "exp_to_next": 28767
+        },
+        {
+          "level": 94,
+          "total_exp": 873420,
+          "exp_to_next": 29415
+        },
+        {
+          "level": 95,
+          "total_exp": 902835,
+          "exp_to_next": 30068
+        },
+        {
+          "level": 96,
+          "total_exp": 932903,
+          "exp_to_next": 30729
+        },
+        {
+          "level": 97,
+          "total_exp": 963632,
+          "exp_to_next": 31398
+        },
+        {
+          "level": 98,
+          "total_exp": 995030,
+          "exp_to_next": 32073
+        },
+        {
+          "level": 99,
+          "total_exp": 1027103,
+          "exp_to_next": 32757
+        },
+        {
+          "level": 100,
+          "total_exp": 1059860,
+          "exp_to_next": null
+        }
+      ],
+      "design_status": "Approved",
+      "mechanics_status": "Approved for website implementation",
+      "level_up_moveset_status": "Complete (Kangarush final stage Levels 40–100)",
+      "notes": "Approved #021 Kangarush. Exact Knockout Pokémon entry, 550 BST with 140 Attack and 120 Defense, and final evolution at Level 40. Normal artwork exists in repository as 021_Kangarush.png; shiny artwork exists as 021_Kangarush (Shiny).png, a filename distinct from the rejected older 021_Kangarush_Shiny.png. The repository shiny visual is not independently confirmed against original source shiny_cyan_kangarush_boxing_stance.png, so verify visually if needed. No regeneration, redesign or changes to prior species. Level 40 Hammer Arm is Kangarush's regular level-up move; no additional exclusive move. Previous stages' moves and original ability and experience carry over."
     }
   ]
 }
