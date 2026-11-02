@@ -3094,7 +3094,7 @@
         "from_stage_1": 16,
         "to_stage_3": 32
       },
-      "design_status": "Evolution concept approved; solo artwork pending",
+      "design_status": "Approved",
       "base_stats": {
         "hp": 60,
         "attack": 50,
@@ -3107,14 +3107,80 @@
       "abilities": [
         {
           "name": "Overgrow",
-          "slot": "regular"
+          "slot": "A",
+          "description": "Increases the power of Grass-type moves by 50% when HP falls to one-third of maximum or lower."
         },
         {
           "name": "Infiltrator",
-          "slot": "regular"
+          "slot": "B",
+          "description": "Allows the user's moves to bypass Substitute and applicable protective barriers such as Reflect and Light Screen."
         }
       ],
       "moves": [
+        {
+          "level": 16,
+          "name": "Leech Seed",
+          "type": "Grass",
+          "category": "Status"
+        },
+        {
+          "level": 19,
+          "name": "Giga Drain",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "level": 22,
+          "name": "Synthesis",
+          "type": "Grass",
+          "category": "Status"
+        },
+        {
+          "level": 25,
+          "name": "Energy Ball",
+          "type": "Grass",
+          "category": "Special"
+        },
+        {
+          "level": 28,
+          "name": "Double Team",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "level": 31,
+          "name": "Petal Blizzard",
+          "type": "Grass",
+          "category": "Physical"
+        }
+      ],
+      "pokedex_entry": "Folisk is an agile climber that spends much of its life high in the forest canopy. Its enlarged toe pads allow it to cling securely to branches, even while hanging upside down. It patiently waits among the leaves for unsuspecting prey, striking with remarkable speed before disappearing back into the foliage.",
+      "notes": "Approved #011 Folisk. Preserve existing Pokédex entry and normal solo artwork exactly. Use actual uploaded shiny filename #011 Folisk (Shiny).png (the spec's 011_Folisk_Shiny.png does not match repository). Six middle-stage moves at Levels 16–31; Leech Seed at Level 16 is the regular stage-specific move, not an extra evolution-exclusive move. Leaf Storm at Level 32 belongs to Foliraptor. EXP and previous moves are retained across evolutions. No gender visual differences; shiny palette burnt orange/copper, golden amber leaf tail, pale cream markings, unchanged golden eyes.",
+      "level_up_moveset_status": "Complete (Folisk stage Levels 16–31)",
+      "images": {
+        "solo": "#011 Folisk.png",
+        "shiny": "#011 Folisk (Shiny).png"
+      },
+      "battle_role": "Fast special attacker",
+      "ability_assignment": "Each Pokémon has either Overgrow or Infiltrator with equal 50% probability. The ability assigned to Foliko is retained through Folisk and Foliraptor. No hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 142,
+      "ev_yield": {
+        "special_attack": 2
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "retains_previous_moves": true,
+      "inherited_level_up_moves_from": 10,
+      "evolution_move_at_16": false,
+      "original_family_moveset": [
         {
           "level": 1,
           "name": "Pound"
@@ -3192,12 +3258,94 @@
           "name": "Frenzy Plant"
         }
       ],
-      "pokedex_entry": "Folisk is an agile climber that spends much of its life high in the forest canopy. Its enlarged toe pads allow it to cling securely to branches, even while hanging upside down. It patiently waits among the leaves for unsuspecting prey, striking with remarkable speed before disappearing back into the foliage.",
-      "notes": "Grass starter family. Names, concept designs, sizes, evolution levels approved. Abilities and movesets deferred; additional details to be added later.",
-      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression)",
-      "images": {
-        "solo": "#011 Folisk.png"
-      }
+      "experience_table": [
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": 585
+        },
+        {
+          "level": 17,
+          "total_exp": 3120,
+          "exp_to_next": 678
+        },
+        {
+          "level": 18,
+          "total_exp": 3798,
+          "exp_to_next": 777
+        },
+        {
+          "level": 19,
+          "total_exp": 4575,
+          "exp_to_next": 885
+        },
+        {
+          "level": 20,
+          "total_exp": 5460,
+          "exp_to_next": 998
+        },
+        {
+          "level": 21,
+          "total_exp": 6458,
+          "exp_to_next": 1119
+        },
+        {
+          "level": 22,
+          "total_exp": 7577,
+          "exp_to_next": 1248
+        },
+        {
+          "level": 23,
+          "total_exp": 8825,
+          "exp_to_next": 1383
+        },
+        {
+          "level": 24,
+          "total_exp": 10208,
+          "exp_to_next": 1527
+        },
+        {
+          "level": 25,
+          "total_exp": 11735,
+          "exp_to_next": 1676
+        },
+        {
+          "level": 26,
+          "total_exp": 13411,
+          "exp_to_next": 1833
+        },
+        {
+          "level": 27,
+          "total_exp": 15244,
+          "exp_to_next": 1998
+        },
+        {
+          "level": 28,
+          "total_exp": 17242,
+          "exp_to_next": 2169
+        },
+        {
+          "level": 29,
+          "total_exp": 19411,
+          "exp_to_next": 2349
+        },
+        {
+          "level": 30,
+          "total_exp": 21760,
+          "exp_to_next": 2534
+        },
+        {
+          "level": 31,
+          "total_exp": 24294,
+          "exp_to_next": 2727
+        },
+        {
+          "level": 32,
+          "total_exp": 27021,
+          "exp_to_next": null
+        }
+      ],
+      "mechanics_status": "Approved for website implementation"
     },
     {
       "number": 12,
