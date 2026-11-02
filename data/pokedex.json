@@ -7350,6 +7350,84 @@
       ],
       "design_status": "Approved",
       "notes": "Psychic starter family design approved. Only Pokédex identity, artwork and evolution relationships are set. Battle stats, moves, abilities, evolution levels, experience data, EV yields, catch rates and other mechanics remain intentionally unspecified."
+    },
+    {
+      "type1": "Ghost",
+      "type2": null,
+      "inspiration": "Raven",
+      "evolution_line": [
+        25,
+        26,
+        27
+      ],
+      "appearance": "Dark raven-like feathers with purple spectral energy.",
+      "shiny_appearance": "Ghostly green feathers and accents with purple spectral essence.",
+      "design_status": "Approved — Pokédex design only",
+      "notes": "Living raven Pokémon with supernatural Ghost-type powers. Battle details and evolution levels to be determined.",
+      "number": 25,
+      "name": "Ravisp",
+      "category": "Wisp Chick Pokémon",
+      "stage": 1,
+      "stage_label": "First",
+      "height_m": 0.4,
+      "weight_kg": 2.5,
+      "pokedex_entry": "Ravisp is a curious Pokémon that wanders through quiet forests and abandoned places. Mysterious purple wisps drift around its feathers, growing brighter whenever it senses nearby spirits. Despite its ghostly appearance, Ravisp is playful and often follows travelers, mimicking their voices to get their attention.",
+      "images": {
+        "solo": "025 Ravisp.png",
+        "shiny": "025 Ravisp (Shiny).png"
+      }
+    },
+    {
+      "type1": "Ghost",
+      "type2": null,
+      "inspiration": "Raven",
+      "evolution_line": [
+        25,
+        26,
+        27
+      ],
+      "appearance": "Dark raven-like feathers with purple spectral energy.",
+      "shiny_appearance": "Ghostly green feathers and accents with purple spectral essence.",
+      "design_status": "Approved — Pokédex design only",
+      "notes": "Living raven Pokémon with supernatural Ghost-type powers. Battle details and evolution levels to be determined.",
+      "number": 26,
+      "name": "Ravraith",
+      "category": "Spectral Raven Pokémon",
+      "stage": 2,
+      "stage_label": "Middle",
+      "height_m": 0.9,
+      "weight_kg": 8.5,
+      "pokedex_entry": "Ravraith is a highly intelligent Pokémon that uses its ghostly powers to navigate even the darkest forests. The spectral energy flowing through its feathers allows it to move almost silently and briefly disappear from sight. It communicates with other Ravraith through eerie calls that can be heard from great distances, even through thick fog.",
+      "images": {
+        "solo": "026 Ravraith.png",
+        "shiny": "026 Ravraith (Shiny).png"
+      }
+    },
+    {
+      "type1": "Ghost",
+      "type2": null,
+      "inspiration": "Raven",
+      "evolution_line": [
+        25,
+        26,
+        27
+      ],
+      "appearance": "Dark raven-like feathers with purple spectral energy.",
+      "shiny_appearance": "Ghostly green feathers and accents with purple spectral essence.",
+      "design_status": "Approved — Pokédex design only",
+      "notes": "Living raven Pokémon with supernatural Ghost-type powers. Battle details and evolution levels to be determined.",
+      "number": 27,
+      "name": "Ravantom",
+      "category": "Phantom Raven Pokémon",
+      "stage": 3,
+      "stage_label": "Final",
+      "height_m": 1.7,
+      "weight_kg": 24,
+      "pokedex_entry": "Ravantom is a majestic Pokémon that commands powerful spectral energy through its enormous wings. Its haunting cries echo across vast forests, and the ghostly flames surrounding its feathers intensify when it senses danger. Despite its intimidating appearance, Ravantom is known to protect smaller Pokémon, using its supernatural powers to conceal them from approaching threats.",
+      "images": {
+        "solo": "027 Ravantom.png",
+        "shiny": "027 Ravantom (Shiny).png"
+      }
     }
   ]
 }
