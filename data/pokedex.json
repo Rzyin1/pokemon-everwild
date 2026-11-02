@@ -7275,6 +7275,81 @@
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Complete (Kangarush final stage Levels 40–100)",
       "notes": "Approved #021 Kangarush. Exact Knockout Pokémon entry, 550 BST with 140 Attack and 120 Defense, and final evolution at Level 40. Normal artwork exists in repository as 021_Kangarush.png; shiny artwork exists as 021_Kangarush (Shiny).png, a filename distinct from the rejected older 021_Kangarush_Shiny.png. The repository shiny visual is not independently confirmed against original source shiny_cyan_kangarush_boxing_stance.png, so verify visually if needed. No regeneration, redesign or changes to prior species. Level 40 Hammer Arm is Kangarush's regular level-up move; no additional exclusive move. Previous stages' moves and original ability and experience carry over."
+    },
+    {
+      "number": 22,
+      "name": "Tarsik",
+      "category": "Rune Kit Pokémon",
+      "type1": "Psychic",
+      "type2": null,
+      "stage": 1,
+      "stage_label": "First",
+      "inspiration": "Tarsier",
+      "height_m": 0.4,
+      "weight_kg": 3.5,
+      "pokedex_entry": "Tarsik is a curious Pokémon with an unusual fascination for ancient ruins. The mysterious markings on its fur glow faintly whenever it senses psychic energy nearby. Its enormous eyes allow it to perceive things invisible to most Pokémon, often causing it to stare silently at seemingly empty spaces.",
+      "appearance": "A small, curious tarsier with enormous golden eyes, oversized pink ears, soft mauve-brown fur, cream-colored facial tufts, and a slender curved tail. Glowing purple runes appear on its forehead, body, and tail. It wears a small ancient pendant.",
+      "images": {
+        "solo": "022 Tarsik.png",
+        "shiny": "022_Tarsik_Shiny.png"
+      },
+      "evolution_line": [
+        22,
+        23,
+        24
+      ],
+      "design_status": "Approved",
+      "notes": "Psychic starter family design approved. Only Pokédex identity, artwork and evolution relationships are set. Battle stats, moves, abilities, evolution levels, experience data, EV yields, catch rates and other mechanics remain intentionally unspecified."
+    },
+    {
+      "number": 23,
+      "name": "Tarsigil",
+      "category": "Mystic Sigil Pokémon",
+      "type1": "Psychic",
+      "type2": null,
+      "stage": 2,
+      "stage_label": "Middle",
+      "inspiration": "Tarsier",
+      "height_m": 0.8,
+      "weight_kg": 10,
+      "pokedex_entry": "Tarsigil spends hours studying the ancient markings found within forgotten ruins. The glowing symbols across its fur react to psychic energy, allowing it to decipher messages left behind by civilizations long gone. When threatened, it creates powerful psychic barriers to protect itself and its companions.",
+      "appearance": "A taller, slender tarsier with large golden eyes, elongated fingers, prominent ears, and more elaborate glowing purple runes. It wears an ancient patterned headband, decorative ornaments, and a gold-trimmed cloth across its shoulders. Its long tail carries illuminated psychic markings.",
+      "images": {
+        "solo": "023 Tarsigil.png",
+        "shiny": "023_Tarsigil_Shiny.png"
+      },
+      "evolution_line": [
+        22,
+        23,
+        24
+      ],
+      "design_status": "Approved",
+      "notes": "Psychic starter family design approved. Only Pokédex identity, artwork and evolution relationships are set. Battle stats, moves, abilities, evolution levels, experience data, EV yields, catch rates and other mechanics remain intentionally unspecified."
+    },
+    {
+      "number": 24,
+      "name": "Tarsage",
+      "category": "Ancient Sage Pokémon",
+      "type1": "Psychic",
+      "type2": null,
+      "stage": 3,
+      "stage_label": "Final",
+      "inspiration": "Tarsier",
+      "height_m": 1.3,
+      "weight_kg": 28,
+      "pokedex_entry": "Tarsage possesses an extraordinary understanding of the psychic energy that flows through the world. The ancient symbols covering its body glow brilliantly when it unleashes its powers. Legends claim that Tarsage can glimpse events yet to occur and has silently guarded the secrets of forgotten civilizations for centuries.",
+      "appearance": "A majestic, fully developed tarsier with enormous golden eyes, prominent ears, a layered cream-colored mane, long fingers, and an elaborate ancient cloak decorated with golden symbols. Its body and tail display powerful glowing purple runes, while swirling psychic energy surrounds it.",
+      "images": {
+        "solo": "024 Tarsage.png",
+        "shiny": "024_Tarsage_Shiny.png"
+      },
+      "evolution_line": [
+        22,
+        23,
+        24
+      ],
+      "design_status": "Approved",
+      "notes": "Psychic starter family design approved. Only Pokédex identity, artwork and evolution relationships are set. Battle stats, moves, abilities, evolution levels, experience data, EV yields, catch rates and other mechanics remain intentionally unspecified."
     }
   ]
 }
