@@ -3894,7 +3894,8 @@
       "stage": 1,
       "appearance": "Playful golden cheetah cub with black spots, rounded ears, cream chest and paws, dark tear markings, banded lightning-tipped tail, and small static discharges.",
       "evolution_levels": {
-        "to_stage_2": 18
+        "to_stage_2": 18,
+        "to_stage_3": 36
       },
       "category": "Cheetah Cub Pokémon",
       "type1": "Electric",
@@ -3905,9 +3906,9 @@
         14,
         15
       ],
-      "design_status": "Concept and solo artwork generated in chat; artwork not yet uploaded to repository",
-      "battle_role": "Very fast physical attacker with relatively low Defense (concept, not finalized)",
-      "notes": "Names, pure Electric typing, cheetah concept, visual direction, and evolution levels approved. Pokédex entry, size, base stats, abilities and moves pending approval.",
+      "design_status": "Approved",
+      "battle_role": "Fast physical attacker",
+      "notes": "Approved #013 Kivolt. Preserve exact existing Pokédex entry and normal solo artwork. Existing original silver-white and electric-blue shiny file #013 Kivolt (Shiny).png linked without altering artwork. Kivolt learns seven stage-only moves Levels 1–16; Bite at Level 19 belongs to Kivarra. Automatically evolves into Kivarra at Level 18, then Kivarion at Level 36; accumulated Medium Slow EXP, previously learned moves, and assigned ability carry over. No additional evolution-exclusive move at Level 18. Keep Kivarra/Kivarion intentional artwork swap unchanged.",
       "pokedex_entry": "Kivolt is a playful Pokémon that generates static electricity as it runs through tall grass. Its spotted fur releases tiny sparks whenever it becomes excited. Young Kivolt frequently chase one another, unknowingly developing the extraordinary speed they will possess as adults.",
       "height_m": 0.5,
       "weight_kg": 12,
@@ -3923,14 +3924,82 @@
       "abilities": [
         {
           "name": "Static",
-          "slot": "regular"
+          "slot": "A",
+          "description": "Has a 30% chance to paralyze an opponent when that opponent makes contact."
         },
         {
           "name": "Motor Drive",
-          "slot": "regular"
+          "slot": "B",
+          "description": "Grants immunity to applicable Electric-type moves and raises Speed by one stage when activated."
         }
       ],
       "moves": [
+        {
+          "level": 1,
+          "name": "Tackle",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "level": 1,
+          "name": "Tail Whip",
+          "type": "Normal",
+          "category": "Status"
+        },
+        {
+          "level": 4,
+          "name": "Quick Attack",
+          "type": "Normal",
+          "category": "Physical"
+        },
+        {
+          "level": 7,
+          "name": "Thunder Shock",
+          "type": "Electric",
+          "category": "Special"
+        },
+        {
+          "level": 10,
+          "name": "Thunder Wave",
+          "type": "Electric",
+          "category": "Status"
+        },
+        {
+          "level": 13,
+          "name": "Spark",
+          "type": "Electric",
+          "category": "Physical"
+        },
+        {
+          "level": 16,
+          "name": "Agility",
+          "type": "Psychic",
+          "category": "Status"
+        }
+      ],
+      "level_up_moveset_status": "Complete (Kivolt first-stage moves Levels 1–17)",
+      "images": {
+        "solo": "#013 Kivolt.png",
+        "shiny": "#013 Kivolt (Shiny).png"
+      },
+      "ability_assignment": "One of Static or Motor Drive is assigned with equal (50%) probability when Kivolt is generated, and retained through Kivarra and Kivarion. No hidden ability.",
+      "gender_ratio": {
+        "male": 87.5,
+        "female": 12.5
+      },
+      "gender_appearance_differences": false,
+      "catch_rate": 45,
+      "base_exp_yield": 62,
+      "ev_yield": {
+        "speed": 1
+      },
+      "experience_growth_rate": "Medium Slow",
+      "max_level": 100,
+      "evolution_forced": true,
+      "evolution_exp_retained": true,
+      "evolution_move_at_18": false,
+      "retains_previous_moves": true,
+      "original_family_moveset": [
         {
           "level": 1,
           "name": "Tackle"
@@ -4008,10 +4077,126 @@
           "name": "Giga Impact"
         }
       ],
-      "level_up_moveset_status": "Complete (approved shared evolutionary-line progression; Extreme Speed learned on evolution to Kivarion at level 36)",
-      "images": {
-        "solo": "#013 Kivolt.png"
-      }
+      "experience_table": [
+        {
+          "level": 1,
+          "total_exp": 0,
+          "exp_to_next": 9
+        },
+        {
+          "level": 2,
+          "total_exp": 9,
+          "exp_to_next": 48
+        },
+        {
+          "level": 3,
+          "total_exp": 57,
+          "exp_to_next": 39
+        },
+        {
+          "level": 4,
+          "total_exp": 96,
+          "exp_to_next": 39
+        },
+        {
+          "level": 5,
+          "total_exp": 135,
+          "exp_to_next": 44
+        },
+        {
+          "level": 6,
+          "total_exp": 179,
+          "exp_to_next": 57
+        },
+        {
+          "level": 7,
+          "total_exp": 236,
+          "exp_to_next": 78
+        },
+        {
+          "level": 8,
+          "total_exp": 314,
+          "exp_to_next": 105
+        },
+        {
+          "level": 9,
+          "total_exp": 419,
+          "exp_to_next": 141
+        },
+        {
+          "level": 10,
+          "total_exp": 560,
+          "exp_to_next": 182
+        },
+        {
+          "level": 11,
+          "total_exp": 742,
+          "exp_to_next": 231
+        },
+        {
+          "level": 12,
+          "total_exp": 973,
+          "exp_to_next": 288
+        },
+        {
+          "level": 13,
+          "total_exp": 1261,
+          "exp_to_next": 351
+        },
+        {
+          "level": 14,
+          "total_exp": 1612,
+          "exp_to_next": 423
+        },
+        {
+          "level": 15,
+          "total_exp": 2035,
+          "exp_to_next": 500
+        },
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": 585
+        },
+        {
+          "level": 17,
+          "total_exp": 3120,
+          "exp_to_next": 678
+        },
+        {
+          "level": 18,
+          "total_exp": 3798,
+          "exp_to_next": null
+        }
+      ],
+      "type_effectiveness": {
+        "offensive": {
+          "super_effective": [
+            "Water",
+            "Flying"
+          ],
+          "not_very_effective": [
+            "Electric",
+            "Grass",
+            "Dragon"
+          ],
+          "no_effect": [
+            "Ground"
+          ]
+        },
+        "defensive": {
+          "weaknesses": [
+            "Ground"
+          ],
+          "resistances": [
+            "Electric",
+            "Flying",
+            "Steel"
+          ],
+          "immunities_from_typing": []
+        }
+      },
+      "mechanics_status": "Approved for website implementation"
     },
     {
       "number": 14,
