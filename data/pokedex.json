@@ -7845,6 +7845,87 @@
         "solo": "042 Falcorion.png",
         "shiny": "042 Falcorion (Shiny).png"
       }
+    },
+    {
+      "number": 43,
+      "name": "Odonlet",
+      "category": "Nymph Pokémon",
+      "stage": 1,
+      "stage_label": "First",
+      "height_m": 0.4,
+      "weight_kg": 2.5,
+      "pokedex_entry": "Odonlet inhabits clear streams and ponds, where it develops its hunting instincts. The small wing buds along its back gradually grow larger as it prepares for its first true flight.",
+      "type1": "Bug",
+      "type2": null,
+      "inspiration": "Dragonfly",
+      "evolution_line": [
+        43,
+        44,
+        45
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Crimson Dragonfly — ruby-red armor, warm ivory underbody, amber markings, copper-tinted wings.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved individual normal and Crimson Dragonfly shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "043 Odonlet.png",
+        "shiny": "043 Odonlet (Shiny).png"
+      }
+    },
+    {
+      "number": 44,
+      "name": "Odonair",
+      "category": "Dragonfly Pokémon",
+      "stage": 2,
+      "stage_label": "Middle",
+      "height_m": 0.8,
+      "weight_kg": 7.5,
+      "pokedex_entry": "No longer confined to the water, Odonair explores the skies above its former habitat. Its developing wings and powerful eyesight make it an increasingly capable hunter, though it still has much to learn.",
+      "type1": "Bug",
+      "type2": null,
+      "inspiration": "Dragonfly",
+      "evolution_line": [
+        43,
+        44,
+        45
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Crimson Dragonfly — ruby-red armor, warm ivory underbody, amber markings, copper-tinted wings.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved individual normal and Crimson Dragonfly shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "044 Odonair.png",
+        "shiny": "044 Odonair (Shiny).png"
+      }
+    },
+    {
+      "number": 45,
+      "name": "Odonarch",
+      "category": "Dragonfly Monarch Pokémon",
+      "stage": 3,
+      "stage_label": "Final",
+      "height_m": 1.3,
+      "weight_kg": 20,
+      "pokedex_entry": "Odonarch rules the skies above vast freshwater territories. Its exceptional eyesight allows it to detect the slightest movement below, while its incredible speed makes escaping its pursuit nearly impossible.",
+      "type1": "Bug",
+      "type2": null,
+      "inspiration": "Dragonfly",
+      "evolution_line": [
+        43,
+        44,
+        45
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Crimson Dragonfly — ruby-red armor, warm ivory underbody, amber markings, copper-tinted wings.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved individual normal and Crimson Dragonfly shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "045 Odonarch.png",
+        "shiny": "045 Odonarch (Shiny).png"
+      }
     }
   ]
 }
