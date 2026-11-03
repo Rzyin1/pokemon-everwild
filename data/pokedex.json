@@ -7596,6 +7596,78 @@
         "shiny": "033 Cairnox (Shiny).png"
       },
       "pokedex_entry": "Cairnox rules the highest mountain peaks, where its enormous stone horns serve as a symbol of strength and dominance. Rival Cairnox clash in thunderous headbutting contests that can send tremors through entire mountainsides. Its powerful legs and exceptional balance allow it to charge across narrow cliffs with ease, while its thick wool protects it from the harshest alpine conditions."
+    },
+    {
+      "number": 34,
+      "name": "Hornit",
+      "category": "Iron Horn Pokémon",
+      "type1": "Steel",
+      "type2": null,
+      "inspiration": "Hercules Beetle",
+      "stage": 1,
+      "stage_label": "First",
+      "evolution_line": [
+        34,
+        35,
+        36
+      ],
+      "height_m": 0.4,
+      "weight_kg": 8,
+      "pokedex_entry": "Hornit spends its nights wandering through forests in search of fallen fruit, which it can detect with its sensitive antennae. Its powerful claws allow it to cling firmly to tree trunks, even while carrying objects heavier than itself. Curious by nature, Hornit often investigates unfamiliar objects, sometimes accidentally knocking them over with its developing metallic horn.",
+      "appearance": "Small, rounded Hercules beetle with a golden-yellow spotted shell, charcoal body, silver metallic horn, orange eyes, and developing steel armor.",
+      "personality": "Curious, exploratory, and generally peaceful. Its developing strength occasionally causes accidental damage.",
+      "shiny_appearance": "Deep cobalt-blue shell with dark spots; dark titanium and polished silver armor; polished platinum horns with blue metallic accents; electric-cyan eyes; charcoal-black body.",
+      "design_status": "Pokédex design approved",
+      "artwork_status": "Individual normal and shiny artwork completed and approved; image files awaiting upload to the GitHub repository.",
+      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined."
+    },
+    {
+      "number": 35,
+      "name": "Hornsteel",
+      "category": "Steel Pincer Pokémon",
+      "type1": "Steel",
+      "type2": null,
+      "inspiration": "Hercules Beetle",
+      "stage": 2,
+      "stage_label": "Middle",
+      "evolution_line": [
+        34,
+        35,
+        36
+      ],
+      "height_m": 0.9,
+      "weight_kg": 42,
+      "pokedex_entry": "Hornsteel is most active after sunset, when it searches for food among the forest canopy. Its enlarged metallic horns are used in contests against rival Hornsteel, lifting opponents from branches and forcing them to retreat. Although these competitions can appear fierce, Hornsteel rarely pursues a defeated rival, returning to its peaceful activities once the dispute is settled.",
+      "appearance": "Larger, muscular beetle with a spotted golden shell, enlarged metallic pincer-like horns, reinforced silver armor, and powerful legs.",
+      "personality": "Competitive with rivals, particularly during horn-wrestling contests, but rarely aggressive once a dispute is settled.",
+      "shiny_appearance": "Deep cobalt-blue shell with dark spots; dark titanium and polished silver armor; polished platinum horns with blue metallic accents; electric-cyan eyes; charcoal-black body.",
+      "design_status": "Pokédex design approved",
+      "artwork_status": "Individual normal and shiny artwork completed and approved; image files awaiting upload to the GitHub repository.",
+      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined."
+    },
+    {
+      "number": 36,
+      "name": "Hornforge",
+      "category": "Titan Horn Pokémon",
+      "type1": "Steel",
+      "type2": null,
+      "inspiration": "Hercules Beetle",
+      "stage": 3,
+      "stage_label": "Final",
+      "evolution_line": [
+        34,
+        35,
+        36
+      ],
+      "height_m": 1.6,
+      "weight_kg": 165,
+      "pokedex_entry": "Hornforge possesses an extraordinarily powerful body capable of lifting objects several times its own weight. Its massive metallic horns can bend thick tree trunks, yet it rarely uses its strength without reason. During the day, Hornforge rests among the largest trees in the forest, where its nearly impenetrable exoskeleton protects it from predators. Despite its imposing appearance, it remains calm unless directly threatened.",
+      "appearance": "Massive Hercules beetle with enormous serrated metallic horns, heavy silver armor, a golden spotted shell, powerful armored limbs, and a formidable appearance.",
+      "personality": "Exceptionally strong, calm, and defensive rather than aggressive. It uses its strength only when necessary.",
+      "shiny_appearance": "Deep cobalt-blue shell with dark spots; dark titanium and polished silver armor; polished platinum horns with blue metallic accents; electric-cyan eyes; charcoal-black body.",
+      "design_status": "Pokédex design approved",
+      "artwork_status": "Individual normal and shiny artwork completed and approved; image files awaiting upload to the GitHub repository.",
+      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined."
     }
   ]
 }
