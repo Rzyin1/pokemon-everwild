@@ -7512,6 +7512,90 @@
         "shiny": "030 Pangranite (Shiny).png"
       },
       "pokedex_entry": "Pangranite possesses an enormous body protected by scales as hard as granite. Its massive claws can tear through solid rock, allowing it to carve vast underground tunnels. Fiercely territorial, Pangranite patrols its underground domain and uses its immense strength to drive away intruders. When threatened, it slams its armored tail against the ground, sending powerful tremors through the surrounding area."
+    },
+    {
+      "type1": "Rock",
+      "type2": null,
+      "inspiration": "Bighorn Sheep",
+      "evolution_line": [
+        31,
+        32,
+        33
+      ],
+      "shiny_appearance": "Dark obsidian-gray stone horns, vibrant amethyst-purple crystals and mineral markings, cool silver-gray fur, silver-white chest and neck wool, and bright turquoise-blue eyes.",
+      "design_status": "Pokédex design approved",
+      "artwork_status": "Approved normal and shiny concepts; individual artwork created for all three forms.",
+      "notes": "Rock starter family approved at design-only stage. Battle stats, abilities, moves, evolution levels, experience data, EV yields, catch rates, and other battle mechanics have not been assigned.",
+      "number": 31,
+      "name": "Cairnuff",
+      "category": "Pebble Horn Pokémon",
+      "stage": 1,
+      "stage_label": "First",
+      "height_m": 0.6,
+      "weight_kg": 18,
+      "appearance": "Small, playful bighorn sheep with tan-and-cream wool, amber eyes, dark hooves, and developing curled stone horns.",
+      "personality": "Playful, curious, and competitive through friendly headbutting contests.",
+      "images": {
+        "solo": "031 Cairnuff.png",
+        "shiny": "031 Cairnuff (Shiny).png"
+      },
+      "pokedex_entry": "Cairnuff is a playful Pokémon that spends its days climbing rocky hillsides and exploring mountain trails. Its small, curled horns are made of hardened stone and gradually grow larger as it matures. Young Cairnuff often challenge one another to friendly headbutting contests, strengthening their horns and developing the balance needed to navigate steep cliffs."
+    },
+    {
+      "type1": "Rock",
+      "type2": null,
+      "inspiration": "Bighorn Sheep",
+      "evolution_line": [
+        31,
+        32,
+        33
+      ],
+      "shiny_appearance": "Dark obsidian-gray stone horns, vibrant amethyst-purple crystals and mineral markings, cool silver-gray fur, silver-white chest and neck wool, and bright turquoise-blue eyes.",
+      "design_status": "Pokédex design approved",
+      "artwork_status": "Approved normal and shiny concepts; individual artwork created for all three forms.",
+      "notes": "Rock starter family approved at design-only stage. Battle stats, abilities, moves, evolution levels, experience data, EV yields, catch rates, and other battle mechanics have not been assigned.",
+      "number": 32,
+      "name": "Cairnram",
+      "category": "Crag Horn Pokémon",
+      "stage": 2,
+      "stage_label": "Middle",
+      "height_m": 1.2,
+      "weight_kg": 75,
+      "appearance": "Larger, muscular ram with thicker wool, stronger legs, increasingly massive spiral stone horns, and rugged rocky features.",
+      "personality": "Strong, determined, and increasingly competitive, challenging others for dominance.",
+      "images": {
+        "solo": "032 Cairnram.png",
+        "shiny": "032 Cairnram (Shiny).png"
+      },
+      "pokedex_entry": "Cairnram inhabits steep mountain slopes, where it trains by charging into massive boulders with its powerful stone horns. Its thick wool protects it from freezing mountain winds, while its sturdy hooves allow it to maintain balance on narrow ledges. As Cairnram matures, it becomes increasingly competitive, challenging others of its kind in fierce headbutting contests to establish dominance."
+    },
+    {
+      "type1": "Rock",
+      "type2": null,
+      "inspiration": "Bighorn Sheep",
+      "evolution_line": [
+        31,
+        32,
+        33
+      ],
+      "shiny_appearance": "Dark obsidian-gray stone horns, vibrant amethyst-purple crystals and mineral markings, cool silver-gray fur, silver-white chest and neck wool, and bright turquoise-blue eyes.",
+      "design_status": "Pokédex design approved",
+      "artwork_status": "Approved normal and shiny concepts; individual artwork created for all three forms.",
+      "notes": "Rock starter family approved at design-only stage. Battle stats, abilities, moves, evolution levels, experience data, EV yields, catch rates, and other battle mechanics have not been assigned.",
+      "number": 33,
+      "name": "Cairnox",
+      "category": "Monolith Horn Pokémon",
+      "stage": 3,
+      "stage_label": "Final",
+      "height_m": 1.8,
+      "weight_kg": 180,
+      "appearance": "Enormous mountain ram with powerful legs, thick wool, gigantic cracked stone horns, and prominent crystal formations.",
+      "personality": "Dominant, powerful, and territorial over the highest mountain peaks.",
+      "images": {
+        "solo": "033 Cairnox.png",
+        "shiny": "033 Cairnox (Shiny).png"
+      },
+      "pokedex_entry": "Cairnox rules the highest mountain peaks, where its enormous stone horns serve as a symbol of strength and dominance. Rival Cairnox clash in thunderous headbutting contests that can send tremors through entire mountainsides. Its powerful legs and exceptional balance allow it to charge across narrow cliffs with ease, while its thick wool protects it from the harshest alpine conditions."
     }
   ]
 }
