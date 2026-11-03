@@ -1822,7 +1822,7 @@ function designOnlyProfile(p,pokemon){
   +'<section id="evolution" class="panel"><h2 class="section-title">Evolution Family</h2>'+evolution
   +'<p class="muted">Evolution levels and battle mechanics have not yet been assigned.</p></section>'
   +'<section id="appearance" class="panel"><h2 class="section-title">Approved Appearance</h2><p>'
-  +escape(p.appearance)+'</p>'+(p.shiny_appearance?'<p><strong>Shiny Appearance:</strong> '+escape(p.shiny_appearance)+'</p>':'')+(p.type1==='Ghost'?'<p class="muted">These Pokémon are living ravens with supernatural Ghost-type powers.</p>':'')+(p.personality?'<p><strong>Personality:</strong> '+escape(p.personality)+'</p>':'')+(p.shiny_artwork_status?'<p class="muted">'+escape(p.shiny_artwork_status)+'</p>':'')+'</section>'
+  +escape(p.appearance)+'</p>'+(p.shiny_appearance?'<p><strong>Shiny Appearance:</strong> '+escape(p.shiny_appearance)+'</p>':'')+(p.type1==='Ghost'?'<p class="muted">These Pokémon are living ravens with supernatural Ghost-type powers.</p>':'')+(p.personality?'<p><strong>Personality:</strong> '+escape(p.personality)+'</p>':'')+(p.shiny_artwork_status?'<p class="muted">'+escape(p.shiny_artwork_status)+'</p>':'')+(p.artwork_status?'<p class="muted">'+escape(p.artwork_status)+'</p>':'')+'</section>'
   +'<div class="panel"><div class="nav">'
   +(prev?'<a href="pokemon.html?id='+prev.number+'">← '+escape(prev.name)+'</a>':'')
   +'<a href="index.html">Back to Pokédex</a>'
