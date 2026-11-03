@@ -7926,6 +7926,87 @@
         "solo": "045 Odonarch.png",
         "shiny": "045 Odonarch (Shiny).png"
       }
+    },
+    {
+      "number": 46,
+      "name": "Duskup",
+      "category": "Shadow Cub Pokémon",
+      "height_m": 0.5,
+      "weight_kg": 10,
+      "stage": 1,
+      "stage_label": "First",
+      "pokedex_entry": "Duskup becomes most active after nightfall, when it begins searching for food and exploring unfamiliar territory. Its sharp hearing allows it to detect even the faintest sounds in complete darkness.",
+      "type1": "Dark",
+      "type2": null,
+      "inspiration": "Striped Hyena",
+      "evolution_line": [
+        46,
+        47,
+        48
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Phantom White — ivory-white fur, smoky-gray mane, and icy-cyan stripes.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved normal and shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "046 Duskup.png",
+        "shiny": "046 Duskup (Shiny).png"
+      }
+    },
+    {
+      "number": 47,
+      "name": "Duskmane",
+      "category": "Shadow Stalker Pokémon",
+      "height_m": 1,
+      "weight_kg": 32,
+      "stage": 2,
+      "stage_label": "Middle",
+      "pokedex_entry": "Duskmane patiently stalks its prey beneath the cover of darkness, carefully avoiding detection. The dark stripes along its body help it blend into its surroundings, allowing it to approach remarkably close before striking.",
+      "type1": "Dark",
+      "type2": null,
+      "inspiration": "Striped Hyena",
+      "evolution_line": [
+        46,
+        47,
+        48
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Phantom White — ivory-white fur, smoky-gray mane, and icy-cyan stripes.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved normal and shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "047 Duskmane.png",
+        "shiny": "047 Duskmane (Shiny).png"
+      }
+    },
+    {
+      "number": 48,
+      "name": "Duskhowl",
+      "category": "Night Howler Pokémon",
+      "height_m": 1.5,
+      "weight_kg": 70,
+      "stage": 3,
+      "stage_label": "Final",
+      "pokedex_entry": "Duskhowl has perfected the art of hunting without detection. Its dark striped fur allows it to disappear into the night, while its exceptional senses guide it silently toward prey before delivering a devastating strike.",
+      "type1": "Dark",
+      "type2": null,
+      "inspiration": "Striped Hyena",
+      "evolution_line": [
+        46,
+        47,
+        48
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Phantom White — ivory-white fur, smoky-gray mane, and icy-cyan stripes.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved normal and shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "048 Duskhowl.png",
+        "shiny": "048 Duskhowl (Shiny).png"
+      }
     }
   ]
 }
