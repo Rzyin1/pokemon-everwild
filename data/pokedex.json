@@ -7618,8 +7618,12 @@
       "personality": "Curious, exploratory, and generally peaceful. Its developing strength occasionally causes accidental damage.",
       "shiny_appearance": "Deep cobalt-blue shell with dark spots; dark titanium and polished silver armor; polished platinum horns with blue metallic accents; electric-cyan eyes; charcoal-black body.",
       "design_status": "Pokédex design approved",
-      "artwork_status": "Individual normal and shiny artwork completed and approved; image files awaiting upload to the GitHub repository.",
-      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined."
+      "artwork_status": "Approved normal and shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined.",
+      "images": {
+        "solo": "034 Hornit.png",
+        "shiny": "034 Hornit (Shiny).png"
+      }
     },
     {
       "number": 35,
@@ -7642,8 +7646,12 @@
       "personality": "Competitive with rivals, particularly during horn-wrestling contests, but rarely aggressive once a dispute is settled.",
       "shiny_appearance": "Deep cobalt-blue shell with dark spots; dark titanium and polished silver armor; polished platinum horns with blue metallic accents; electric-cyan eyes; charcoal-black body.",
       "design_status": "Pokédex design approved",
-      "artwork_status": "Individual normal and shiny artwork completed and approved; image files awaiting upload to the GitHub repository.",
-      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined."
+      "artwork_status": "Approved normal and shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined.",
+      "images": {
+        "solo": "035 Hornsteel.png",
+        "shiny": "035 Hornsteel (Shiny).png"
+      }
     },
     {
       "number": 36,
@@ -7666,8 +7674,12 @@
       "personality": "Exceptionally strong, calm, and defensive rather than aggressive. It uses its strength only when necessary.",
       "shiny_appearance": "Deep cobalt-blue shell with dark spots; dark titanium and polished silver armor; polished platinum horns with blue metallic accents; electric-cyan eyes; charcoal-black body.",
       "design_status": "Pokédex design approved",
-      "artwork_status": "Individual normal and shiny artwork completed and approved; image files awaiting upload to the GitHub repository.",
-      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined."
+      "artwork_status": "Approved normal and shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "Steel starter design is approved. Evolution levels, base stats, abilities, moves, and other battle mechanics are not yet determined.",
+      "images": {
+        "solo": "036 Hornforge.png",
+        "shiny": "036 Hornforge (Shiny).png"
+      }
     }
   ]
 }
