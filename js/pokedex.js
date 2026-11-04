@@ -4,7 +4,7 @@
  const chip=t=>'<span class="type" style="--type:'+escape(TYPES[t]||'#dde6d9')+'">'+escape(t)+'</span>';
  const chips=items=>items.map(chip).join(' ');
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
- const evolution='<div class="evo"><a href="pokemon.html?id=4"><strong>#004 Solcub</strong><span>Base form</span></a><strong>→ Level 18 →</strong><a href="pokemon.html?id=5"><strong>#005 Solbruin</strong><span>Stage 2</span></a><strong>→ Level 36 →</strong><a href="pokemon.html?id=6"><strong>#006 Solursus</strong><span>Final evolution</span></a></div>';
+ const evolution='<div class="evo"><a href="pokemon.html?id=4"><strong>#004 Solcub</strong><span>Base form</span></a><strong>→ Level 19 →</strong><a href="pokemon.html?id=5"><strong>#005 Solbruin</strong><span>Stage 2</span></a><strong>→ Level 39 →</strong><a href="pokemon.html?id=6"><strong>#006 Solursus</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Fire-Type Attacks',[
    ['Super Effective','Grass, Ice, Bug, Steel','2×',['Grass','Ice','Bug','Steel']],
@@ -40,9 +40,9 @@
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +1 Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 18 → Solbruin (automatic)')+'<p class="muted">Cumulative experience is retained when evolving. These totals represent required EXP, not EXP awarded for defeating Solcub.</p>'
+  +info('Evolution','Level 19 → Solbruin (automatic)')+'<p class="muted">Cumulative experience is retained when evolving. These totals represent required EXP, not EXP awarded for defeating Solcub.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th><th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2><p class="muted">Only moves learned as Solcub (before evolving at Level 18).</p>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2><p class="muted">Only moves learned as Solcub (before evolving at Level 19).</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th><th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div>'
   +(custom?'<div class="custom-move"><h3>★ Ember Claw — Original Everwild Move</h3><div class="table-scroll"><table class="moves"><tbody>'
     +[['Type',custom.type],['Category',custom.category],['Power',custom.power],['Accuracy',custom.accuracy+'%'],['PP',custom.pp],['Additional Effect',custom.burn_chance_percent+'% chance to burn'],['Contact Move',custom.contact?'Yes':'No']].map(row=>'<tr><th>'+escape(row[0])+'</th><td>'+escape(row[1])+'</td></tr>').join('')
@@ -67,8 +67,8 @@ function solbruinProfile(p,pokemon){
  const pills=arr=>arr.map(pill).join(' ');
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
-  +'<a href="pokemon.html?id=4"><strong>#004 Solcub</strong><span>Base form</span></a><strong>→ Level 18 →</strong>'
-  +'<a href="pokemon.html?id=5"><strong>#005 Solbruin</strong><span>Stage 2</span></a><strong>→ Level 36 →</strong>'
+  +'<a href="pokemon.html?id=4"><strong>#004 Solcub</strong><span>Base form</span></a><strong>→ Level 19 →</strong>'
+  +'<a href="pokemon.html?id=5"><strong>#005 Solbruin</strong><span>Stage 2</span></a><strong>→ Level 39 →</strong>'
   +'<a href="pokemon.html?id=6"><strong>#006 Solursus</strong><span>Final evolution</span></a></div>';
  const matchups=[
   ['Offensive — Fire-Type Attacks',[
@@ -126,18 +126,18 @@ function solbruinProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +2 Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 36 → Solursus')
+  +info('Evolution','Level 39 → Solursus')
   +'<p class="muted">Cumulative EXP carries over from Solcub and is retained when evolving into Solursus. '
   +'These totals are required experience, not experience awarded for defeating Solbruin.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+experienceHtml+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Solbruin (Levels 18–35) are listed. '
+  +'<p class="muted">Only moves learned as Solbruin (Levels 19–38) are listed. '
   +'Previously learned moves from Solcub are retained; no new evolution move at Level 18.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+movesHtml+'</tbody></table></div>'
   +(ember?'<div class="custom-move"><h3>★ Ember Claw — Previously Learned Custom Move</h3>'
-    +'<p class="muted">Learned by Solcub at Level 4; retained through evolution. Not a new Level 18 move.</p>'
+    +'<p class="muted">Learned by Solcub at Level 4; retained through evolution. Not a new Level 19 move.</p>'
     +'<div class="table-scroll"><table class="moves"><tbody>'
     +[['Type',ember.type],['Category',ember.category],['Power',ember.power],
       ['Accuracy',ember.accuracy+'%'],['PP',ember.pp],
@@ -176,8 +176,8 @@ function solursusProfile(p,pokemon){
  const pills=arr=>arr.map(pill).join(' ');
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
-  +'<a href="pokemon.html?id=4"><strong>#004 Solcub</strong><span>Base form</span></a><strong>→ Level 18 →</strong>'
-  +'<a href="pokemon.html?id=5"><strong>#005 Solbruin</strong><span>Stage 2</span></a><strong>→ Level 36 →</strong>'
+  +'<a href="pokemon.html?id=4"><strong>#004 Solcub</strong><span>Base form</span></a><strong>→ Level 19 →</strong>'
+  +'<a href="pokemon.html?id=5"><strong>#005 Solbruin</strong><span>Stage 2</span></a><strong>→ Level 39 →</strong>'
   +'<a href="pokemon.html?id=6"><strong>#006 Solursus</strong><span>Final evolution</span></a></div>';
  const matchups=[
   ['Offensive — Fire-Type Attacks',[
@@ -241,12 +241,12 @@ function solursusProfile(p,pokemon){
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+experienceHtml+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Solursus (Levels 36–100) are listed. '
-  +'Previously learned moves from Solcub and Solbruin are retained; no new evolution move at Level 36.</p>'
+  +'<p class="muted">Only moves learned as Solursus (Levels 39–100) are listed. '
+  +'Previously learned moves from Solcub and Solbruin are retained; no new evolution move at Level 39.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+movesHtml+'</tbody></table></div>'
   +(ember?'<div class="custom-move"><h3>★ Ember Claw — Previously Learned Custom Move</h3>'
-    +'<p class="muted">Learned by Solcub at Level 4; retained through evolution. Not a new Level 36 move.</p>'
+    +'<p class="muted">Learned by Solcub at Level 4; retained through evolution. Not a new Level 39 move.</p>'
     +'<div class="table-scroll"><table class="moves"><tbody>'
     +[['Type',ember.type],['Category',ember.category],['Power',ember.power],
       ['Accuracy',ember.accuracy+'%'],['PP',ember.pp],
@@ -285,9 +285,9 @@ function rippletProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=7"><strong>#007 Ripplet</strong><span>Base form</span></a>'
-  +'<strong>→ Level 20 →</strong>'
+  +'<strong>→ Level 22 →</strong>'
   +'<a href="pokemon.html?id=8"><strong>#008 Ripplash</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 40 →</strong>'
+  +'<strong>→ Level 41 →</strong>'
   +'<a href="pokemon.html?id=9"><strong>#009 Riptorrent</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Water-Type Attacks',[
@@ -346,13 +346,13 @@ function rippletProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +1 Special Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 20 → Ripplash (automatic)')
+  +info('Evolution','Level 22 → Ripplash (automatic)')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Ripplet.'
   +' All accumulated EXP carries over when Ripplet evolves into Ripplash.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Ripplet (Levels 1–19). Mud Shot at Level 20 belongs to Ripplash.'
+  +'<p class="muted">Only moves learned as Ripplet (Levels 1–21). Mud Shot at Level 20 is retained in the draft moveset and requires review after the Level 22 evolution change.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -385,9 +385,9 @@ function ripplashProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=7"><strong>#007 Ripplet</strong><span>Base form</span></a>'
-  +'<strong>→ Level 20 →</strong>'
+  +'<strong>→ Level 22 →</strong>'
   +'<a href="pokemon.html?id=8"><strong>#008 Ripplash</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 40 →</strong>'
+  +'<strong>→ Level 41 →</strong>'
   +'<a href="pokemon.html?id=9"><strong>#009 Riptorrent</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Water-Type Attacks',[
@@ -446,13 +446,13 @@ function ripplashProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +2 Special Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 40 → Riptorrent (automatic)')
+  +info('Evolution','Level 41 → Riptorrent (automatic)')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Ripplash.'
   +' All accumulated EXP carries over from Ripplet and is retained when Ripplash evolves into Riptorrent.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Ripplash (Levels 20–39). Torrent Break at Level 40 belongs to Riptorrent.'
+  +'<p class="muted">Only moves learned as Ripplash (Levels 22–40). Torrent Break remains assigned to Riptorrent at Level 40, pending timing review for its Level 41 evolution.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -485,9 +485,9 @@ function riptorrentProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=7"><strong>#007 Ripplet</strong><span>Base form</span></a>'
-  +'<strong>→ Level 20 →</strong>'
+  +'<strong>→ Level 22 →</strong>'
   +'<a href="pokemon.html?id=8"><strong>#008 Ripplash</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 40 →</strong>'
+  +'<strong>→ Level 41 →</strong>'
   +'<a href="pokemon.html?id=9"><strong>#009 Riptorrent</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Water-Type Attacks',[
@@ -546,13 +546,13 @@ function riptorrentProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +3 Special Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Final evolution from Ripplash at Level 40')
+  +info('Evolution','Final evolution from Ripplash at Level 41')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Riptorrent.'
   +' All accumulated EXP carries over from Ripplet through Ripplash to Riptorrent.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Riptorrent (Levels 40–100). Torrent Break ★ is its original Everwild signature move at Level 40.'
+  +'<p class="muted">Only moves learned as Riptorrent (Levels 41–100). Torrent Break ★ is its original Everwild signature move at Level 40.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -596,9 +596,9 @@ function folikoProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=10"><strong>#010 Foliko</strong><span>Base form</span></a>'
-  +'<strong>→ Level 16 →</strong>'
+  +'<strong>→ Level 17 →</strong>'
   +'<a href="pokemon.html?id=11"><strong>#011 Folisk</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 32 →</strong>'
+  +'<strong>→ Level 36 →</strong>'
   +'<a href="pokemon.html?id=12"><strong>#012 Foliraptor</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Grass-Type Attacks',[
@@ -657,13 +657,13 @@ function folikoProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +1 Special Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 16 → Folisk (automatic)')
+  +info('Evolution','Level 17 → Folisk (automatic)')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Foliko.'
   +' All accumulated EXP carries over when Foliko evolves into Folisk.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Foliko (Levels 1–15). Leech Seed at Level 16 belongs to Folisk.'
+  +'<p class="muted">Only moves learned as Foliko (Levels 1–16). Leech Seed at Level 16 remains in Folisk’s draft moveset; timing review is needed for the Level 17 evolution.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -696,9 +696,9 @@ function foliskProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=10"><strong>#010 Foliko</strong><span>Base form</span></a>'
-  +'<strong>→ Level 16 →</strong>'
+  +'<strong>→ Level 17 →</strong>'
   +'<a href="pokemon.html?id=11"><strong>#011 Folisk</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 32 →</strong>'
+  +'<strong>→ Level 36 →</strong>'
   +'<a href="pokemon.html?id=12"><strong>#012 Foliraptor</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Grass-Type Attacks',[
@@ -757,13 +757,13 @@ function foliskProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +2 Special Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 32 → Foliraptor (automatic)')
+  +info('Evolution','Level 36 → Foliraptor (automatic)')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Folisk.'
   +' All accumulated EXP carries over from Foliko and is retained when Folisk evolves into Foliraptor.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Folisk (Levels 16–31). Leech Seed at Level 16 is a standard level-up move; no separate evolution-exclusive move is added. Leaf Storm at Level 32 belongs to Foliraptor.'
+  +'<p class="muted">Only moves learned as Folisk (Levels 17–35). Leech Seed at Level 16 is a standard level-up move; no separate evolution-exclusive move is added. Leaf Storm at Level 32 remains in Foliraptor’s draft moveset; timing review is needed for the Level 36 evolution.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -796,9 +796,9 @@ function foliraptorProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=10"><strong>#010 Foliko</strong><span>Base form</span></a>'
-  +'<strong>→ Level 16 →</strong>'
+  +'<strong>→ Level 17 →</strong>'
   +'<a href="pokemon.html?id=11"><strong>#011 Folisk</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 32 →</strong>'
+  +'<strong>→ Level 36 →</strong>'
   +'<a href="pokemon.html?id=12"><strong>#012 Foliraptor</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Grass-Type Attacks',[
@@ -857,13 +857,13 @@ function foliraptorProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +3 Special Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Final stage; evolves from Folisk at Level 32')
+  +info('Evolution','Final stage; evolves from Folisk at Level 36')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Foliraptor.'
   +' All accumulated EXP carries over from Foliko and Folisk into Foliraptor. Maximum Level 100.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Foliraptor (Levels 32–100) are listed. Leaf Storm at Level 32 is learned when Folisk evolves, and no additional evolution-exclusive move is assigned.'
+  +'<p class="muted">Only moves learned as Foliraptor (Levels 36–100) are listed. Leaf Storm is currently assigned at Level 32; its timing needs review for the Level 36 evolution, and no additional evolution-exclusive move is assigned.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -898,7 +898,7 @@ function kivoltProfile(p,pokemon){
   +'<a href="pokemon.html?id=13"><strong>#013 Kivolt</strong><span>Base form</span></a>'
   +'<strong>→ Level 18 →</strong>'
   +'<a href="pokemon.html?id=14"><strong>#014 Kivarra</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 36 →</strong>'
+  +'<strong>→ Level 38 →</strong>'
   +'<a href="pokemon.html?id=15"><strong>#015 Kivarion</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Electric-Type Attacks',[
@@ -998,7 +998,7 @@ function kivarraProfile(p,pokemon){
   +'<a href="pokemon.html?id=13"><strong>#013 Kivolt</strong><span>Base form</span></a>'
   +'<strong>→ Level 18 →</strong>'
   +'<a href="pokemon.html?id=14"><strong>#014 Kivarra</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 36 →</strong>'
+  +'<strong>→ Level 38 →</strong>'
   +'<a href="pokemon.html?id=15"><strong>#015 Kivarion</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Electric-Type Attacks',[
@@ -1057,13 +1057,13 @@ function kivarraProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +2 Speed</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 36 → Kivarion (automatic)')
+  +info('Evolution','Level 38 → Kivarion (automatic)')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Kivarra.'
   +' All accumulated EXP carries over from Kivolt through Kivarra and into Kivarion.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Kivarra (Levels 18–35) are listed. Extreme Speed at Level 36 belongs to Kivarion. No additional evolution-exclusive move is learned at Level 18.'
+  +'<p class="muted">Only moves learned as Kivarra (Levels 18–37) are listed. Extreme Speed at Level 36 remains in Kivarion’s draft moveset, pending timing review for its Level 38 evolution. No additional evolution-exclusive move is learned at Level 18.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -1098,7 +1098,7 @@ function kivarionProfile(p,pokemon){
   +'<a href="pokemon.html?id=13"><strong>#013 Kivolt</strong><span>Base form</span></a>'
   +'<strong>→ Level 18 →</strong>'
   +'<a href="pokemon.html?id=14"><strong>#014 Kivarra</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 36 →</strong>'
+  +'<strong>→ Level 38 →</strong>'
   +'<a href="pokemon.html?id=15"><strong>#015 Kivarion</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Electric-Type Attacks',[
@@ -1157,13 +1157,13 @@ function kivarionProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +3 Speed</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Final evolution from Kivarra at Level 36')
+  +info('Evolution','Final evolution from Kivarra at Level 38')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Kivarion.'
   +' All accumulated EXP carries over from Kivolt and Kivarra into Kivarion through evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Kivarion (Levels 36–100) are listed. Extreme Speed at Level 36 is learned when Kivarra evolves into Kivarion, with no additional evolution-exclusive move.'
+  +'<p class="muted">Only moves learned as Kivarion (Levels 38–100) are listed. Extreme Speed remains assigned at Level 36; timing review is needed for the Level 38 evolution, with no additional evolution-exclusive move.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -1198,7 +1198,7 @@ function arctixProfile(p,pokemon){
   +'<a href="pokemon.html?id=16"><strong>#016 Arctix</strong><span>Base form</span></a>'
   +'<strong>→ Level 16 →</strong>'
   +'<a href="pokemon.html?id=17"><strong>#017 Arctivar</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 32 →</strong>'
+  +'<strong>→ Level 34 →</strong>'
   +'<a href="pokemon.html?id=18"><strong>#018 Arctivale</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Ice-Type Attacks',[
@@ -1298,7 +1298,7 @@ function arctivarProfile(p,pokemon){
   +'<a href="pokemon.html?id=16"><strong>#016 Arctix</strong><span>Base form</span></a>'
   +'<strong>→ Level 16 →</strong>'
   +'<a href="pokemon.html?id=17"><strong>#017 Arctivar</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 32 →</strong>'
+  +'<strong>→ Level 34 →</strong>'
   +'<a href="pokemon.html?id=18"><strong>#018 Arctivale</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Ice-Type Attacks',[
@@ -1357,13 +1357,13 @@ function arctivarProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +2 Special Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 32 → Arctivale (automatic)')
+  +info('Evolution','Level 34 → Arctivale (automatic)')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Arctivar.'
   +' All accumulated EXP carries over from Arctix and remains intact when Arctivar evolves into Arctivale.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Arctivar (Levels 16–31) are listed. Bite, Swift, Ice Shard, Freeze-Dry and Agility are learned at Levels 18, 21, 24, 27 and 30. Freeze-Dry is also super effective against Water-type Pokémon. Level 32 Ice Beam belongs to Arctivale; no additional evolution-exclusive move is added.'
+  +'<p class="muted">Only moves learned as Arctivar (Levels 16–33) are listed. Bite, Swift, Ice Shard, Freeze-Dry and Agility are learned at Levels 18, 21, 24, 27 and 30. Freeze-Dry is also super effective against Water-type Pokémon. Level 32 Ice Beam belongs to Arctivale; no additional evolution-exclusive move is added.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -1398,7 +1398,7 @@ function arctivaleProfile(p,pokemon){
   +'<a href="pokemon.html?id=16"><strong>#016 Arctix</strong><span>Base form</span></a>'
   +'<strong>→ Level 16 →</strong>'
   +'<a href="pokemon.html?id=17"><strong>#017 Arctivar</strong><span>Stage 2</span></a>'
-  +'<strong>→ Level 32 →</strong>'
+  +'<strong>→ Level 34 →</strong>'
   +'<a href="pokemon.html?id=18"><strong>#018 Arctivale</strong><span>Final evolution</span></a></div>';
  const groups=[
   ['Offensive — Ice-Type Attacks',[
@@ -1457,13 +1457,13 @@ function arctivaleProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +3 Special Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Final evolution from Arctivar at Level 32')
+  +info('Evolution','Final evolution from Arctivar at Level 34')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Arctivale.'
   +' All accumulated EXP carries over from Arctix and Arctivar into Arctivale. Level 100 is the maximum level.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Arctivale (Levels 32–100) are listed. Ice Beam is learned at Level 32 as Arctivar evolves, and no additional evolution-exclusive move is assigned. Blizzard bypasses accuracy checks during snow; Aurora Veil normally requires snow. Previously learned Snowscape can activate Snow Cloak and Ice Body.'
+  +'<p class="muted">Only moves learned as Arctivale (Levels 34–100) are listed. Ice Beam remains assigned at Level 32; timing review is needed for the Level 34 evolution, and no additional evolution-exclusive move is assigned. Blizzard bypasses accuracy checks during snow; Aurora Veil normally requires snow. Previously learned Snowscape can activate Snow Cloak and Ice Body.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -1496,7 +1496,7 @@ function joeyjabProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=19"><strong>#019 Joeyjab</strong><span>Base form</span></a>'
-  +'<strong>→ Level 16 →</strong>'
+  +'<strong>→ Level 20 →</strong>'
   +'<a href="pokemon.html?id=20"><strong>#020 Rookick</strong><span>Stage 2</span></a>'
   +'<strong>→ Level 40 →</strong>'
   +'<a href="pokemon.html?id=21"><strong>#021 Kangarush</strong><span>Final evolution</span></a></div>';
@@ -1557,13 +1557,13 @@ function joeyjabProfile(p,pokemon){
   +'<p><strong>Base Stat Total: '+bst(p)+'</strong></p><p><strong>EV Yield:</strong> +1 Attack</p></section>'
   +'<section id="experience" class="panel"><h2 class="section-title">Experience Growth</h2>'
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
-  +info('Evolution','Level 16 → Rookick (automatic)')
+  +info('Evolution','Level 20 → Rookick (automatic)')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Joeyjab.'
   +' All accumulated EXP carries over when Joeyjab evolves into Rookick. Rookick later evolves into Kangarush at Level 40.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Joeyjab (Levels 1–15) are listed. Mach Punch benefits from Iron Fist; Arm Thrust does not. Joeyjab evolves at Level 16, retaining previously learned moves.'
+  +'<p class="muted">Only moves learned as Joeyjab (Levels 1–19) are listed. Mach Punch benefits from Iron Fist; Arm Thrust does not. Joeyjab evolves at Level 20, retaining previously learned moves.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -1596,7 +1596,7 @@ function rookickProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=19"><strong>#019 Joeyjab</strong><span>Base form</span></a>'
-  +'<strong>→ Level 16 →</strong>'
+  +'<strong>→ Level 20 →</strong>'
   +'<a href="pokemon.html?id=20"><strong>#020 Rookick</strong><span>Stage 2</span></a>'
   +'<strong>→ Level 40 →</strong>'
   +'<a href="pokemon.html?id=21"><strong>#021 Kangarush</strong><span>Final evolution</span></a></div>';
@@ -1659,11 +1659,11 @@ function rookickProfile(p,pokemon){
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
   +info('Evolution','Level 40 → Kangarush (automatic)')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Rookick.'
-  +' At Level 16, Joeyjab evolves into Rookick with 2,535 accumulated EXP. At Level 40, Rookick evolves into Kangarush with 56,660 accumulated EXP. All experience and previously learned moves are retained.</p>'
+  +' At Level 20, Joeyjab evolves into Rookick with 5,460 accumulated EXP. At Level 40, Rookick evolves into Kangarush with 56,660 accumulated EXP. All experience and previously learned moves are retained.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Rookick (Levels 16–39) are listed. Bullet Punch at Level 22 and Drain Punch at Level 34 benefit from Iron Fist, as does Joeyjab’s previously learned Mach Punch. Level 40 Hammer Arm belongs to Kangarush, and no additional evolution-only move is learned at Levels 16 or 40.'
+  +'<p class="muted">Only moves learned as Rookick (Levels 20–39) are listed. Bullet Punch at Level 22 and Drain Punch at Level 34 benefit from Iron Fist, as does Joeyjab’s previously learned Mach Punch. Level 40 Hammer Arm belongs to Kangarush, and no additional evolution-only move is learned at Levels 20 or 40.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -1696,7 +1696,7 @@ function kangarushProfile(p,pokemon){
  const info=(label,value)=>'<p><strong>'+escape(label)+':</strong> '+escape(value)+'</p>';
  const evolution='<div class="evo">'
   +'<a href="pokemon.html?id=19"><strong>#019 Joeyjab</strong><span>Base form</span></a>'
-  +'<strong>→ Level 16 →</strong>'
+  +'<strong>→ Level 20 →</strong>'
   +'<a href="pokemon.html?id=20"><strong>#020 Rookick</strong><span>Stage 2</span></a>'
   +'<strong>→ Level 40 →</strong>'
   +'<a href="pokemon.html?id=21"><strong>#021 Kangarush</strong><span>Final evolution</span></a></div>';
@@ -1759,7 +1759,7 @@ function kangarushProfile(p,pokemon){
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
   +info('Evolution','Final evolution from Rookick at Level 40')
   +'<p class="muted">The table lists cumulative EXP requirements, not EXP rewarded for defeating Kangarush.'
-  +' Joeyjab evolves into Rookick at Level 16 (2,535 cumulative EXP); Rookick evolves into Kangarush at Level 40 (56,660 cumulative EXP). Kangarush has no further evolution, and its Medium Slow EXP reaches 1,059,860 at the maximum Level 100. Previous moves, accumulated experience and selected ability carry through evolution.</p>'
+  +' Joeyjab evolves into Rookick at Level 20 (5,460 cumulative EXP); Rookick evolves into Kangarush at Level 40 (56,660 cumulative EXP). Kangarush has no further evolution, and its Medium Slow EXP reaches 1,059,860 at the maximum Level 100. Previous moves, accumulated experience and selected ability carry through evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
   +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
@@ -1798,7 +1798,7 @@ function designOnlyProfile(p,pokemon){
  const dimensions=imperial[p.number]||['—','—'];
  const prev=pokemon.find(species=>species.number===p.number-1),next=pokemon.find(species=>species.number===p.number+1);
  const evolution='<div class="evo">'+family.map((species,i)=>
-  (i?'<strong>→</strong>':'')+'<a href="pokemon.html?id='+species.number+'"><strong>'
+  (i?'<strong>→ Level '+(i===1?family[0].evolution_levels.to_stage_2:family[1].evolution_levels.to_stage_3)+' →</strong>':'')+'<a href="pokemon.html?id='+species.number+'"><strong>'
   +num(species.number)+' '+escape(species.name)+'</strong><span>'+escape(familyStages[i]||'Evolution stage')+'</span></a>'
  ).join('')+'</div>';
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1820,7 +1820,7 @@ function designOnlyProfile(p,pokemon){
   +((p.type1==='Psychic'||p.gender_appearance_differences===false)?'<p class="muted">No visual gender differences; the same normal and shiny artwork is used for both genders.</p>':'')
   +'</div></section>'
   +'<section id="evolution" class="panel"><h2 class="section-title">Evolution Family</h2>'+evolution
-  +'<p class="muted">Evolution levels and battle mechanics have not yet been assigned.</p></section>'
+  +'<p class="muted">Evolution levels are approved. Base stats, abilities, moves, and other battle mechanics will be determined later.</p></section>'
   +'<section id="appearance" class="panel"><h2 class="section-title">'+(p.type1==='Flying'?'Approved Artwork':p.appearance?'Approved Appearance':'Artwork & Shiny Palette')+'</h2>'
   +(p.appearance?'<p>'+escape(p.appearance)+'</p>':'')+(p.shiny_appearance?'<p><strong>Shiny Appearance:</strong> '+escape(p.shiny_appearance)+'</p>':'')+(p.type1==='Ghost'?'<p class="muted">These Pokémon are living ravens with supernatural Ghost-type powers.</p>':'')+(p.personality?'<p><strong>Personality:</strong> '+escape(p.personality)+'</p>':'')+(p.shiny_artwork_status?'<p class="muted">'+escape(p.shiny_artwork_status)+'</p>':'')+(p.artwork_status?'<p class="muted">'+escape(p.artwork_status)+'</p>':'')+'</section>'
   +'<div class="panel"><div class="nav">'
