@@ -8007,6 +8007,75 @@
         "solo": "048 Duskhowl.png",
         "shiny": "048 Duskhowl (Shiny).png"
       }
+    },
+    {
+      "number": 49,
+      "name": "Komodra",
+      "category": "Ridgeclaw Pokémon",
+      "stage": 1,
+      "stage_label": "First",
+      "height_m": 0.5,
+      "weight_kg": 12,
+      "pokedex_entry": "Komodra's back is covered in small, hardened scales that gradually develop into protective ridges as it matures. Though still young, it fearlessly explores its surroundings, relying on its sturdy claws to navigate rough terrain.",
+      "type1": "Dragon",
+      "type2": null,
+      "inspiration": "Komodo Dragon",
+      "evolution_line": [
+        49,
+        50,
+        51
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Bone Dragon — bone-white scales, stone-gray underbelly, charcoal armor.",
+      "design_status": "Approved — Pokédex information and shiny palette",
+      "artwork_status": "Normal and shiny images not yet uploaded to GitHub; artwork placeholders are shown.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later."
+    },
+    {
+      "number": 50,
+      "name": "Komodran",
+      "category": "Platespine Pokémon",
+      "stage": 2,
+      "stage_label": "Middle",
+      "height_m": 1,
+      "weight_kg": 35,
+      "pokedex_entry": "Komodran's growing armor allows it to withstand attacks that would easily injure smaller Pokémon. Known for its fearless nature, it rarely retreats from a confrontation, relying on its powerful limbs and hardened plates for protection.",
+      "type1": "Dragon",
+      "type2": null,
+      "inspiration": "Komodo Dragon",
+      "evolution_line": [
+        49,
+        50,
+        51
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Bone Dragon — bone-white scales, stone-gray underbelly, charcoal armor.",
+      "design_status": "Approved — Pokédex information and shiny palette",
+      "artwork_status": "Normal and shiny images not yet uploaded to GitHub; artwork placeholders are shown.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later."
+    },
+    {
+      "number": 51,
+      "name": "Komodralis",
+      "category": "Armored Dragon Pokémon",
+      "stage": 3,
+      "stage_label": "Final",
+      "height_m": 1.6,
+      "weight_kg": 85,
+      "pokedex_entry": "Komodralis's thick armor has developed to withstand tremendous force. When threatened, it plants its powerful claws firmly into the ground and refuses to retreat, using its immense strength to drive away its opponent.",
+      "type1": "Dragon",
+      "type2": null,
+      "inspiration": "Komodo Dragon",
+      "evolution_line": [
+        49,
+        50,
+        51
+      ],
+      "gender_appearance_differences": false,
+      "shiny_appearance": "Bone Dragon — bone-white scales, stone-gray underbelly, charcoal armor.",
+      "design_status": "Approved — Pokédex information and shiny palette",
+      "artwork_status": "Normal and shiny images not yet uploaded to GitHub; artwork placeholders are shown.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later."
     }
   ]
 }
