@@ -1848,13 +1848,13 @@
         }
       ],
       "base_stats": {
-        "hp": 65,
+        "hp": 75,
         "attack": 45,
         "defense": 55,
-        "special_attack": 75,
+        "special_attack": 80,
         "special_defense": 55,
         "speed": 30,
-        "total": 325
+        "total": 340
       },
       "evolution_levels": {
         "to_stage_2": 22,
@@ -2077,7 +2077,7 @@
       ],
       "mechanics_status": "Approved for website implementation",
       "approved_bst": 340,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 8,
@@ -2110,13 +2110,13 @@
         }
       ],
       "base_stats": {
-        "hp": 85,
-        "attack": 60,
+        "hp": 100,
+        "attack": 55,
         "defense": 75,
-        "special_attack": 100,
+        "special_attack": 110,
         "special_defense": 75,
-        "speed": 40,
-        "total": 435
+        "speed": 35,
+        "total": 450
       },
       "evolution_levels": {
         "from_stage_1": 22,
@@ -2335,7 +2335,7 @@
       "mechanics_status": "Approved for website implementation",
       "move_timing_review_needed": true,
       "approved_bst": 450,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 9,
@@ -2368,12 +2368,12 @@
         }
       ],
       "base_stats": {
-        "hp": 110,
-        "attack": 75,
-        "defense": 100,
-        "special_attack": 125,
-        "special_defense": 95,
-        "speed": 45,
+        "hp": 125,
+        "attack": 65,
+        "defense": 90,
+        "special_attack": 140,
+        "special_defense": 90,
+        "speed": 40,
         "total": 550
       },
       "evolution_levels": {
