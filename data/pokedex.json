@@ -1912,7 +1912,7 @@
         "solo": "#007 Ripplet.png",
         "shiny": "#007 Ripplet (Shiny).png"
       },
-      "notes": "Approved #007 Ripplet profile. Preserve exact Pokédex entry and approved normal artwork. Special-attacking 325 BST. Seven level-up moves through Level 16; Level 20 Mud Shot remains in Ripplash's draft moveset, pending timing review for evolution at Level 22. Automatic evolution at Level 22 retains accumulated EXP and learned moves. Shiny color palette: deep purple body, pale underside, turquoise fins and golden eyes; no gender-based appearance differences.",
+      "notes": "Approved #007 Ripplet profile. Preserve exact Pokédex entry and approved normal artwork. Special-attacking 340 approved BST. Seven level-up moves through Level 16; Level 20 Mud Shot remains in Ripplash's draft moveset, pending timing review for evolution at Level 22. Automatic evolution at Level 22 retains accumulated EXP and learned moves. Shiny color palette: deep purple body, pale underside, turquoise fins and golden eyes; no gender-based appearance differences.",
       "battle_role": "Slow, defensive special attacker",
       "gender_ratio": {
         "male": 87.5,
@@ -2162,7 +2162,7 @@
         "solo": "#008 Ripplash.png",
         "shiny": "#008 Ripplash (Shiny).jpg"
       },
-      "notes": "Approved #008 Ripplash. Original normal artwork and exact Pokédex entry preserved. Retains 435 BST (higher than Normal/Fire middle evolutions). Learns five new moves at Levels 20,24,28,32,36; Torrent Break at Level 40 remains in Riptorrent's draft moveset, pending timing review for evolution at Level 41. Inherits previously learned Ripplet moves. Evolves automatically at Level 41 with retained cumulative EXP. Both genders use the same normal and shiny artwork. Approved shiny palette: deep purple body, pale silver underside, bright turquoise tail fins, original golden eyes.",
+      "notes": "Approved #008 Ripplash. Original normal artwork and exact Pokédex entry preserved. Approved 450 BST (higher than Normal/Fire middle evolutions). Learns five new moves at Levels 20,24,28,32,36; Torrent Break at Level 40 remains in Riptorrent's draft moveset, pending timing review for evolution at Level 41. Inherits previously learned Ripplet moves. Evolves automatically at Level 41 with retained cumulative EXP. Both genders use the same normal and shiny artwork. Approved shiny palette: deep purple body, pale silver underside, bright turquoise tail fins, original golden eyes.",
       "battle_role": "Slow, durable special attacker",
       "gender_ratio": {
         "male": 87.5,
@@ -2915,7 +2915,7 @@
         }
       ],
       "pokedex_entry": "Foliko spends most of its day hiding among fallen leaves and low branches. Its leaf-shaped tail and mottled skin make it nearly impossible to distinguish from surrounding foliage. When startled, it freezes completely, relying on its camouflage to escape detection. Curious by nature, it often follows unfamiliar sounds before quickly retreating into hiding.",
-      "notes": "Approved #010 Foliko. Exact existing Pokédex entry and normal artwork preserved; existing approved autumn shiny linked. Pure Grass, fast special attacker, 310 BST. Six stage moves at Levels 1–13; Leech Seed at Level 16 remains assigned to Folisk pending move timing review for evolution at Level 17. Evolves at Level 17 into Folisk and at Level 36 into Foliraptor, retaining cumulative Medium Slow EXP and previously learned moves. No gender appearance differences; shiny uses burnt orange/copper body, golden-amber tail, pale cream markings, original golden eyes.",
+      "notes": "Approved #010 Foliko. Exact existing Pokédex entry and normal artwork preserved; existing approved autumn shiny linked. Pure Grass, fast special attacker, 315 approved BST. Six stage moves at Levels 1–13; Leech Seed at Level 16 remains assigned to Folisk pending move timing review for evolution at Level 17. Evolves at Level 17 into Folisk and at Level 36 into Foliraptor, retaining cumulative Medium Slow EXP and previously learned moves. No gender appearance differences; shiny uses burnt orange/copper body, golden-amber tail, pale cream markings, original golden eyes.",
       "level_up_moveset_status": "Complete (Foliko stage Levels 1–16)",
       "images": {
         "solo": "#010 Foliko.png",
@@ -4575,7 +4575,7 @@
       ],
       "design_status": "Approved",
       "battle_role": "Extremely fast physical attacker",
-      "notes": "Approved #015 Kivarion. Preserve exact website Pokédex entry, 530 BST, 140 Speed and 120 Attack. Preserve intentionally mapped normal artwork #014 Kivarra.png for Kivarion (#014 Kivarra uses #015 Kivarion.png). The uploaded Kivarion shiny uses its actual filename #015 Kivarion (Shiny).png. Final-stage moves at Levels 36,39,43,47,51,55 only; Extreme Speed is currently assigned at Level 36 pending timing review for evolution at Level 38, with no additional evolution-exclusive move. Retain previously learned moves, assigned ability, and cumulative Medium Slow EXP. No gender differences.",
+      "notes": "Approved #015 Kivarion. Preserve exact website Pokédex entry. Approved BST 540; provisional individual stat spread retains 140 Speed and 120 Attack pending redistribution. Preserve intentionally mapped normal artwork #014 Kivarra.png for Kivarion (#014 Kivarra uses #015 Kivarion.png). The uploaded Kivarion shiny uses its actual filename #015 Kivarion (Shiny).png. Final-stage moves at Levels 36,39,43,47,51,55 only; Extreme Speed is currently assigned at Level 36 pending timing review for evolution at Level 38, with no additional evolution-exclusive move. Retain previously learned moves, assigned ability, and cumulative Medium Slow EXP. No gender differences.",
       "pokedex_entry": "Kivarion is an exceptionally fast predator capable of crossing vast grasslands in seconds. Its powerful legs generate tremendous electrical energy with every stride, causing its markings to glow brilliantly. When pursuing prey, Kivarion can release a concentrated burst of electricity to accelerate beyond its normal limits.",
       "height_m": 1.4,
       "weight_kg": 65,
@@ -6408,7 +6408,7 @@
       "design_status": "Approved",
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Complete (Joeyjab first stage Levels 1–19)",
-      "notes": "Approved #019 Joeyjab. Preserve exact approved Sparring Pokémon Pokédex entry. Normal and shiny art from current repository files 019_Joeyjab.png and 019_Joeyjab (Shiny).png; original conversation source filenames were different and do not establish repository paths. This shiny is the only current uploaded Joeyjab shiny. Evolves into Rookick at Level 20 and Kangarush at Level 40; approved BST progression 310→435→550. Evolutions retain ability, moves and cumulative Medium Slow EXP. Mach Punch is boosted by Iron Fist; Arm Thrust is not. No hidden ability or gender appearance differences.",
+      "notes": "Approved #019 Joeyjab. Preserve exact approved Sparring Pokémon Pokédex entry. Normal and shiny art from current repository files 019_Joeyjab.png and 019_Joeyjab (Shiny).png; original conversation source filenames were different and do not establish repository paths. This shiny is the only current uploaded Joeyjab shiny. Evolves into Rookick at Level 20 and Kangarush at Level 40; approved BST progression 330→445→550. Evolutions retain ability, moves and cumulative Medium Slow EXP. Mach Punch is boosted by Iron Fist; Arm Thrust is not. No hidden ability or gender appearance differences.",
       "approved_bst": 330,
       "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
