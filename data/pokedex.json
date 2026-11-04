@@ -69,11 +69,11 @@
       "design_status": "Finalized",
       "mechanics_status": "To be determined",
       "evolution_levels": {
-        "to_stage_2": 17,
-        "to_stage_3": 35
+        "to_stage_2": 16,
+        "to_stage_3": 34
       },
       "level_up_moveset_status": "Complete",
-      "notes": "Species design, typing, abilities, base stats, and mandatory evolution at level 17 approved. Wolvyn learns moves only before evolving; later moves belong to evolved species.",
+      "notes": "Species design, typing, abilities, base stats, and mandatory evolution at level 16 approved. Wolvyn learns moves only before evolving; later moves belong to evolved species.",
       "experience_growth_rate": "Medium Slow",
       "base_exp_yield": 62,
       "gender_ratio": {
@@ -119,8 +119,8 @@
         "shiny": "#002-Wolvigor (Shiny).png"
       },
       "evolution_levels": {
-        "from_stage_1": 17,
-        "to_stage_3": 35
+        "from_stage_1": 16,
+        "to_stage_3": 34
       },
       "experience_growth_rate": "Medium Slow",
       "evolution_exp_retained": true,
@@ -192,7 +192,7 @@
       ],
       "design_status": "Approved",
       "mechanics_status": "Approved for handoff",
-      "notes": "Approved Wolvigor profile. Normal artwork linked as 002-Wolvigor.png; corrected shiny artwork awaiting upload under confirmed filename. Level 35 and later family moves belong to Wolvage.",
+      "notes": "Approved Wolvigor profile. Evolves from Wolvyn at level 16 and into Wolvage at level 34. Normal artwork linked as 002-Wolvigor.png; corrected shiny artwork awaiting upload under confirmed filename. Level 35 and later family moves belong to Wolvage.",
       "inspiration": "Wolverine",
       "height_m": 0.8,
       "weight_kg": 28.5,
@@ -256,6 +256,11 @@
         }
       ],
       "experience_table": [
+        {
+          "level": 16,
+          "total_exp": 2535,
+          "exp_to_next": 585
+        },
         {
           "level": 17,
           "total_exp": 3120,
@@ -344,11 +349,6 @@
         {
           "level": 34,
           "total_exp": 33084,
-          "exp_to_next": 3351
-        },
-        {
-          "level": 35,
-          "total_exp": 36435,
           "exp_to_next": null
         }
       ],
@@ -372,7 +372,7 @@
         "shiny": "#003-Wolvage (Shiny).png"
       },
       "evolution_levels": {
-        "from_stage_2": 35
+        "from_stage_2": 34
       },
       "experience_growth_rate": "Medium Slow",
       "evolution_exp_retained": true,
@@ -440,7 +440,7 @@
       ],
       "design_status": "Approved",
       "mechanics_status": "Approved for handoff",
-      "notes": "Final stage, evolves from Wolvigor at level 35. No hidden abilities. No gender-based appearance differences.",
+      "notes": "Final stage, evolves from Wolvigor at level 34. No hidden abilities. No gender-based appearance differences.",
       "inspiration": "Wolverine",
       "height_m": 1.4,
       "weight_kg": 68,
@@ -458,6 +458,11 @@
       },
       "max_level": 100,
       "experience_table": [
+        {
+          "level": 34,
+          "total_exp": 33084,
+          "exp_to_next": 3351
+        },
         {
           "level": 35,
           "total_exp": 36435,
