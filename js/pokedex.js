@@ -22,7 +22,7 @@
  const matchups=groups.map(g=>'<div><h3>'+escape(g[0])+'</h3><div class="effect-grid">'+g[1].map(x=>'<div class="effect-item"><strong>'+escape(x[0])+'</strong><div>'+(x[3].length?chips(x[3]):escape(x[1]))+'</div><span class="effect-multiplier">'+escape(x[2])+'</span></div>').join('')+'</div></div>').join('');
  const abilityCards=(p.abilities||[]).filter(a=>a.slot!=='hidden').map((a,i)=>'<div class="ability"><h3>'+escape(a.name)+'</h3><p>'+escape(a.description||'Information Coming Soon')+'</p><p class="muted">Ability '+escape(a.slot||String.fromCharCode(65+i))+'</p></div>').join('');
  const levels=(p.experience_table||[]).map(row=>'<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')+'</td><td>'+(row.exp_to_next==null?'Evolves into Solbruin':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)<18).slice().sort((a,b)=>Number(a.level)-Number(b.level)).map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+(m.custom?' ★':'')+'</td><td>'+chip(m.type||'Normal')+'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)<Number(p.evolution_levels.to_stage_2)).slice().sort((a,b)=>Number(a.level)-Number(b.level)).map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+(m.custom?' ★':'')+'</td><td>'+chip(m.type||'Normal')+'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch"><button type="button" id="normalArt" aria-pressed="true">Normal</button><button type="button" id="shinyArt" aria-pressed="false" '+(!shiny?'disabled title="Shiny artwork not uploaded"':'')+'>✨ Shiny</button></div></div>';
  root.innerHTML='<div class="solcub-profile">'
   +'<nav class="section-nav">'+['Effectiveness','Evolution','Abilities','Stats','Experience','Moves'].map(x=>'<a href="#'+x.toLowerCase()+'">'+x+'</a>').join('')+'</nav>'
@@ -42,7 +42,7 @@
   +info('Growth Rate',p.experience_growth_rate)+info('Base EXP Yield',p.base_exp_yield)
   +info('Evolution','Level 19 → Solbruin (automatic)')+'<p class="muted">Cumulative experience is retained when evolving. These totals represent required EXP, not EXP awarded for defeating Solcub.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th><th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2><p class="muted">Only moves learned as Solcub (before evolving at Level 19).</p>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+'<p class="muted">Only moves learned as Solcub (before evolving at Level 19).</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th><th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div>'
   +(custom?'<div class="custom-move"><h3>★ Ember Claw — Original Everwild Move</h3><div class="table-scroll"><table class="moves"><tbody>'
     +[['Type',custom.type],['Category',custom.category],['Power',custom.power],['Accuracy',custom.accuracy+'%'],['PP',custom.pp],['Additional Effect',custom.burn_chance_percent+'% chance to burn'],['Contact Move',custom.contact?'Yes':'No']].map(row=>'<tr><th>'+escape(row[0])+'</th><td>'+escape(row[1])+'</td></tr>').join('')
@@ -93,7 +93,7 @@ function solbruinProfile(p,pokemon){
  const experienceHtml=(p.experience_table||[]).map(x=>
   '<tr><td>'+escape(x.level)+'</td><td>'+Number(x.total_exp).toLocaleString('en-US')
   +'</td><td>'+(x.exp_to_next==null?'Evolves into Solursus':Number(x.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const movesHtml=(p.moves||[]).filter(m=>Number(m.level)>=18&&Number(m.level)<36)
+ const movesHtml=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_1)&&Number(m.level)<Number(p.evolution_levels.to_stage_3))
    .slice().sort((a,b)=>Number(a.level)-Number(b.level)).map(m=>
    '<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+pill(m.type||'Normal')
    +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
@@ -131,7 +131,7 @@ function solbruinProfile(p,pokemon){
   +'These totals are required experience, not experience awarded for defeating Solbruin.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+experienceHtml+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Solbruin (Levels 19–38) are listed. '
   +'Previously learned moves from Solcub are retained; no new evolution move at Level 18.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -202,7 +202,7 @@ function solursusProfile(p,pokemon){
  const experienceHtml=(p.experience_table||[]).map(x=>
   '<tr><td>'+escape(x.level)+'</td><td>'+Number(x.total_exp).toLocaleString('en-US')
   +'</td><td>'+(x.exp_to_next==null?'Maximum Level':Number(x.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const movesHtml=(p.moves||[]).filter(m=>Number(m.level)>=36&&Number(m.level)<=100)
+ const movesHtml=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_2)&&Number(m.level)<=100)
    .slice().sort((a,b)=>Number(a.level)-Number(b.level)).map(m=>
    '<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+pill(m.type||'Normal')
    +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
@@ -240,7 +240,7 @@ function solursusProfile(p,pokemon){
   +'These totals are required experience, not experience awarded for defeating Solursus.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+experienceHtml+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Solursus (Levels 39–100) are listed. '
   +'Previously learned moves from Solcub and Solbruin are retained; no new evolution move at Level 39.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -311,7 +311,7 @@ function rippletProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Ripplash':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)<20).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)<Number(p.evolution_levels.to_stage_2)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -351,7 +351,7 @@ function rippletProfile(p,pokemon){
   +' All accumulated EXP carries over when Ripplet evolves into Ripplash.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Ripplet (Levels 1–21). Mud Shot at Level 20 is retained in the draft moveset and requires review after the Level 22 evolution change.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -411,7 +411,7 @@ function ripplashProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Riptorrent':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=20&&Number(m.level)<40).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_1)&&Number(m.level)<Number(p.evolution_levels.to_stage_3)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -451,7 +451,7 @@ function ripplashProfile(p,pokemon){
   +' All accumulated EXP carries over from Ripplet and is retained when Ripplash evolves into Riptorrent.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Ripplash (Levels 22–40). Torrent Break remains assigned to Riptorrent at Level 40, pending timing review for its Level 41 evolution.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -511,7 +511,7 @@ function riptorrentProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Maximum Level':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=40&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_2)&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+(m.signature?' ★':'')+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -551,7 +551,7 @@ function riptorrentProfile(p,pokemon){
   +' All accumulated EXP carries over from Ripplet through Ripplash to Riptorrent.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Riptorrent (Levels 41–100). Torrent Break ★ is its original Everwild signature move at Level 40.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -622,7 +622,7 @@ function folikoProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Folisk':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)<16).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)<Number(p.evolution_levels.to_stage_2)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -662,7 +662,7 @@ function folikoProfile(p,pokemon){
   +' All accumulated EXP carries over when Foliko evolves into Folisk.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Foliko (Levels 1–16). Leech Seed at Level 16 remains in Folisk’s draft moveset; timing review is needed for the Level 17 evolution.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -722,7 +722,7 @@ function foliskProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Foliraptor':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=16&&Number(m.level)<32).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_1)&&Number(m.level)<Number(p.evolution_levels.to_stage_3)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -762,8 +762,8 @@ function foliskProfile(p,pokemon){
   +' All accumulated EXP carries over from Foliko and is retained when Folisk evolves into Foliraptor.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Folisk (Levels 17–35). Leech Seed at Level 16 is a standard level-up move; no separate evolution-exclusive move is added. Leaf Storm at Level 32 remains in Foliraptor’s draft moveset; timing review is needed for the Level 36 evolution.'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
+  +'<p class="muted">Only moves learned as Folisk (Levels 17–35). Leech Seed remains assigned to Folisk at Level 16 in the draft; its timing needs review because Folisk now evolves at Level 17. No separate evolution-exclusive move is added. Leaf Storm at Level 32 remains in Foliraptor’s draft moveset; timing review is needed for the Level 36 evolution.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -822,7 +822,7 @@ function foliraptorProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Maximum Level':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=32&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_2)&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -862,7 +862,7 @@ function foliraptorProfile(p,pokemon){
   +' All accumulated EXP carries over from Foliko and Folisk into Foliraptor. Maximum Level 100.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Foliraptor (Levels 36–100) are listed. Leaf Storm is currently assigned at Level 32; its timing needs review for the Level 36 evolution, and no additional evolution-exclusive move is assigned.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -922,7 +922,7 @@ function kivoltProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Kivarra':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)<18).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)<Number(p.evolution_levels.to_stage_2)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -962,7 +962,7 @@ function kivoltProfile(p,pokemon){
   +' All accumulated EXP carries over when Kivolt evolves into Kivarra.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Kivolt (Levels 1–17). Bite at Level 19 belongs to Kivarra. No additional evolution-exclusive move is learned at Level 18.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -1022,7 +1022,7 @@ function kivarraProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Kivarion':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=18&&Number(m.level)<36).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_1)&&Number(m.level)<Number(p.evolution_levels.to_stage_3)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1062,7 +1062,7 @@ function kivarraProfile(p,pokemon){
   +' All accumulated EXP carries over from Kivolt through Kivarra and into Kivarion.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Kivarra (Levels 18–37) are listed. Extreme Speed at Level 36 remains in Kivarion’s draft moveset, pending timing review for its Level 38 evolution. No additional evolution-exclusive move is learned at Level 18.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -1122,7 +1122,7 @@ function kivarionProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Maximum Level':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=36&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_2)&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1162,7 +1162,7 @@ function kivarionProfile(p,pokemon){
   +' All accumulated EXP carries over from Kivolt and Kivarra into Kivarion through evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Kivarion (Levels 38–100) are listed. Extreme Speed remains assigned at Level 36; timing review is needed for the Level 38 evolution, with no additional evolution-exclusive move.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -1222,7 +1222,7 @@ function arctixProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Arctivar':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)<16).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)<Number(p.evolution_levels.to_stage_2)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1262,7 +1262,7 @@ function arctixProfile(p,pokemon){
   +' All accumulated EXP carries over when Arctix evolves into Arctivar.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Arctix (Levels 1–15). Arctix evolves into Arctivar at Level 16, retaining previously learned moves.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -1322,7 +1322,7 @@ function arctivarProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Arctivale':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=16&&Number(m.level)<32).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_1)&&Number(m.level)<Number(p.evolution_levels.to_stage_3)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1362,8 +1362,8 @@ function arctivarProfile(p,pokemon){
   +' All accumulated EXP carries over from Arctix and remains intact when Arctivar evolves into Arctivale.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
-  +'<p class="muted">Only moves learned as Arctivar (Levels 16–33) are listed. Bite, Swift, Ice Shard, Freeze-Dry and Agility are learned at Levels 18, 21, 24, 27 and 30. Freeze-Dry is also super effective against Water-type Pokémon. Level 32 Ice Beam belongs to Arctivale; no additional evolution-exclusive move is added.'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
+  +'<p class="muted">Only moves learned as Arctivar (Levels 16–33) are listed. Bite, Swift, Ice Shard, Freeze-Dry and Agility are learned at Levels 18, 21, 24, 27 and 30. Freeze-Dry is also super effective against Water-type Pokémon. Ice Beam remains assigned to Arctivale at Level 32 in the draft; its timing needs review because Arctivale now evolves at Level 34. No additional evolution-exclusive move is added.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
   +'<th>Type</th><th>Category</th></tr></thead><tbody>'+moveRows+'</tbody></table></div></section>'
@@ -1422,7 +1422,7 @@ function arctivaleProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Maximum Level':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=32&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_2)&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1462,7 +1462,7 @@ function arctivaleProfile(p,pokemon){
   +' All accumulated EXP carries over from Arctix and Arctivar into Arctivale. Level 100 is the maximum level.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Arctivale (Levels 34–100) are listed. Ice Beam remains assigned at Level 32; timing review is needed for the Level 34 evolution, and no additional evolution-exclusive move is assigned. Blizzard bypasses accuracy checks during snow; Aurora Veil normally requires snow. Previously learned Snowscape can activate Snow Cloak and Ice Body.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -1522,7 +1522,7 @@ function joeyjabProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.exp_to_next==null?'Evolves into Rookick':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)<16).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)<Number(p.evolution_levels.to_stage_2)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1562,7 +1562,7 @@ function joeyjabProfile(p,pokemon){
   +' All accumulated EXP carries over when Joeyjab evolves into Rookick. Rookick later evolves into Kangarush at Level 40.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Joeyjab (Levels 1–19) are listed. Mach Punch benefits from Iron Fist; Arm Thrust does not. Joeyjab evolves at Level 20, retaining previously learned moves.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -1622,7 +1622,7 @@ function rookickProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.level===16?'Evolved from Joeyjab · ':'')+(row.exp_to_next==null?'Evolves into Kangarush':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=16&&Number(m.level)<40).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_1)&&Number(m.level)<Number(p.evolution_levels.to_stage_3)).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1662,7 +1662,7 @@ function rookickProfile(p,pokemon){
   +' At Level 20, Joeyjab evolves into Rookick with 5,460 accumulated EXP. At Level 40, Rookick evolves into Kangarush with 56,660 accumulated EXP. All experience and previously learned moves are retained.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Rookick (Levels 20–39) are listed. Bullet Punch at Level 22 and Drain Punch at Level 34 benefit from Iron Fist, as does Joeyjab’s previously learned Mach Punch. Level 40 Hammer Arm belongs to Kangarush, and no additional evolution-only move is learned at Levels 20 or 40.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
@@ -1722,7 +1722,7 @@ function kangarushProfile(p,pokemon){
  const levels=(p.experience_table||[]).map(row=>
   '<tr><td>'+escape(row.level)+'</td><td>'+Number(row.total_exp).toLocaleString('en-US')
   +'</td><td>'+(row.level===40?'Evolved from Rookick · ':'')+(row.exp_to_next==null?'Maximum Level':Number(row.exp_to_next).toLocaleString('en-US'))+'</td></tr>').join('');
- const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=40&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
+ const moveRows=(p.moves||[]).filter(m=>Number(m.level)>=Number(p.evolution_levels.from_stage_2)&&Number(m.level)<=100).slice().sort((a,b)=>Number(a.level)-Number(b.level))
   .map(m=>'<tr><td>'+escape(m.level)+'</td><td>'+escape(m.name)+'</td><td>'+chip(m.type||'Normal')
   +'</td><td>'+escape(m.category||'—')+'</td></tr>').join('');
  const heroArt='<div>'+artHTML(p)+'<div class="shiny-switch">'
@@ -1762,7 +1762,7 @@ function kangarushProfile(p,pokemon){
   +' Joeyjab evolves into Rookick at Level 20 (5,460 cumulative EXP); Rookick evolves into Kangarush at Level 40 (56,660 cumulative EXP). Kangarush has no further evolution, and its Medium Slow EXP reaches 1,059,860 at the maximum Level 100. Previous moves, accumulated experience and selected ability carry through evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Total Cumulative EXP</th>'
   +'<th>EXP to Next Level</th></tr></thead><tbody>'+levels+'</tbody></table></div></section>'
-  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'
+  +'<section id="moves" class="panel"><h2 class="section-title">Level-Up Moves</h2>'+(p.move_timing_review_needed?'<p class="muted">Move timing review pending after the evolution-level update. Earlier draft move levels are preserved in the Pokédex data but not shown as level-up moves outside this evolution stage.</p>':'')+''
   +'<p class="muted">Only moves learned as Kangarush (Levels 40–100) are listed. Hammer Arm is learned at Level 40 when Rookick evolves, with no additional evolution-exclusive move. Iron Fist boosts eligible punches (Mach Punch, Bullet Punch, Drain Punch, Hammer Arm, Thunder Punch and Focus Punch), but not Blaze Kick, Close Combat or Giga Impact.'
   +' Previously learned moves remain available after evolution.</p>'
   +'<div class="table-scroll"><table class="moves"><thead><tr><th>Level</th><th>Move</th>'
