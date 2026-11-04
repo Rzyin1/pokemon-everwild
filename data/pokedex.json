@@ -100,7 +100,9 @@
       "evolution_exp_retained": true,
       "ev_yield": {
         "attack": 1
-      }
+      },
+      "approved_bst": 310,
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 2,
@@ -354,7 +356,9 @@
       ],
       "evolution_forced": true,
       "evolution_move_at_17": false,
-      "level_up_moveset_status": "Complete — Wolvigor retains earlier moves learned as Wolvyn; evolves at Level 16"
+      "level_up_moveset_status": "Complete — Wolvigor retains earlier moves learned as Wolvyn; evolves at Level 16",
+      "approved_bst": 410,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 3,
@@ -794,7 +798,9 @@
           "total_exp": 1059860,
           "exp_to_next": null
         }
-      ]
+      ],
+      "approved_bst": 530,
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 4,
@@ -1017,7 +1023,9 @@
           "total_exp": 4575,
           "exp_to_next": null
         }
-      ]
+      ],
+      "approved_bst": 325,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 5,
@@ -1309,7 +1317,9 @@
           "total_exp": 52127,
           "exp_to_next": null
         }
-      ]
+      ],
+      "approved_bst": 440,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 6,
@@ -1803,7 +1813,9 @@
           "total_exp": 1059860,
           "exp_to_next": null
         }
-      ]
+      ],
+      "approved_bst": 545,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 7,
@@ -2063,7 +2075,9 @@
           "exp_to_next": null
         }
       ],
-      "mechanics_status": "Approved for website implementation"
+      "mechanics_status": "Approved for website implementation",
+      "approved_bst": 340,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 8,
@@ -2319,7 +2333,9 @@
         }
       ],
       "mechanics_status": "Approved for website implementation",
-      "move_timing_review_needed": true
+      "move_timing_review_needed": true,
+      "approved_bst": 450,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 9,
@@ -2814,7 +2830,9 @@
         }
       ],
       "mechanics_status": "Approved for website implementation",
-      "move_timing_review_needed": true
+      "move_timing_review_needed": true,
+      "approved_bst": 550,
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 10,
@@ -3085,7 +3103,9 @@
           "exp_to_next": null
         }
       ],
-      "mechanics_status": "Approved for website implementation"
+      "mechanics_status": "Approved for website implementation",
+      "approved_bst": 315,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 11,
@@ -3374,7 +3394,9 @@
         }
       ],
       "mechanics_status": "Approved for website implementation",
-      "move_timing_review_needed": true
+      "move_timing_review_needed": true,
+      "approved_bst": 420,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 12,
@@ -3896,7 +3918,9 @@
         }
       ],
       "mechanics_status": "Approved for website implementation",
-      "move_timing_review_needed": true
+      "move_timing_review_needed": true,
+      "approved_bst": 535,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 13,
@@ -4206,7 +4230,9 @@
           "immunities_from_typing": []
         }
       },
-      "mechanics_status": "Approved for website implementation"
+      "mechanics_status": "Approved for website implementation",
+      "approved_bst": 320,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 14,
@@ -4526,7 +4552,9 @@
           "immunities_from_typing": []
         }
       },
-      "mechanics_status": "Approved for website implementation"
+      "mechanics_status": "Approved for website implementation",
+      "approved_bst": 435,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 15,
@@ -5059,7 +5087,9 @@
         }
       },
       "mechanics_status": "Approved for website implementation",
-      "move_timing_review_needed": true
+      "move_timing_review_needed": true,
+      "approved_bst": 540,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 16,
@@ -5284,7 +5314,9 @@
         }
       },
       "mechanics_status": "Approved for website implementation",
-      "level_up_moveset_status": "Complete (Arctix first stage Levels 1–15)"
+      "level_up_moveset_status": "Complete (Arctix first stage Levels 1–15)",
+      "approved_bst": 310,
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 17,
@@ -5520,7 +5552,9 @@
         }
       },
       "mechanics_status": "Approved for website implementation",
-      "level_up_moveset_status": "Complete (Arctivar middle stage Levels 16–33)"
+      "level_up_moveset_status": "Complete (Arctivar middle stage Levels 16–33)",
+      "approved_bst": 410,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 18,
@@ -6103,7 +6137,9 @@
       },
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Timing review needed after evolution level update; approved moves preserved",
-      "move_timing_review_needed": true
+      "move_timing_review_needed": true,
+      "approved_bst": 530,
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 19,
@@ -6372,7 +6408,9 @@
       "design_status": "Approved",
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Complete (Joeyjab first stage Levels 1–19)",
-      "notes": "Approved #019 Joeyjab. Preserve exact approved Sparring Pokémon Pokédex entry. Normal and shiny art from current repository files 019_Joeyjab.png and 019_Joeyjab (Shiny).png; original conversation source filenames were different and do not establish repository paths. This shiny is the only current uploaded Joeyjab shiny. Evolves into Rookick at Level 20 and Kangarush at Level 40; approved BST progression 310→435→550. Evolutions retain ability, moves and cumulative Medium Slow EXP. Mach Punch is boosted by Iron Fist; Arm Thrust is not. No hidden ability or gender appearance differences."
+      "notes": "Approved #019 Joeyjab. Preserve exact approved Sparring Pokémon Pokédex entry. Normal and shiny art from current repository files 019_Joeyjab.png and 019_Joeyjab (Shiny).png; original conversation source filenames were different and do not establish repository paths. This shiny is the only current uploaded Joeyjab shiny. Evolves into Rookick at Level 20 and Kangarush at Level 40; approved BST progression 310→435→550. Evolutions retain ability, moves and cumulative Medium Slow EXP. Mach Punch is boosted by Iron Fist; Arm Thrust is not. No hidden ability or gender appearance differences.",
+      "approved_bst": 330,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 20,
@@ -6702,7 +6740,9 @@
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Timing review needed after evolution level update; approved moves preserved",
       "notes": "Approved #020 Rookick Kickboxer Pokémon. Original normal art is repository file 020_Rookick.png; shiny path is 020_Rookick (Shiny).png, the existing non-rejected filename. The earlier rejected version named 020_Rookick_Shiny.png must not be used. Shiny file's exact visual equivalence to the original source shiny_rookick_mid_kick_pose.png has not been independently verified. Middle stage moves occur at Levels 18,22,26,30,34,38. Rookick evolves to Kangarush at Level 40; Hammer Arm at Level 40 belongs to Kangarush. No extra evolution-only moves. Retain Joeyjab's learned moves and assigned ability, accumulated Medium Slow EXP, and no gender differences.",
-      "move_timing_review_needed": true
+      "move_timing_review_needed": true,
+      "approved_bst": 445,
+      "stat_distribution_status": "pending_rebalance_to_approved_bst"
     },
     {
       "number": 21,
@@ -7287,7 +7327,9 @@
       "design_status": "Approved",
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Complete (Kangarush final stage Levels 40–100)",
-      "notes": "Approved #021 Kangarush. Exact Knockout Pokémon entry, 550 BST with 140 Attack and 120 Defense, and final evolution at Level 40. Normal artwork exists in repository as 021_Kangarush.png; shiny artwork exists as 021_Kangarush (Shiny).png, a filename distinct from the rejected older 021_Kangarush_Shiny.png. The repository shiny visual is not independently confirmed against original source shiny_cyan_kangarush_boxing_stance.png, so verify visually if needed. No regeneration, redesign or changes to prior species. Level 40 Hammer Arm is Kangarush's regular level-up move; no additional exclusive move. Previous stages' moves and original ability and experience carry over."
+      "notes": "Approved #021 Kangarush. Exact Knockout Pokémon entry, 550 BST with 140 Attack and 120 Defense, and final evolution at Level 40. Normal artwork exists in repository as 021_Kangarush.png; shiny artwork exists as 021_Kangarush (Shiny).png, a filename distinct from the rejected older 021_Kangarush_Shiny.png. The repository shiny visual is not independently confirmed against original source shiny_cyan_kangarush_boxing_stance.png, so verify visually if needed. No regeneration, redesign or changes to prior species. Level 40 Hammer Arm is Kangarush's regular level-up move; no additional exclusive move. Previous stages' moves and original ability and experience carry over.",
+      "approved_bst": 550,
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 22,
@@ -7316,7 +7358,9 @@
       "evolution_levels": {
         "to_stage_2": 16,
         "to_stage_3": 38
-      }
+      },
+      "approved_bst": 310,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 23,
@@ -7345,7 +7389,9 @@
       "evolution_levels": {
         "from_stage_1": 16,
         "to_stage_3": 38
-      }
+      },
+      "approved_bst": 430,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 24,
@@ -7373,7 +7419,9 @@
       "notes": "Psychic starter family design approved. Only Pokédex identity, artwork and evolution relationships are set. Battle stats, moves, abilities, evolution levels, experience data, EV yields, catch rates and other mechanics remain intentionally unspecified. Approved evolution levels: Tarsik → Tarsigil at level 16; Tarsigil → Tarsage at level 38.",
       "evolution_levels": {
         "from_stage_2": 38
-      }
+      },
+      "approved_bst": 540,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Ghost",
@@ -7403,7 +7451,9 @@
       "evolution_levels": {
         "to_stage_2": 13,
         "to_stage_3": 31
-      }
+      },
+      "approved_bst": 295,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Ghost",
@@ -7433,7 +7483,9 @@
       "evolution_levels": {
         "from_stage_1": 13,
         "to_stage_3": 31
-      }
+      },
+      "approved_bst": 385,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Ghost",
@@ -7462,7 +7514,9 @@
       },
       "evolution_levels": {
         "from_stage_2": 31
-      }
+      },
+      "approved_bst": 530,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Ground",
@@ -7494,7 +7548,9 @@
       "evolution_levels": {
         "to_stage_2": 18,
         "to_stage_3": 37
-      }
+      },
+      "approved_bst": 320,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Ground",
@@ -7526,7 +7582,9 @@
       "evolution_levels": {
         "from_stage_1": 18,
         "to_stage_3": 37
-      }
+      },
+      "approved_bst": 430,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Ground",
@@ -7557,7 +7615,9 @@
       "pokedex_entry": "Pangranite possesses an enormous body protected by scales as hard as granite. Its massive claws can tear through solid rock, allowing it to carve vast underground tunnels. Fiercely territorial, Pangranite patrols its underground domain and uses its immense strength to drive away intruders. When threatened, it slams its armored tail against the ground, sending powerful tremors through the surrounding area.",
       "evolution_levels": {
         "from_stage_2": 37
-      }
+      },
+      "approved_bst": 540,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Rock",
@@ -7589,7 +7649,9 @@
       "evolution_levels": {
         "to_stage_2": 19,
         "to_stage_3": 40
-      }
+      },
+      "approved_bst": 325,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Rock",
@@ -7621,7 +7683,9 @@
       "evolution_levels": {
         "from_stage_1": 19,
         "to_stage_3": 40
-      }
+      },
+      "approved_bst": 445,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Rock",
@@ -7652,7 +7716,9 @@
       "pokedex_entry": "Cairnox rules the highest mountain peaks, where its enormous stone horns serve as a symbol of strength and dominance. Rival Cairnox clash in thunderous headbutting contests that can send tremors through entire mountainsides. Its powerful legs and exceptional balance allow it to charge across narrow cliffs with ease, while its thick wool protects it from the harshest alpine conditions.",
       "evolution_levels": {
         "from_stage_2": 40
-      }
+      },
+      "approved_bst": 550,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 34,
@@ -7684,7 +7750,9 @@
       "evolution_levels": {
         "to_stage_2": 19,
         "to_stage_3": 38
-      }
+      },
+      "approved_bst": 325,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 35,
@@ -7716,7 +7784,9 @@
       "evolution_levels": {
         "from_stage_1": 19,
         "to_stage_3": 38
-      }
+      },
+      "approved_bst": 435,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 36,
@@ -7747,7 +7817,9 @@
       },
       "evolution_levels": {
         "from_stage_2": 38
-      }
+      },
+      "approved_bst": 540,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Poison",
@@ -7779,7 +7851,9 @@
       "evolution_levels": {
         "to_stage_2": 16,
         "to_stage_3": 35
-      }
+      },
+      "approved_bst": 310,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Poison",
@@ -7811,7 +7885,9 @@
       "evolution_levels": {
         "from_stage_1": 16,
         "to_stage_3": 35
-      }
+      },
+      "approved_bst": 415,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "type1": "Poison",
@@ -7842,7 +7918,9 @@
       },
       "evolution_levels": {
         "from_stage_2": 35
-      }
+      },
+      "approved_bst": 530,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 40,
@@ -7873,7 +7951,9 @@
       "evolution_levels": {
         "to_stage_2": 13,
         "to_stage_3": 31
-      }
+      },
+      "approved_bst": 295,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 41,
@@ -7904,7 +7984,9 @@
       "evolution_levels": {
         "from_stage_1": 13,
         "to_stage_3": 31
-      }
+      },
+      "approved_bst": 385,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 42,
@@ -7934,7 +8016,9 @@
       },
       "evolution_levels": {
         "from_stage_2": 31
-      }
+      },
+      "approved_bst": 530,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 43,
@@ -7965,7 +8049,9 @@
       "evolution_levels": {
         "to_stage_2": 17,
         "to_stage_3": 36
-      }
+      },
+      "approved_bst": 315,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 44,
@@ -7996,7 +8082,9 @@
       "evolution_levels": {
         "from_stage_1": 17,
         "to_stage_3": 36
-      }
+      },
+      "approved_bst": 420,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 45,
@@ -8026,7 +8114,9 @@
       },
       "evolution_levels": {
         "from_stage_2": 36
-      }
+      },
+      "approved_bst": 535,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 46,
@@ -8057,7 +8147,9 @@
       "evolution_levels": {
         "to_stage_2": 19,
         "to_stage_3": 39
-      }
+      },
+      "approved_bst": 325,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 47,
@@ -8088,7 +8180,9 @@
       "evolution_levels": {
         "from_stage_1": 19,
         "to_stage_3": 39
-      }
+      },
+      "approved_bst": 440,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 48,
@@ -8118,7 +8212,9 @@
       },
       "evolution_levels": {
         "from_stage_2": 39
-      }
+      },
+      "approved_bst": 545,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 49,
@@ -8149,7 +8245,9 @@
       "evolution_levels": {
         "to_stage_2": 23,
         "to_stage_3": 41
-      }
+      },
+      "approved_bst": 345,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 50,
@@ -8180,7 +8278,9 @@
       "evolution_levels": {
         "from_stage_1": 23,
         "to_stage_3": 41
-      }
+      },
+      "approved_bst": 450,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 51,
@@ -8210,7 +8310,9 @@
       },
       "evolution_levels": {
         "from_stage_2": 41
-      }
+      },
+      "approved_bst": 550,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 52,
@@ -8242,7 +8344,9 @@
       "evolution_levels": {
         "to_stage_2": 15,
         "to_stage_3": 35
-      }
+      },
+      "approved_bst": 305,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 53,
@@ -8274,7 +8378,9 @@
       "evolution_levels": {
         "from_stage_1": 15,
         "to_stage_3": 35
-      }
+      },
+      "approved_bst": 415,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     },
     {
       "number": 54,
@@ -8305,7 +8411,9 @@
       },
       "evolution_levels": {
         "from_stage_2": 35
-      }
+      },
+      "approved_bst": 530,
+      "stat_distribution_status": "individual_stats_not_yet_assigned"
     }
   ]
 }
