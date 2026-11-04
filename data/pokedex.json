@@ -8028,8 +8028,12 @@
       "gender_appearance_differences": false,
       "shiny_appearance": "Bone Dragon — bone-white scales, stone-gray underbelly, charcoal armor.",
       "design_status": "Approved — Pokédex information and shiny palette",
-      "artwork_status": "Normal and shiny images not yet uploaded to GitHub; artwork placeholders are shown.",
-      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later."
+      "artwork_status": "Normal and Bone Dragon shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "049 Komodra.png",
+        "shiny": "049 Komodra (Shiny).png"
+      }
     },
     {
       "number": 50,
@@ -8051,8 +8055,12 @@
       "gender_appearance_differences": false,
       "shiny_appearance": "Bone Dragon — bone-white scales, stone-gray underbelly, charcoal armor.",
       "design_status": "Approved — Pokédex information and shiny palette",
-      "artwork_status": "Normal and shiny images not yet uploaded to GitHub; artwork placeholders are shown.",
-      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later."
+      "artwork_status": "Normal and Bone Dragon shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "050 Komodran.png",
+        "shiny": "050 Komodran (Shiny).png"
+      }
     },
     {
       "number": 51,
@@ -8074,8 +8082,12 @@
       "gender_appearance_differences": false,
       "shiny_appearance": "Bone Dragon — bone-white scales, stone-gray underbelly, charcoal armor.",
       "design_status": "Approved — Pokédex information and shiny palette",
-      "artwork_status": "Normal and shiny images not yet uploaded to GitHub; artwork placeholders are shown.",
-      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later."
+      "artwork_status": "Normal and Bone Dragon shiny artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "051 Komodralis.png",
+        "shiny": "051 Komodralis (Shiny).png"
+      }
     }
   ]
 }
