@@ -32,11 +32,11 @@
         }
       ],
       "base_stats": {
-        "hp": 48,
-        "attack": 68,
-        "defense": 48,
+        "hp": 50,
+        "attack": 70,
+        "defense": 45,
         "special_attack": 35,
-        "special_defense": 41,
+        "special_defense": 40,
         "speed": 70,
         "total": 310
       },
@@ -144,11 +144,11 @@
       "base_stats": {
         "hp": 65,
         "attack": 95,
-        "defense": 65,
-        "special_attack": 40,
+        "defense": 60,
+        "special_attack": 45,
         "special_defense": 55,
-        "speed": 95,
-        "total": 415
+        "speed": 90,
+        "total": 410
       },
       "moves": [
         {
@@ -358,7 +358,7 @@
       "evolution_move_at_17": false,
       "level_up_moveset_status": "Complete — Wolvigor retains earlier moves learned as Wolvyn; evolves at Level 16",
       "approved_bst": 410,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 3,
@@ -397,12 +397,12 @@
         }
       ],
       "base_stats": {
-        "hp": 90,
-        "attack": 115,
-        "defense": 90,
-        "special_attack": 45,
+        "hp": 85,
+        "attack": 125,
+        "defense": 80,
+        "special_attack": 55,
         "special_defense": 75,
-        "speed": 115,
+        "speed": 110,
         "total": 530
       },
       "moves": [
