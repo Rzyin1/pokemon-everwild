@@ -8088,6 +8088,90 @@
         "solo": "051 Komodralis.png",
         "shiny": "051 Komodralis (Shiny).png"
       }
+    },
+    {
+      "number": 52,
+      "name": "Fawnlit",
+      "category": "Fawn Pokémon",
+      "stage": 1,
+      "stage_label": "First",
+      "height_m": 0.6,
+      "weight_kg": 12,
+      "pokedex_entry": "Fawnlit is a curious and gentle Pokémon that roams forest clearings in small groups. The crescent marking on its forehead is said to absorb the light of the moon.",
+      "type1": "Fairy",
+      "type2": null,
+      "inspiration": "Pudu Deer",
+      "evolution_line": [
+        52,
+        53,
+        54
+      ],
+      "gender_appearance_differences": false,
+      "appearance": "Moonwood — warm brown fur, cream markings, pale antlers, blue-lavender moonlight accents.",
+      "shiny_appearance": "Golden Dawn — golden fur, warm ivory markings, bronze antlers, soft golden light.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved individual normal Moonwood and shiny Golden Dawn artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "052 Fawnlit.png",
+        "shiny": "052 Fawnlit (Shiny).png"
+      }
+    },
+    {
+      "number": 53,
+      "name": "Deerelle",
+      "category": "Grove Deer Pokémon",
+      "stage": 2,
+      "stage_label": "Middle",
+      "height_m": 1.1,
+      "weight_kg": 38,
+      "pokedex_entry": "Deerelle's budding antlers are infused with a mysterious, fairy-like energy. It tirelessly watches over its territory, driving away those who would harm the forest.",
+      "type1": "Fairy",
+      "type2": null,
+      "inspiration": "Pudu Deer",
+      "evolution_line": [
+        52,
+        53,
+        54
+      ],
+      "gender_appearance_differences": false,
+      "appearance": "Moonwood — warm brown fur, cream markings, pale antlers, blue-lavender moonlight accents.",
+      "shiny_appearance": "Golden Dawn — golden fur, warm ivory markings, bronze antlers, soft golden light.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved individual normal Moonwood and shiny Golden Dawn artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "053 Deerelle.png",
+        "shiny": "053 Deerelle (Shiny).png"
+      }
+    },
+    {
+      "number": 54,
+      "name": "Ceryndor",
+      "category": "Moonwood Guardian Pokémon",
+      "stage": 3,
+      "stage_label": "Final",
+      "height_m": 1.7,
+      "weight_kg": 95,
+      "pokedex_entry": "Ceryndor is regarded as a guardian of the forest, its antlers glowing with a gentle, moonlit radiance. It is said that when Ceryndor walks through the woods, the forest itself blossoms in its wake.",
+      "type1": "Fairy",
+      "type2": null,
+      "inspiration": "Pudu Deer",
+      "evolution_line": [
+        52,
+        53,
+        54
+      ],
+      "gender_appearance_differences": false,
+      "appearance": "Moonwood — warm brown fur, cream markings, pale antlers, blue-lavender moonlight accents.",
+      "shiny_appearance": "Golden Dawn — golden fur, warm ivory markings, bronze antlers, soft golden light.",
+      "design_status": "Approved — Pokédex design only",
+      "artwork_status": "Approved individual normal Moonwood and shiny Golden Dawn artwork uploaded and linked to the Pokédex.",
+      "notes": "No gender differences. Evolution levels, base stats, abilities, moves, and other battle mechanics will be determined later.",
+      "images": {
+        "solo": "054 Ceryndor.png",
+        "shiny": "054 Ceryndor (Shiny).png"
+      }
     }
   ]
 }
