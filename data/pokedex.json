@@ -833,13 +833,13 @@
         }
       ],
       "base_stats": {
-        "hp": 60,
-        "attack": 65,
+        "hp": 65,
+        "attack": 70,
         "defense": 55,
-        "special_attack": 60,
+        "special_attack": 55,
         "special_defense": 45,
-        "speed": 25,
-        "total": 310
+        "speed": 35,
+        "total": 325
       },
       "moves": [
         {
@@ -1025,7 +1025,7 @@
         }
       ],
       "approved_bst": 325,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 5,
@@ -1058,13 +1058,13 @@
         }
       ],
       "base_stats": {
-        "hp": 80,
-        "attack": 90,
+        "hp": 85,
+        "attack": 100,
         "defense": 75,
-        "special_attack": 75,
+        "special_attack": 70,
         "special_defense": 60,
-        "speed": 35,
-        "total": 415
+        "speed": 50,
+        "total": 440
       },
       "moves": [
         {
@@ -1319,7 +1319,7 @@
         }
       ],
       "approved_bst": 440,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 6,
@@ -1352,13 +1352,13 @@
         }
       ],
       "base_stats": {
-        "hp": 105,
-        "attack": 120,
-        "defense": 100,
-        "special_attack": 90,
-        "special_defense": 75,
-        "speed": 40,
-        "total": 530
+        "hp": 110,
+        "attack": 130,
+        "defense": 95,
+        "special_attack": 80,
+        "special_defense": 70,
+        "speed": 60,
+        "total": 545
       },
       "moves": [
         {
@@ -1815,7 +1815,7 @@
         }
       ],
       "approved_bst": 545,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 7,
