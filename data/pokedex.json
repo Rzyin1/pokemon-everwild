@@ -5351,10 +5351,10 @@
         "hp": 60,
         "attack": 55,
         "defense": 50,
-        "special_attack": 90,
+        "special_attack": 85,
         "special_defense": 65,
         "speed": 95,
-        "total": 415
+        "total": 410
       },
       "battle_role": "Fast special attacker",
       "abilities": [
@@ -5554,7 +5554,7 @@
       "mechanics_status": "Approved for website implementation",
       "level_up_moveset_status": "Complete (Arctivar middle stage Levels 16–33)",
       "approved_bst": 410,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 18,
@@ -6173,13 +6173,13 @@
         "same_for_both_genders": true
       },
       "base_stats": {
-        "hp": 55,
-        "attack": 75,
-        "defense": 65,
+        "hp": 60,
+        "attack": 85,
+        "defense": 70,
         "special_attack": 30,
         "special_defense": 45,
         "speed": 40,
-        "total": 310
+        "total": 330
       },
       "abilities": [
         {
@@ -6410,7 +6410,7 @@
       "level_up_moveset_status": "Complete (Joeyjab first stage Levels 1–19)",
       "notes": "Approved #019 Joeyjab. Preserve exact approved Sparring Pokémon Pokédex entry. Normal and shiny art from current repository files 019_Joeyjab.png and 019_Joeyjab (Shiny).png; original conversation source filenames were different and do not establish repository paths. This shiny is the only current uploaded Joeyjab shiny. Evolves into Rookick at Level 20 and Kangarush at Level 40; approved BST progression 330→445→550. Evolutions retain ability, moves and cumulative Medium Slow EXP. Mach Punch is boosted by Iron Fist; Arm Thrust is not. No hidden ability or gender appearance differences.",
       "approved_bst": 330,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 20,
@@ -6445,13 +6445,13 @@
         "same_for_both_genders": true
       },
       "base_stats": {
-        "hp": 75,
-        "attack": 110,
+        "hp": 80,
+        "attack": 115,
         "defense": 95,
         "special_attack": 35,
         "special_defense": 60,
         "speed": 60,
-        "total": 435
+        "total": 445
       },
       "abilities": [
         {
@@ -6742,7 +6742,7 @@
       "notes": "Approved #020 Rookick Kickboxer Pokémon. Original normal art is repository file 020_Rookick.png; shiny path is 020_Rookick (Shiny).png, the existing non-rejected filename. The earlier rejected version named 020_Rookick_Shiny.png must not be used. Shiny file's exact visual equivalence to the original source shiny_rookick_mid_kick_pose.png has not been independently verified. Middle stage moves occur at Levels 18,22,26,30,34,38. Rookick evolves to Kangarush at Level 40; Hammer Arm at Level 40 belongs to Kangarush. No extra evolution-only moves. Retain Joeyjab's learned moves and assigned ability, accumulated Medium Slow EXP, and no gender differences.",
       "move_timing_review_needed": true,
       "approved_bst": 445,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 21,
