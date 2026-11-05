@@ -3948,12 +3948,12 @@
       "weight_kg": 12,
       "base_stats": {
         "hp": 45,
-        "attack": 65,
+        "attack": 70,
         "defense": 35,
         "special_attack": 45,
         "special_defense": 40,
-        "speed": 80,
-        "total": 310
+        "speed": 85,
+        "total": 320
       },
       "abilities": [
         {
@@ -4232,7 +4232,7 @@
       },
       "mechanics_status": "Approved for website implementation",
       "approved_bst": 320,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 14,
@@ -4259,13 +4259,13 @@
       "height_m": 0.9,
       "weight_kg": 32,
       "base_stats": {
-        "hp": 60,
-        "attack": 90,
+        "hp": 65,
+        "attack": 100,
         "defense": 45,
         "special_attack": 55,
         "special_defense": 50,
-        "speed": 115,
-        "total": 415
+        "speed": 120,
+        "total": 435
       },
       "abilities": [
         {
@@ -4554,7 +4554,7 @@
       },
       "mechanics_status": "Approved for website implementation",
       "approved_bst": 435,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 15,
@@ -4580,13 +4580,13 @@
       "height_m": 1.4,
       "weight_kg": 65,
       "base_stats": {
-        "hp": 75,
-        "attack": 120,
+        "hp": 80,
+        "attack": 125,
         "defense": 60,
         "special_attack": 70,
         "special_defense": 65,
         "speed": 140,
-        "total": 530
+        "total": 540
       },
       "abilities": [
         {
@@ -5089,7 +5089,7 @@
       "mechanics_status": "Approved for website implementation",
       "move_timing_review_needed": true,
       "approved_bst": 540,
-      "stat_distribution_status": "pending_rebalance_to_approved_bst"
+      "stat_distribution_status": "approved_matches_bst"
     },
     {
       "number": 16,
