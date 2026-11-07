@@ -1,19 +1,24 @@
-# Pokémon Everwild
+# Everwild — Original Monster Universe
 
-An original fan-made Pokémon adventure in early planning.
+The Everwild project and its existing GitHub repository continue, but the active website is being rebuilt for a wholly original monster universe. The prior Pokémon roster, art files, Pokédex data, and former game-planning materials have been removed from the active branch. They remain recoverable through Git history.
 
-## Current phase: Fakemon design
-We are designing original Pokémon before building the playable game. The regional Pokédex has no fixed size.
+**Live site:** https://rzyin1.github.io/pokemon-everwild/
 
-## Project structure
-- `data/pokedex.json` — structured records for approved Pokémon.
-- `docs/pokemon-design-template.md` — checklist for developing each Pokémon.
-- `assets/pokemon/` — future original Pokémon artwork and sprites (added when ready).
+## Included in the new site
 
-## Design rules
-- Every species gets a unique, permanent regional Pokédex number once approved.
-- Draft concepts are not counted as finalized species.
-- Evolution lines, types, abilities, base stats, moves, and Pokédex descriptions are developed and reviewed before finalization.
-- Gameplay implementation is planned for a later phase, potentially using Pokémon Essentials and RPG Maker XP.
+- Interactive catalog of **20 types**
+- Complete **20 × 20 matchup matrix** (400 interactions)
+- Attacking and defending strengths, weaknesses, resistances and immunities
+- Type-to-type effectiveness calculator
+- Mobile-friendly design and accessible table labels
 
-This is an unofficial fan project and is not affiliated with Nintendo, Game Freak, or The Pokémon Company.
+The chart uses **17 traditional elemental types plus Sound, Light, and Mist**, replacing Normal with Mist. This data is taken directly from the user's supplied type-chart source, not automatically rebalanced.
+
+## Project files
+- `index.html` — main website
+- `css/everwild.css` — visual design and responsive styles
+- `js/everwild.js` — interactive chart UI
+- `data/monster_type_chart.js` — structured chart module
+- `data/monster_type_chart.csv` — source chart in CSV
+
+**Current phase:** worldbuilding and planning for original creatures.
