@@ -58,6 +58,12 @@ function render(markdown){
   }
   Object.keys(counts).forEach(k=>document.getElementById(k.toLowerCase()+'-count').textContent=counts[k]);
   apply();
+  // The section list loads asynchronously; honor direct anchor links after rendering.
+  if(window.location.hash){
+    const anchor=decodeURIComponent(window.location.hash.slice(1));
+    const destination=document.getElementById(anchor);
+    if(destination)requestAnimationFrame(()=>destination.scrollIntoView());
+  }
 }
 function apply(){
   const query=search.value.trim().toLowerCase();

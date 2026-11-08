@@ -211,7 +211,10 @@ function handleAction(action){let r=current();if(!r)return;
  if(action==='move')return moveTurn($('move-amount').value);
  if(action==='use-action')return useTurnAction();
  if(action==='next-turn')return nextTurn();
- if(action==='attack')return check(r.attackName||'Attack',r.attackBonus);
+ if(action==='attack'){
+  if(r.actionUsed){notice('The action for this turn is already spent. Start the next turn to attack again.',true);return;}
+  useTurnAction();return check(r.attackName||'Attack',r.attackBonus);
+ }
  if(action==='damage-roll')return recordRoll((r.attackName||'Attack')+' damage',roll(r.damageDice));
  if(action==='dice')return recordRoll('Dice: '+$('dice-input').value,roll($('dice-input').value,rollmode()));
  if(action==='clear-log'){if(confirm('Clear roll history for this sheet?')){r.log=[];save();renderLog();}return;}
