@@ -43,3 +43,7 @@ Player sheets initialize with level 1, unassigned class rank and attributes, 20 
 - `characters.html`, `npcs.html` — sheet pages
 - `css/sheets.css` — layout and styling
 - `js/sheets.js` — local persistence and dice/mechanics
+
+## Approved armor, shield, movement & initiative system
+
+See [Ideas: Armor, Shields & Movement](https://rzyin1.github.io/pokemon-everwild/ideas.html#armor-shields-movement). Both player and NPC sheets calculate Defense, movement and initiative from the saved AGI ability modifier and equipped armor (Unarmored, Leather, Chainmail, or Plate); shields add +2 Defense but cannot be paired with two-handed weapons. The optional turn tracker enforces one action per turn and a movement allowance that can be split before and after the action. Armor penalties and rounding follow the approved master design table. Existing saved `dex` ability values are retained and displayed as **Agility (AGI)** for compatibility.

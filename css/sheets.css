@@ -8,3 +8,25 @@
 @media(max-width:1100px){.sheet-workspace{grid-template-columns:250px minmax(0,1fr)}.sheet-columns{grid-template-columns:1fr}.score-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:780px){.sheet-workspace{display:block}.roster-panel{position:static;margin-bottom:23px}.roster-list{max-height:240px}.page-head-row{padding-top:20px}.crest{height:70px;width:70px;font-size:36px}.head-tabs{flex-wrap:wrap}.sheet-heading{flex-wrap:wrap}}
 @media(max-width:540px){.page-head-row h1{font-size:36px}.crest{display:none}.sheet-page-head{padding-top:30px}.roster-panel,.s-card{padding:17px}.sheet-heading{padding:17px}.sheet-heading-buttons{width:100%}.field-grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}.score-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.score-tile{padding:8px 5px}.score-bottom{flex-direction:column}.condition-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.health-numbers{font-size:34px}.stat-strip span{font-size:8px}.stat-strip strong{font-size:19px}.save-context{display:none}.head-tabs a{flex:1;justify-content:center}}
+
+/* Approved armor and combat movement system */
+.equipment-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:16px 0}
+.equipment-checks label{display:flex;align-items:center;flex-wrap:wrap;gap:7px;padding:11px;border:1px solid #52735b;background:#173b27;border-radius:9px;font-size:12px;font-weight:800;color:#e4f3e4}
+.equipment-checks input{accent-color:#d9c487}
+.equipment-checks label span{display:block;width:100%;padding-left:23px;font-size:10px;color:#aec8b4;font-weight:500}
+.armor-breakdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:13px 0}
+.armor-breakdown>div{background:#0d291c;border:1px solid #395a41;border-radius:9px;text-align:center;padding:11px 5px}
+.armor-breakdown span{display:block;font-size:9px;color:#a4c6af;line-height:1.4}
+.armor-breakdown strong{display:block;font:600 20px Cinzel,Georgia,serif;color:#e9d19e;margin-top:5px}
+.turn-info{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.turn-info>div{background:#183c2b;border:1px solid #476f51;border-radius:12px;padding:13px 10px}
+.turn-info small{display:block;color:#b0cdb7;font-size:9px;font-weight:800;letter-spacing:.04em}
+.turn-info strong{font:600 22px Cinzel,Georgia,serif;color:#e6d294;display:block;margin-top:5px}
+.move-meter{margin:17px 0 12px}.move-meter .meter-fill{background:linear-gradient(90deg,#a5b56e,#d2c289)}
+.movement-breakdown{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;font-size:11px;color:#a6c4af}
+.movement-breakdown strong{color:#ecdfb5}
+.turn-input{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:20px;font-size:12px;color:#b8d3be}
+.turn-input input{max-width:82px;background:#0b2419;border:1px solid #547b5b;border-radius:8px;padding:9px;color:#fff}
+.turn-input .s-btn{margin-left:auto}
+.s-btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+@media(max-width:540px){.armor-breakdown{grid-template-columns:repeat(2,minmax(0,1fr))}.equipment-checks{grid-template-columns:1fr}.turn-info strong{font-size:17px}.turn-info small{font-size:8px}}

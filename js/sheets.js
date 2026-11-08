@@ -1,22 +1,25 @@
 'use strict';
 /* Everwild — offline browser character / NPC sheets. Import/export JSON for backups. */
 const KEY='everwild-sheets-v1',MODE=document.body.dataset.mode==='npcs'?'npcs':'characters',IS_NPC=MODE==='npcs';
-const A=[['str','Strength'],['dex','Dexterity'],['con','Constitution'],['int','Intelligence'],['wis','Wisdom'],['cha','Charisma']];
+const A=[['str','Strength'],['dex','Agility (AGI)'],['con','Constitution'],['int','Intelligence'],['wis','Wisdom'],['cha','Charisma']];
 const SK=[['Acrobatics','dex'],['Animal Handling','wis'],['Arcana','int'],['Athletics','str'],['Deception','cha'],['History','int'],['Insight','wis'],['Intimidation','cha'],['Investigation','int'],['Medicine','wis'],['Nature','int'],['Perception','wis'],['Performance','cha'],['Persuasion','cha'],['Religion','int'],['Sleight of Hand','dex'],['Stealth','dex'],['Survival','wis']];
 const COND=['Blinded','Charmed','Deafened','Frightened','Grappled','Incapacitated','Invisible','Paralyzed','Petrified','Poisoned','Prone','Restrained','Stunned','Unconscious'];
 const XP=[0,300,900,2700,6500,14000,23000,34000,48000,64000,85000,100000,120000,140000,165000,195000,225000,265000,305000,355000];
 const $=id=>document.getElementById(id),clamp=(x,a,b)=>Math.min(b,Math.max(a,Math.trunc(Number(x)||0)));
 let db={version:1,characters:[],npcs:[],selected:{characters:null,npcs:null}};
-const num={level:[1,20],hp:[0,99999],maxHp:[1,99999],tempHp:[0,99999],currency:[0,999999999],xp:[0,99999999],ac:[0,99],speed:[0,1000],hitDie:[4,12],hitDice:[0,20],exhaustion:[0,6],deathSuccess:[0,3],deathFail:[0,3],attackBonus:[-50,50],xpReward:[0,999999]};
+const num={level:[1,20],hp:[0,99999],maxHp:[1,99999],tempHp:[0,99999],currency:[0,999999999],xp:[0,99999999],ac:[0,99],speed:[0,1000],hitDie:[4,12],hitDice:[0,20],exhaustion:[0,6],deathSuccess:[0,3],deathFail:[0,3],turn:[1,9999],moveBefore:[0,1000],moveAfter:[0,1000],attackBonus:[-50,50],xpReward:[0,999999]};
 const txt=['name','rank','origin','starter','quest','attackName','damageDice','notes','role','location','faction','disposition'];
 const uid=()=>globalThis.crypto?.randomUUID?.()||'record-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);
 const mk=(tag,cls,text)=>{let e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e;};
-function template(){return {id:uid(),name:'',level:1,rank:'Unassigned',origin:'',hp:20,maxHp:20,tempHp:0,currency:0,starter:'',quest:'None',attributes:{str:null,dex:null,con:null,int:null,wis:null,cha:null},xp:0,ac:10,speed:30,hitDie:8,hitDice:1,deathSuccess:0,deathFail:0,saves:[],skills:[],conditions:[],exhaustion:0,attackName:'Basic attack',attackBonus:0,damageDice:'1d6',notes:'',role:'',location:'',faction:'',disposition:'Neutral',xpReward:0,log:[],createdAt:Date.now()};}
+function template(){return {id:uid(),name:'',level:1,rank:'Unassigned',origin:'',hp:20,maxHp:20,tempHp:0,currency:0,starter:'',quest:'None',attributes:{str:null,dex:null,con:null,int:null,wis:null,cha:null},xp:0,ac:10,speed:30,armor:'Unarmored',shield:false,twoHanded:false,turn:1,moveBefore:0,moveAfter:0,actionUsed:false,hitDie:8,hitDice:1,deathSuccess:0,deathFail:0,saves:[],skills:[],conditions:[],exhaustion:0,attackName:'Basic attack',attackBonus:0,damageDice:'1d6',notes:'',role:'',location:'',faction:'',disposition:'Neutral',xpReward:0,log:[],createdAt:Date.now()};}
 function normalize(v){
  if(!v||typeof v!=='object'||Array.isArray(v))return null;let r=template();
  for(let k of txt)if(typeof v[k]==='string')r[k]=v[k].slice(0,k==='notes'?25000:800);
  for(let [k,[a,b]] of Object.entries(num))if(Number.isFinite(v[k]))r[k]=clamp(v[k],a,b);
  if(![4,6,8,10,12].includes(r.hitDie))r.hitDie=8;
+ if(['Unarmored','Leather','Chainmail','Plate'].includes(v.armor))r.armor=v.armor;
+ r.shield=v.shield===true;r.twoHanded=v.twoHanded===true;if(r.shield&&r.twoHanded)r.twoHanded=false;
+ r.actionUsed=v.actionUsed===true||r.moveAfter>0;
  if(typeof v.id==='string'&&v.id.length<110&&v.id)r.id=v.id;
  for(let [k] of A){let n=v.attributes?.[k];r.attributes[k]=Number.isInteger(n)&&n>=1&&n<=30?n:null;}
  for(let [k,allowed] of [['saves',A.map(x=>x[0])],['skills',SK.map(x=>x[0])],['conditions',COND]])if(Array.isArray(v[k]))r[k]=[...new Set(v[k].filter(x=>allowed.includes(x)))];
@@ -32,6 +35,45 @@ const mod=n=>n===null||n===undefined?null:Math.floor((n-10)/2);
 const plus=n=>n===null?'—':n>=0?'+'+n:String(n);
 const proficiency=l=>2+Math.floor((l-1)/4);
 const nextXP=l=>l<20?XP[l]:XP[19];
+
+// Approved Monster Hunting combat formulas. "dex" is the existing saved agility field.
+const ARMOR={
+ Unarmored:{base:10,penalty:0},
+ Leather:{base:11,penalty:0},
+ Chainmail:{base:14,penalty:1},
+ Plate:{base:18,penalty:2}
+};
+function battleStats(r){
+ const spec=ARMOR[r.armor]||ARMOR.Unarmored;
+ const base=mod(r.attributes.dex);
+ const effective=base===null?null:base-spec.penalty;
+ let defense=null;
+ if(r.armor==='Plate')defense=18;
+ else if(effective!==null)defense=spec.base+(r.armor==='Chainmail'?Math.min(effective,2):effective);
+ if(defense!==null&&r.shield)defense+=2;
+ const movement=effective===null?null:Math.floor(Math.max(10,30+effective*2.5)/5)*5;
+ return {base,effective,defense,movement,penalty:spec.penalty,shieldBonus:r.shield?2:0};
+}
+function moveTurn(distance){
+ const r=current();if(!r)return;
+ const n=Number(distance),max=battleStats(r).movement,spent=r.moveBefore+r.moveAfter;
+ if(max===null){notice('Assign an Agility score before tracking movement.',true);return;}
+ if(!Number.isInteger(n)||n<=0||n%5!==0){notice('Movement must be a positive multiple of 5 feet.',true);return;}
+ if(n>max-spent){notice('Only '+Math.max(0,max-spent)+' ft of movement remains this turn.',true);return;}
+ if(r.actionUsed)r.moveAfter+=n;else r.moveBefore+=n;
+ save();refresh();notice('Moved '+n+' ft ('+(max-r.moveBefore-r.moveAfter)+' ft remaining).');
+}
+function useTurnAction(){
+ const r=current();if(!r)return;
+ if(r.actionUsed){notice('The action for this turn has already been used.',true);return;}
+ r.actionUsed=true;save();refresh();notice('Action used. You may still spend any remaining movement.');
+}
+function nextTurn(){
+ const r=current();if(!r)return;
+ r.turn=Math.min(9999,r.turn+1);r.moveBefore=0;r.moveAfter=0;r.actionUsed=false;
+ save();refresh();notice('Turn '+r.turn+' started. Unused movement was not carried over.');
+}
+
 function dice(sides){const c=globalThis.crypto;if(c?.getRandomValues){let x=new Uint32Array(1),limit=Math.floor(4294967296/sides)*sides;do{c.getRandomValues(x);}while(x[0]>=limit);return x[0]%sides+1;}return Math.floor(Math.random()*sides)+1;}
 function roll(formula,variant='normal'){let m=String(formula).replace(/\s+/g,'').match(/^(\d{0,2})d(4|6|8|10|12|20|100)([+-]\d{1,3})?$/i);if(!m)return null;let n=m[1]?Number(m[1]):1,sides=Number(m[2]),bonus=Number(m[3]||0);if(n<1||n>30)return null;let values=Array.from({length:n},()=>dice(sides)),picked=values,detail='['+values.join(', ')+']';if(n===1&&sides===20&&variant!=='normal'){let extra=dice(20);picked=[variant==='advantage'?Math.max(values[0],extra):Math.min(values[0],extra)];detail='['+values[0]+', '+extra+' → '+picked[0]+']';}return {total:picked.reduce((a,b)=>a+b,0)+bonus,detail:detail+(bonus?' '+plus(bonus):'')};}
 function rollmode(){return $('roll-mode')?.value.toLowerCase()||'normal';}
@@ -58,7 +100,7 @@ const select=(label,key,values)=>'<label class="s-field"><span>'+label+'</span><
 const card=(title,body,cls='')=>'<section class="s-card '+cls+'"><h3>'+title+'</h3>'+body+'</section>';
 const scoreTiles=()=>A.map(([k,name])=>'<div class="score-tile"><label>'+name+'<input type="number" min="1" max="30" placeholder="—" data-ability="'+k+'"></label><div class="score-bottom"><strong id="mod-'+k+'">—</strong><button type="button" data-check="'+k+'">Roll ↗</button></div></div>').join('');
 const saves=()=>A.map(([k,name])=>'<div class="check-row"><label><input type="checkbox" data-save="'+k+'"> '+name+'</label><span id="save-'+k+'">—</span><button type="button" data-save-roll="'+k+'">Roll</button></div>').join('');
-const skills=()=>SK.map(([name,a])=>'<div class="check-row"><label><input type="checkbox" data-skill="'+name+'"> '+name+' <small>'+a.toUpperCase()+'</small></label><span data-skill-score="'+name+'">—</span><button type="button" data-skill-roll="'+name+'">Roll</button></div>').join('');
+const skills=()=>SK.map(([name,a])=>'<div class="check-row"><label><input type="checkbox" data-skill="'+name+'"> '+name+' <small>'+(a==='dex'?'AGI':a.toUpperCase())+'</small></label><span data-skill-score="'+name+'">—</span><button type="button" data-skill-roll="'+name+'">Roll</button></div>').join('');
 const conditions=()=>COND.map(c=>'<label class="condition"><input type="checkbox" data-condition="'+c+'"> '+c+'</label>').join('');
 function render(){
  renderRoster();let r=current(),root=$('sheet');
@@ -66,7 +108,20 @@ function render(){
  let details=IS_NPC?'<div class="field-grid">'+field('Role / occupation','role')+field('Origin / species','origin')+field('Location','location')+field('Faction','faction')+field('Class rank','rank')+select('Disposition','disposition',['Neutral','Friendly','Hostile','Unknown'])+field('Level','level','number')+field('Currency','currency','number')+'</div>':'<div class="field-grid">'+field('Origin','origin')+field('Class rank','rank')+field('Level','level','number')+field('Currency','currency','number')+field('Starter monster','starter')+field('Active quest','quest')+'</div>';
  let xp='<div class="xp"><div class="xp-label"><strong>Experience</strong><span id="xp-text"></span></div><div class="meter slim"><div id="xp-meter" class="meter-fill"></div></div><div class="field-grid two">'+field('Total XP','xp','number')+(IS_NPC?field('XP reward','xpReward','number'):'<p class="small-note align-bottom">Uses D&amp;D 5e cumulative XP thresholds. Character level remains manually controlled.</p>')+'</div></div>';
  let health='<div class="health-heading"><div><small>HEALTH / HIT POINTS</small><div class="health-numbers" id="hp-text">20 / 20</div><span id="hp-status">Ready</span></div><div class="heart">♥</div></div><div id="hp-progress" class="meter hp" role="progressbar" aria-label="Current hit points" aria-valuemin="0" aria-valuemax="20" aria-valuenow="20"><div class="meter-fill" id="hp-fill"></div></div><div class="health-legend"><span id="hp-percent"></span><span id="temp-text"></span></div><div class="field-grid three">'+field('Current HP','hp','number')+field('Maximum HP','maxHp','number')+field('Temporary HP','tempHp','number')+'</div><div class="hp-actions"><label for="health-amount">Amount</label><input type="number" id="health-amount" value="5" min="1" max="99999"><button type="button" class="s-btn damage" data-action="damage">− Damage</button><button type="button" class="s-btn heal" data-action="heal">+ Heal</button></div>';
- let combat='<div class="stat-strip"><div><span>ARMOR CLASS</span><strong id="ac-value"></strong></div><div><span>INITIATIVE</span><strong id="init-value"></strong></div><div><span>SPEED</span><strong id="speed-value"></strong></div><div><span>PROFICIENCY</span><strong id="prof-value"></strong></div></div><div class="field-grid three">'+field('Armor class','ac','number')+field('Speed','speed','number')+select('Hit die','hitDie',['4','6','8','10','12'])+'</div><div class="action-row"><button type="button" class="s-btn dim" data-action="initiative">⚄ Initiative</button><button type="button" class="s-btn dim" data-action="short">◈ Spend Hit Die</button><button type="button" class="s-btn dim" data-action="long">☾ Long Rest</button></div><p class="small-note">Hit dice remaining: <strong id="hit-dice-value"></strong>. Short rest spends one die and heals its roll + Constitution modifier; long rest restores health and up to half your level in spent dice (minimum one).</p>';
+ let combat='<div class="stat-strip"><div><span>DEFENSE</span><strong id="ac-value"></strong></div><div><span>INITIATIVE</span><strong id="init-value"></strong></div><div><span>MOVE / TURN</span><strong id="speed-value"></strong></div><div><span>PROFICIENCY</span><strong id="prof-value"></strong></div></div>'
+ +'<div class="field-grid two">'+select('Armor','armor',['Unarmored','Leather','Chainmail','Plate'])+select('Hit die','hitDie',['4','6','8','10','12'])+'</div>'
+ +'<div class="equipment-checks"><label><input type="checkbox" data-equipment="shield"> Equipped Shield <span>+2 Defense</span></label><label><input type="checkbox" data-equipment="twoHanded"> Two-handed weapon <span>Cannot use shield</span></label></div>'
+ +'<div class="armor-breakdown"><div><span>Base AGI mod</span><strong id="base-agi"></strong></div><div><span>Armor penalty</span><strong id="armor-penalty"></strong></div><div><span>Effective AGI</span><strong id="effective-agi"></strong></div><div><span>Shield bonus</span><strong id="shield-bonus"></strong></div></div>'
+ +'<p class="small-note" id="armor-explanation">Defense, initiative and movement use your effective AGI modifier. Plate provides fixed Defense 18; Chainmail limits effective AGI applied to Defense to +2.</p>'
+ +'<div class="action-row"><button type="button" class="s-btn dim" data-action="initiative">⚄ Roll initiative</button><button type="button" class="s-btn dim" data-action="short">◈ Spend Hit Die</button><button type="button" class="s-btn dim" data-action="long">☾ Long Rest</button></div>'
+ +'<p class="small-note">Initiative: d20 + Effective AGI. Ties: higher Effective AGI goes first; reroll if still tied. Hit dice remaining: <strong id="hit-dice-value"></strong>. Long rests recover up to half your level in spent hit dice (minimum one).</p>';
+ let movement='<div class="turn-info"><div><small>CURRENT TURN</small><strong id="turn-label">1</strong></div><div><small>MOVEMENT ALLOWANCE</small><strong id="turn-speed">— ft</strong></div><div><small>REMAINING</small><strong id="turn-remaining">— ft</strong></div></div>'
+ +'<div class="meter slim move-meter" role="progressbar" aria-label="Movement spent this turn" id="turn-progress" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0"><div class="meter-fill" id="turn-fill"></div></div>'
+ +'<div class="movement-breakdown"><span>Before action: <strong id="before-action">0 ft</strong></span><span>After action: <strong id="after-action">0 ft</strong></span><span>Action: <strong id="action-status">Available</strong></span></div>'
+ +'<div class="turn-input"><label for="move-amount">Move</label><input type="number" id="move-amount" min="5" step="5" value="5" aria-label="Feet to move"><span>ft</span><button type="button" class="s-btn dim" data-action="move">Move</button></div>'
+ +'<div class="action-row"><button type="button" class="s-btn gold" id="use-action-button" data-action="use-action">Use action</button><button type="button" class="s-btn dim" data-action="next-turn">↻ Next turn</button></div>'
+ +'<p class="small-note">One action and one movement allowance per turn. Move before and after your action as long as the combined distance is within the calculated speed. Unused movement never carries over.</p>';
+
  let attack='<div class="field-grid three">'+field('Attack name','attackName')+field('Attack bonus','attackBonus','number')+field('Damage dice','damageDice','text','1d6+3')+'</div><div class="action-row"><button type="button" class="s-btn dim" data-action="attack">⚔ Attack roll</button><button type="button" class="s-btn dim" data-action="damage-roll">✷ Damage roll</button></div>';
  let death='<div class="death" id="death-block"><div class="death-header"><strong>Death saving throws</strong><span id="death-status"></span></div><div class="death-lines"><div>Successes <span id="death-success"></span></div><div>Failures <span id="death-fail"></span></div></div><div class="action-row"><button type="button" class="s-btn dim" data-action="death">Roll death save</button><button type="button" class="s-btn dim" data-action="death-clear">Reset saves</button></div><p class="small-note">10+ succeeds, a natural 1 is two failures, and a natural 20 restores 1 HP. Three successes stabilize; three failures indicate death.</p></div>';
  let dicePanel='<div class="field-grid two"><label class="s-field"><span>Dice expression</span><input id="dice-input" type="text" value="1d20" placeholder="2d6+3"></label><label class="s-field"><span>d20 roll mode</span><select id="roll-mode"><option>Normal</option><option>Advantage</option><option>Disadvantage</option></select></label></div><div class="action-row"><button type="button" class="s-btn gold" data-action="dice">⚄ Roll Dice</button></div><div class="roll-log-head"><h4>Recent rolls</h4><button type="button" class="text-button" data-action="clear-log">Clear</button></div><div id="roll-log" class="roll-log"></div>';
@@ -75,6 +130,7 @@ function render(){
  +'<div class="sheet-columns"><div class="sheet-column">'
  +card(IS_NPC?'◈ NPC Information':'◈ Character Information',details+xp)
  +card('⚔ Combat & Rest',combat)
+ +card('↗ Movement & Turn Tracker',movement)
  +card('⚔ Attacks',attack)
  +card('◉ Ability Scores','<p class="small-note">Unassigned attributes stay blank until you enter them. Ability modifiers are calculated automatically.</p><div class="score-grid">'+scoreTiles()+'</div>')
  +'</div><div class="sheet-column">'
@@ -90,6 +146,7 @@ function render(){
  root.querySelectorAll('[data-save]').forEach(e=>e.checked=r.saves.includes(e.dataset.save));
  root.querySelectorAll('[data-skill]').forEach(e=>e.checked=r.skills.includes(e.dataset.skill));
  root.querySelectorAll('[data-condition]').forEach(e=>e.checked=r.conditions.includes(e.dataset.condition));
+ root.querySelectorAll('[data-equipment]').forEach(e=>e.checked=r[e.dataset.equipment]);
  refresh();
 }
 function refresh(){
@@ -98,7 +155,26 @@ function refresh(){
  $('hp-status').textContent=r.hp===0?'Down · 0 HP':r.hp===r.maxHp?'Full health':pct<=25?'Critical':pct<=50?'Wounded':'In fighting shape';
  $('hp-fill').style.width=pct+'%';$('hp-fill').classList.toggle('low',pct<=25);$('hp-progress').setAttribute('aria-valuenow',r.hp);$('hp-progress').setAttribute('aria-valuemax',r.maxHp);
  $('character-sub').textContent='Level '+r.level+' · Class Rank: '+(r.rank||'Unassigned');
- $('ac-value').textContent=r.ac;$('init-value').textContent=plus(mod(r.attributes.dex)||0);$('speed-value').textContent=r.speed;$('prof-value').textContent=plus(proficiency(r.level));$('hit-dice-value').textContent=r.hitDice+' / '+r.level;
+ const b=battleStats(r);
+ $('ac-value').textContent=b.defense===null?'—':b.defense;
+ $('init-value').textContent=plus(b.effective);
+ $('speed-value').textContent=b.movement===null?'—':b.movement+' ft';
+ $('base-agi').textContent=plus(b.base);$('effective-agi').textContent=plus(b.effective);
+ $('armor-penalty').textContent=b.penalty?'−'+b.penalty:'0';
+ $('shield-bonus').textContent='+'+b.shieldBonus;
+ $('armor-explanation').textContent=b.effective===null?'Assign an Agility (AGI) score to calculate initiative and movement'+(r.armor==='Plate'?'. Plate Defense is fixed at 18.':'.'):'Defense and movement are calculated using the approved '+r.armor+' armor rules.';
+ $('prof-value').textContent=plus(proficiency(r.level));
+ $('hit-dice-value').textContent=r.hitDice+' / '+r.level;
+ const spent=r.moveBefore+r.moveAfter,remaining=b.movement===null?null:Math.max(0,b.movement-spent);
+ $('turn-label').textContent=r.turn;
+ $('turn-speed').textContent=b.movement===null?'—':b.movement+' ft';
+ $('turn-remaining').textContent=remaining===null?'—':remaining+' ft';
+ $('before-action').textContent=r.moveBefore+' ft';$('after-action').textContent=r.moveAfter+' ft';
+ $('action-status').textContent=r.actionUsed?'Used':'Available';
+ $('use-action-button').disabled=r.actionUsed;
+ $('turn-progress').setAttribute('aria-valuenow',spent);
+ $('turn-progress').setAttribute('aria-valuemax',b.movement===null?30:b.movement);
+ $('turn-fill').style.width=b.movement===null?'0%':Math.min(100,spent/Math.max(1,b.movement)*100)+'%';
  for(let [key] of A){let a=mod(r.attributes[key]);$('mod-'+key).textContent=plus(a);$('save-'+key).textContent=plus(a===null?null:a+(r.saves.includes(key)?proficiency(r.level):0));}
  for(let [name,key] of SK){let a=mod(r.attributes[key]);let value=a===null?null:a+(r.skills.includes(name)?proficiency(r.level):0);let element=rootSkill(name);if(element)element.textContent=plus(value);}
  $('xp-text').textContent=r.level===20?'Level 20 · maximum level':r.xp.toLocaleString()+' / '+nextXP(r.level).toLocaleString()+' XP';
@@ -116,7 +192,12 @@ function edit(e){
  if(key==='hitDie'&&![4,6,8,10,12].includes(r.hitDie))r.hitDie=8;
  if(key==='hp'&&r.hp>0)r.deathSuccess=r.deathFail=0;
  }else if(e.dataset.ability){let v=Number(e.value);r.attributes[e.dataset.ability]=e.value!==''&&Number.isInteger(v)&&v>=1&&v<=30?v:null;}
- else{for(let [data,prop] of [['save','saves'],['skill','skills'],['condition','conditions']]){let v=e.dataset[data];if(v){r[prop]=r[prop].filter(x=>x!==v);if(e.checked)r[prop].push(v);break;}}}
+ else if(e.dataset.equipment){
+ const equip=e.dataset.equipment;r[equip]=e.checked;
+ if(equip==='shield'&&r.shield)r.twoHanded=false;
+ if(equip==='twoHanded'&&r.twoHanded)r.shield=false;
+ document.querySelectorAll('[data-equipment]').forEach(x=>x.checked=r[x.dataset.equipment]);
+ }else{for(let [data,prop] of [['save','saves'],['skill','skills'],['condition','conditions']]){let v=e.dataset[data];if(v){r[prop]=r[prop].filter(x=>x!==v);if(e.checked)r[prop].push(v);break;}}}
  save();refresh();
  if(['name','origin','rank','level','hp','maxHp','role','location'].includes(e.dataset.field))renderRoster();
 }
@@ -126,7 +207,10 @@ function handleAction(action){let r=current();if(!r)return;
  if(action==='long')return longRest();
  if(action==='death')return deathSave();
  if(action==='death-clear'){r.deathSuccess=r.deathFail=0;save();render();return;}
- if(action==='initiative')return check('Initiative',mod(r.attributes.dex)||0);
+ if(action==='initiative')return check('Initiative · Effective AGI',battleStats(r).effective);
+ if(action==='move')return moveTurn($('move-amount').value);
+ if(action==='use-action')return useTurnAction();
+ if(action==='next-turn')return nextTurn();
  if(action==='attack')return check(r.attackName||'Attack',r.attackBonus);
  if(action==='damage-roll')return recordRoll((r.attackName||'Attack')+' damage',roll(r.damageDice));
  if(action==='dice')return recordRoll('Dice: '+$('dice-input').value,roll($('dice-input').value,rollmode()));
@@ -144,7 +228,7 @@ $('sheet').addEventListener('click',e=>{
  if(b.dataset.skillRoll){let name=b.dataset.skillRoll,k=SK.find(x=>x[0]===name)?.[1],m=mod(r.attributes[k]);return check(name+' check',m===null?null:m+(r.skills.includes(name)?proficiency(r.level):0));}
 });
 $('sheet').addEventListener('input',e=>{if(e.target.matches('input[type=text][data-field],textarea[data-field]'))edit(e.target);});
-$('sheet').addEventListener('change',e=>{if(e.target.matches('input[type=text][data-field],textarea[data-field]'))return;if(e.target.matches('[data-field],[data-ability],[data-save],[data-skill],[data-condition]'))edit(e.target);});
+$('sheet').addEventListener('change',e=>{if(e.target.matches('input[type=text][data-field],textarea[data-field]'))return;if(e.target.matches('[data-field],[data-ability],[data-save],[data-skill],[data-condition],[data-equipment]'))edit(e.target);});
 $('roster').addEventListener('click',e=>{let b=e.target.closest('[data-record]');if(b)selectRecord(b.dataset.record);});
 $('roster-search').addEventListener('input',renderRoster);
 $('new-button').addEventListener('click',newRecord);

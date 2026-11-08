@@ -147,11 +147,11 @@ All other interactions involving Sound, Light, and Mist are neutral. The three n
 
 | ID | System | Current Decision | Status |
 |---|---|---|---|
-| F01 | Combat system | Not designed | Pending |
+| F01 | Combat system | Armor, shield, movement, initiative, and turn limits approved; remaining combat mechanics pending | Pending |
 | F02 | Monster stats | Not designed | Pending |
 | F03 | Monster abilities | Not designed | Pending |
 | F04 | Monster moves | Not designed | Pending |
-| F05 | Equipment | Not designed | Pending |
+| F05 | Equipment | Armor and shield rules approved; other equipment not yet designed | Pending |
 | F06 | Currency and economy | Not designed beyond Rift entry and capsules | Pending |
 | F07 | Shops and merchants | Not designed | Pending |
 | F08 | Quest system | Will incorporate class ranks | Pending |
@@ -181,3 +181,85 @@ All other interactions involving Sound, Light, and Mist are neutral. The three n
 12. Prepare for future expeditions.
 
 **Design status:** Working master reference. Confirmed decisions remain established unless explicitly revised; pending systems are open for development.
+
+## 10. Armor, Shields & Movement
+
+The following are the **approved Monster Hunting armor, shield, movement, and initiative rules**.
+
+### 10.1 Armor Table
+
+| Armor | Category | Base Defense | AGI Penalty | Final Defense |
+|---|---|---|---|---|
+| Unarmored | None | 10 | 0 | 10 + AGI |
+| Leather | Light | 11 | 0 | 11 + AGI |
+| Chainmail | Medium | 14 | −1 | 14 + min(AGI − 1, 2) |
+| Plate | Heavy | 18 | −2 | 18 |
+
+AGI represents the character's **base Agility modifier**.
+
+**Effective AGI = Base AGI Modifier − Armor Penalty.**
+
+Chainmail's maximum Agility contribution to Defense is +2 **after** applying its armor penalty.
+
+### 10.2 Shields
+
+| Equipment | Defense Bonus | Restriction |
+|---|---|---|
+| Shield | +2 | Occupies one hand; cannot be used simultaneously with a two-handed weapon |
+
+Shields can be used with any armor category, including Unarmored.
+
+### 10.3 Movement Formula
+
+**Movement Speed = max(10, 30 + (Effective AGI × 2.5))**
+
+Round movement speed **down** to the nearest 5 feet.
+
+Minimum movement speed: **10 feet per turn**.
+
+### 10.4 Movement Speed Table
+
+All distances are feet per turn.
+
+| Base AGI Modifier | Unarmored | Leather | Chainmail | Plate |
+|---|---|---|---|---|
+| −4 | 20 | 20 | 15 | 15 |
+| −3 | 20 | 20 | 20 | 15 |
+| −2 | 25 | 25 | 20 | 20 |
+| −1 | 25 | 25 | 25 | 20 |
+| +0 | 30 | 30 | 25 | 25 |
+| +1 | 30 | 30 | 30 | 25 |
+| +2 | 35 | 35 | 30 | 30 |
+| +3 | 35 | 35 | 35 | 30 |
+| +4 | 40 | 40 | 35 | 35 |
+
+### 10.5 Combat Movement Rules
+
+| Rule | Mechanic |
+|---|---|
+| Movement | One movement allowance per turn |
+| Action | One action per turn |
+| Split Movement | Movement can occur before and after an action |
+| Maximum Movement | Cannot exceed calculated movement speed |
+| Unused Movement | Does not carry over to the next turn |
+| Initiative | 1d20 + Effective AGI Modifier |
+| Initiative Ties | Higher Effective AGI acts first; reroll if still tied |
+
+### 10.6 Example Character
+
+Character Agility Score: **16**
+
+Base Agility Modifier: **+3**
+
+| Equipment | Effective AGI | Defense | Movement |
+|---|---|---|---|
+| Unarmored | +3 | 13 | 35 ft |
+| Leather | +3 | 14 | 35 ft |
+| Chainmail | +2 | 16 | 35 ft |
+| Plate | +1 | 18 | 30 ft |
+| Unarmored + Shield | +3 | 15 | 35 ft |
+| Leather + Shield | +3 | 16 | 35 ft |
+| Chainmail + Shield | +2 | 18 | 35 ft |
+| Plate + Shield | +1 | 20 | 30 ft |
+
+These are the approved armor, shield, movement, and initiative rules for Monster Hunting.
