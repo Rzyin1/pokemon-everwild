@@ -30,3 +30,16 @@ The confirmed rules, pending systems, removed systems, and 12-step core gameplay
 - [Full master design source](docs/master-game-design.md)
 
 The master reference is maintained separately from the public homepage. Current game direction: medieval fantasy monster hunting, a Rift exploration realm, free-willed monster bonds, one type per monster, 20 starters via a 1d20 roll, and independent D&D 5e level progression.
+
+## Interactive character and NPC sheets
+
+- [Player Characters](https://rzyin1.github.io/pokemon-everwild/characters.html)
+- [NPC Registry](https://rzyin1.github.io/pokemon-everwild/npcs.html)
+
+Player sheets initialize with level 1, unassigned class rank and attributes, 20 current/max HP, 0 currency, no starter and no active quest. NPC dossiers maintain separate stat blocks. Both pages allow multiple records, automatic browser-local saving, HP damage and healing (including temporary HP), ability scores/modifiers, saving throws, skills, proficiency, dice expressions with advantage and disadvantage, initiative, attack rolls, notes, and JSON backup/restore. Player sheets additionally support death saving throws. Hit dice, optional rests and 5e XP thresholds are provided as tools, not locked campaign rules.
+
+**Storage note:** Records are stored in `localStorage` on the user's current browser and origin. They are **not** synchronized across devices or saved to GitHub. Use **Export all JSON** to back up player and NPC sheets together, and **Import / restore JSON** to merge them into another browser.
+
+- `characters.html`, `npcs.html` — sheet pages
+- `css/sheets.css` — layout and styling
+- `js/sheets.js` — local persistence and dice/mechanics

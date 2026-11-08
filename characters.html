@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1b17">
+<meta name="description" content="Everwild character sheets. Save multiple player characters and track health, ability checks, skills, experience and dice.">
+<title>Player Characters | Everwild</title>
+<link rel="stylesheet" href="css/everwild.css?v=20261107">
+<link rel="stylesheet" href="css/sheets.css?v=20261107-v1">
+<script src="js/sheets.js?v=20261107-v1" defer></script>
+</head><body data-mode="characters">
+<a class="skip" href="#main">Skip to main content</a>
+<header class="topbar" id="top"><div class="wrap top-inner">
+<a class="brand" href="index.html"><span class="brand-glyph" aria-hidden="true">✧</span><span>EVERWILD<small>ORIGINAL MONSTER UNIVERSE</small></span></a>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#chart">Type Chart</a><a href="ideas.html">Ideas</a><a href="characters.html" aria-current="page">Characters</a><a href="npcs.html" >NPCs</a></nav>
+</div></header>
+<main id="main" class="sheets-main">
+<div class="wrap sheet-page-head">
+<div class="sheet-breadcrumb"><a href="index.html">EVERWILD</a><span>/</span> PLAYER JOURNAL</div>
+<div class="page-head-row"><div>
+<span class="kicker">ADVENTURER RECORDS / CHARACTER JOURNAL</span>
+<h1>Player <em>Characters</em></h1>
+<p>Build and manage multiple adventurers. Each sheet starts with your Monster Hunting defaults and adds interactive D&D-style controls for your campaign.</p></div>
+<div class="crest" aria-hidden="true">⚔</div></div>
+<div class="head-tabs" role="navigation" aria-label="Sheet type">
+<a href="characters.html" aria-current="page"><span>♜</span> Player Characters</a>
+<a href="npcs.html"><span>◇</span> NPC Registry</a>
+</div>
+</div>
+<div class="wrap sheet-workspace">
+<aside class="roster-panel" aria-label="Saved characters">
+<div class="roster-head"><div><span class="kicker">YOUR COLLECTION</span><h2>Adventurers</h2></div><span class="roster-count" id="roster-count">0 saved</span></div>
+<button class="s-btn gold new-button" type="button" id="new-button">+ New Character</button>
+<label class="roster-search-label" for="roster-search">Find saved character</label>
+<input id="roster-search" class="roster-search" type="search" placeholder="Search names and details…" autocomplete="off">
+<div id="roster" class="roster-list" aria-label="Saved sheet list"></div>
+<div class="roster-tools"><div class="aside-label">MANAGE YOUR RECORDS</div>
+<button class="tool-link" id="copy-button" type="button"> <span>▣</span> Duplicate selected</button>
+<button class="tool-link" id="export-button" type="button"><span>↓</span> Export all JSON</button>
+<button class="tool-link" id="import-button" type="button"><span>↑</span> Import / restore JSON</button>
+<input type="file" id="import-input" accept=".json,application/json" hidden>
+</div>
+<div class="local-note"><span aria-hidden="true">◈</span><div><strong>Saved in this browser</strong><p>Sheets save automatically on this device. Export a JSON backup to keep them safe or move them to another browser. GitHub does not store your personal sheets.</p></div></div>
+</aside>
+<div class="sheet-main-panel">
+<div class="save-line"><span class="storage-indicator" id="save-status">● Saved on this device</span><span class="save-context">Auto-save enabled · browser storage</span></div>
+<div id="notice" class="sheet-notice" role="status" aria-live="polite" hidden></div>
+<div id="sheet" class="sheet-content"></div>
+</div>
+</div>
+</main>
+<footer><div class="wrap footer-row"><a class="brand" href="index.html"><span class="brand-glyph">✧</span><span>EVERWILD<small>THE ADVENTURE CONTINUES</small></span></a><span>Original monster-hunting RPG · In development</span><a href="ideas.html">Game design ↗</a></div></footer>
+</body></html>
