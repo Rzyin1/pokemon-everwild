@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0b1b17">
-<meta name="description" content="Explore Everwild, an original monster universe, with twenty distinct types and a complete interactive effectiveness chart.">
+<meta name="description" content="Explore Everwild, a medieval fantasy monster-hunting RPG with a separate monster realm called the Rift and twenty distinct elemental types.">
 <title>Everwild | A World of Twenty Forces</title>
 <link rel="stylesheet" href="css/everwild.css?v=20261107">
 <script type="module" src="js/everwild.js?v=20261107"></script>
@@ -10,15 +10,15 @@
 <a class="skip" href="#main">Skip to main content</a>
 <header class="topbar" id="top"><div class="wrap top-inner">
 <a class="brand" href="#top"><span class="brand-glyph">✧</span><span>EVERWILD<small>ORIGINAL MONSTER UNIVERSE</small></span></a>
-<nav aria-label="Main navigation"><a href="#world">World</a><a href="#types">The 20 Types</a><a href="#chart">Type Chart</a><a href="#future">What's Next</a></nav>
+<nav aria-label="Main navigation"><a href="#world">World</a><a href="#types">The 20 Types</a><a href="#chart">Type Chart</a><a href="ideas.html">Ideas</a></nav>
 </div></header>
 <main id="main">
 <section class="hero" id="world"><div class="wrap hero-grid">
 <div class="hero-copy">
 <p class="kicker"><span class="signal"></span> A NEW CHAPTER OF EVERWILD</p>
 <h1>A world shaped by <em>twenty forces.</em></h1>
-<p class="hero-desc">Everwild is becoming its own original monster universe. We're rebuilding from the ground up — with a distinctive world, original creatures, and a complete elemental system to guide the journey.</p>
-<div class="actions"><a class="button primary" href="#types">Explore the types <span>↗</span></a><a class="button secondary" href="#chart">See the matchup chart</a></div>
+<p class="hero-desc">Everwild is a medieval fantasy monster-hunting RPG. Across human kingdoms filled with magic and danger, people form supernatural bonds with free-willed monsters from a separate realm: the Rift.</p>
+<div class="actions"><a class="button primary" href="#types">Explore the types <span>↗</span></a><a class="button secondary" href="ideas.html">Game design ideas ↗</a></div>
 <p class="hero-caption">✦ <span>Currently in worldbuilding and design</span></p>
 </div>
 <div class="sigil" aria-hidden="true"><div class="ring ring-a"></div><div class="ring ring-b"></div><div class="ring ring-c"></div><div class="core">✦</div><span class="glyph g1">✧</span><span class="glyph g2">✳</span><span class="glyph g3">✦</span><div class="sigil-title">THE TWENTY FORCES</div></div>
@@ -41,7 +41,7 @@
 <div><h4><i class="dot good"></i>Resists incoming attacks</h4><div class="chips" id="resists"></div></div>
 <div class="span-full"><h4><i class="dot immune-dot"></i>Immune interactions</h4><div class="chips" id="immune"></div></div>
 </div>
-<p class="profile-note">Profiles are based on the supplied single-type chart. A dual-type defender uses the product of both defensive multipliers.</p>
+<p class="profile-note">Every monster has exactly one type. The chart displays the complete single-type effectiveness rules.</p>
 </div></div></section>
 <section class="section chart-area" id="chart"><div class="wrap">
 <div class="section-head"><div><span class="kicker">02 / BATTLE SYSTEM</span><h2>Type effectiveness</h2><p>Rows are attacking types. Columns are defending types. Select a type above to highlight its matchups.</p></div>
@@ -53,13 +53,13 @@
 <div class="calculator"><div><span class="kicker">QUICK MATCHUP</span><h3>Test an interaction</h3><p>Check the multiplier for any single-type attack and defender.</p></div><div class="calc-controls"><label>Attacking type<select id="attacker"></select></label><b aria-hidden="true">→</b><label>Defending type<select id="defender"></select></label><output id="result" aria-live="polite"><strong id="result-value">2×</strong><small id="result-text">Super effective</small></output></div></div>
 </div></section>
 <section class="section wrap" id="future">
-<div class="section-head"><div><span class="kicker">03 / MOVING FORWARD</span><h2>A fresh beginning</h2><p>The name Everwild stays. This is a new foundation for original monsters and systems.</p></div></div>
+<div class="section-head"><div><span class="kicker">03 / THE WORLD OF EVERWILD</span><h2>Beyond the kingdoms</h2><p>Human civilization and the Rift are connected by monsters, exploration, and supernatural bonds.</p></div></div>
 <div class="roadmap">
-<article><span>01</span><div class="road-icon">◇</div><h3>Worldbuilding</h3><p>Build original locations, cultures, environments, stories and atmosphere.</p><small>IN PLANNING</small></article>
-<article><span>02</span><div class="road-icon">✧</div><h3>Monster creation</h3><p>Create a completely new roster of creatures without the previous species.</p><small>TO DEVELOP</small></article>
-<article><span>03</span><div class="road-icon">⬡</div><h3>Type system</h3><p>Keep the supplied 20-type matchup chart as our starting battle reference.</p><small class="added">REFERENCE ADDED</small></article>
+<article><span>01</span><div class="road-icon">◇</div><h3>The Rift</h3><p>A separate realm of monster habitats. Expeditions begin at a random location and each entry has a cost.</p><small>EXPLORATION</small></article>
+<article><span>02</span><div class="road-icon">✧</div><h3>Monster bonds</h3><p>Monsters have free will. A starter chooses its human through a 1d20 roll; new bonds can form with first-stage monsters.</p><small>BONDING</small></article>
+<article><span>03</span><div class="road-icon">⬡</div><h3>Rift expeditions</h3><p>Manage encounter-based breathing capacity, use capsules to extend trips, and return automatically when it reaches zero.</p><small class="added">CORE LOOP</small></article>
 </div>
-<div class="reset-note"><span>✦</span><div><strong>New direction. Same name.</strong><p>Earlier creature records, images, and game-planning material have been removed from the current website and branch. Their history remains recoverable in Git.</p></div></div>
+<div class="reset-note"><span>✦</span><div><strong>Explore the complete game-design reference.</strong><p>See confirmed rules, pending decisions, the Rift, starter monsters, class ranks, and the full gameplay loop. <a href="ideas.html" style="color:var(--gold);text-decoration:underline">Open Ideas &amp; Game Design ↗</a></p></div></div>
 </section>
-</main><footer><div class="wrap footer-row"><a class="brand" href="#top"><span class="brand-glyph">✧</span><span>EVERWILD<small>AN ORIGINAL MONSTER UNIVERSE</small></span></a><span>In development · Building a new world</span><a href="#top">Back to top ↑</a></div></footer>
+</main><footer><div class="wrap footer-row"><a class="brand" href="#top"><span class="brand-glyph">✧</span><span>EVERWILD<small>AN ORIGINAL MONSTER UNIVERSE</small></span></a><span>Medieval fantasy monster-hunting RPG · In development</span><a href="#top">Back to top ↑</a></div></footer>
 </body></html>

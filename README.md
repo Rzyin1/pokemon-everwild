@@ -22,3 +22,11 @@ The chart uses **17 traditional elemental types plus Sound, Light, and Mist**, r
 - `data/monster_type_chart.csv` — source chart in CSV
 
 **Current phase:** worldbuilding and planning for original creatures.
+
+## Game design reference
+
+The confirmed rules, pending systems, removed systems, and 12-step core gameplay loop are captured in:
+- [Ideas & Game Design](https://rzyin1.github.io/pokemon-everwild/ideas.html)
+- [Full master design source](docs/master-game-design.md)
+
+The master reference is maintained separately from the public homepage. Current game direction: medieval fantasy monster hunting, a Rift exploration realm, free-willed monster bonds, one type per monster, 20 starters via a 1d20 roll, and independent D&D 5e level progression.
